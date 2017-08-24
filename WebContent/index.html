@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>PointAndClick - Les jeux de Bebel</title>
+		<link rel="shortcut icon" href="app/img/favicon.jpg" />
+		<link rel="apple-touch-icon" href="app/img/favicon.jpg" />
+		<link rel="icon" type="image/ jpeg" href="app/img/favicon.jpg" />
+		<meta property="og:image" content="app/img/favicon.jpg" />
+		
+		<meta name="title" content="PointAndClick - Les jeux de Bebel"/>
+		<meta property="og:title" content="PointAndClick - Les jeux de Bebel">
+		
+		<meta name="description" content="PointAndClick - Jeu de pointAndClick gratuit sur navigateur."/>
+		<meta property="og:description" content="PieceOfCake - Jeu de pointAndClick gratuit sur navigateur.">
+		<meta name="keywords" content="PointAndClick; Les jeux de Bebel; Jeu; Game; Bebel; Independant; Indes; Fun; A.E Ferrets; AEFerrets; Nesztler; GameJam;"/>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="Cache-Control" content="private" />
+		<meta http-equiv="Expires" content="86400000" />
+		<meta http-equiv="Cache-Control" content="max-age=86400000" />
+		
+		<script src="lib/require.min.js"></script>
+		
+		<link rel="stylesheet" href="app/css/bootstrap.min.css">
+		<link rel="stylesheet" href="app/css/style.css">
+		<link rel="stylesheet" href="app/css/style-game.css">
+		<link rel="stylesheet" href="app/css/style-menu.css">
+	</head>
+	<body>
+		<div>
+			<div id="app"></div>
+			<script>
+				require(['app/config/config.js'], function () {
+					require(['app/view/menu/menuView'], function (main) {
+					    new main();
+					});
+				});
+			</script>
+		</div>
+		<a class="hidden" href="honeybot" title="Lien pour Robot">Lien pour Robot</a>
+	</body>
+</html>
