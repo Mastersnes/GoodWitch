@@ -4,21 +4,36 @@
 **/
 .plan {
 	position: absolute;
-	width: 100000%;
-	height: 100%;
+}
+.planFar {
+	width: 100%; height: 100%;
+	position: absolute;
+}
+.planFar.background {
+	z-index: -200;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .plan.background {
 	z-index: -100;
-	background-repeat: repeat-x;
-	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .plan.stage {
 	z-index: 0;
 }
+.frontground {
+	opacity : 0.7;
+}
 .plan.frontground {
 	z-index: 100;
-	background-repeat: repeat-x;
-	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.planFar.frontground {
+	z-index: 200;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .element {
@@ -31,41 +46,6 @@
 	position: absolute;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-}
-
-/**
-* Player
-**/
-.player {
-	width: 45; height: 70;
-	background-image: url("../img/game/perso/stop.png");
-}
-.player.marche-0 {
-	background-image: url("../img/game/perso/stop.png");
-}
-.player.marche-1 {
-	background-image: url("../img/game/perso/marche/1.png");
-}
-.player.marche-2 {
-	background-image: url("../img/game/perso/marche/2.png");
-}
-.player.marche-3 {
-	background-image: url("../img/game/perso/marche/3.png");
-}
-.player.cours-0 {
-	background-image: url("../img/game/perso/stop.png");
-}
-.player.cours-1 {
-	background-image: url("../img/game/perso/course/1.png");
-}
-.player.cours-2 {
-	background-image: url("../img/game/perso/course/2.png");
-}
-.player.cours-3 {
-	background-image: url("../img/game/perso/course/3.png");
-}
-.player.saute {
-	background-image: url("../img/game/perso/course/2.png") !important;
 }
 
 /**
@@ -95,27 +75,7 @@
 	background-size: 100% 100%;
 	background-image: url("../img/menu/menu-fond.jpg");
 }
-.hitbox {
-	display: none !important;
-	position: absolute;
-	z-index: 10000;
-	opacity : 0.5;
-}
-.hitbox.perso {
-	background-color: red;
-}
-.hitbox.haut {
-	background-color: green;
-}
-.hitbox.bas {
-	background-color: blue;
-}
-.hitbox.gauche {
-	background-color: pink;
-}
-.hitbox.droite {
-	background-color: yellow;
-}
+
 .shake {
     animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);

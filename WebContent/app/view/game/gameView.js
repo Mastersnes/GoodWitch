@@ -2,8 +2,9 @@
 define(["jquery",
         'underscore',
         "app/utils/utils",
-        "text!app/template/game/game.html"],
-function($, _, Utils, page) {
+        "text!app/template/game/game.html",
+        "app/view/game/tableauView"],
+function($, _, Utils, page, TableauView) {
 	'use strict';
 
 	return function(parent, load, code, Textes, Mediatheque) {
@@ -11,6 +12,7 @@ function($, _, Utils, page) {
 			this.el = $("#app");
 			this.Textes = Textes;
 			this.mediatheque = Mediatheque;
+			this.tableauView = new TableauView(this, Textes);
 			this.render(load, code);
 		};
 
@@ -23,15 +25,14 @@ function($, _, Utils, page) {
 			this.el.html(template(templateData));
 			
 			var save;
-			if (code) {
-				save = JSON.parse(Utils.decode(code));
-			}else if (load) {
+			if (code) save = JSON.parse(Utils.decode(code));
+			else if (load) {
 				var saveSession = window.localStorage.getItem(Utils.name);
 				if (saveSession) save = JSON.parse(Utils.decode(saveSession));
 			}
 			
-			if (save) this.stageView.load(save);
-			else this.stageView.go("debut");
+			if (save && save.lieu) this.tableauView.load(save);
+			else this.tableauView.go("coffre");
 		};
 		
 		this.init(parent, load, code, Textes, Mediatheque);
