@@ -1,17 +1,13 @@
 /**
-* Debut
+* Coffre
 **/
-.plan.background.coffre {
+plan.background.coffre {
 	background-image: url("../img/game/coffre/background.jpg");	
 }
-.plan.frontground.coffre {
+plan.frontground.coffre {
 	background-image: url("../img/game/coffre/frontground.png");	
 }
-
-/**
-* Elements
-**/
-.element.serrure {
+element.serrure {
 	width: 168; height: 182;
 	background-image: url("../img/game/coffre/items/serrure.png");
 }

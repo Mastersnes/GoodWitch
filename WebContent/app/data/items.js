@@ -4,36 +4,13 @@ define(["jquery"], function($){
 		/**
 		 * Items
 		 */
-		"chaise" : {
+		"serrure" : {
+		    w : 168, h : 182,
 			see : function(game, dom) {
-				game.setText("chaise-explorer1");
+				console.log("C'est une serrure");
 			},
 			use : function(game, dom) {
-				dom.remove();
-			}
-		},
-		"table" : {
-			see : function(game, dom) {
-				
-			},
-			use : function(game, dom) {
-				
-			}
-		},
-		"armoire" : {
-			see : function(game, dom) {
-				
-			},
-			use : function(game, dom) {
-				
-			}
-		},
-		"chapeau" : {
-			see : function(game, dom) {
-				
-			},
-			use : function(game, dom) {
-				
+			    console.log("J'utilise la serrure");
 			}
 		}
 	};

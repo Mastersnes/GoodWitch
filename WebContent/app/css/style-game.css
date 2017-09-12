@@ -2,100 +2,45 @@
 /**
 * Game
 **/
-.plan {
-	position: absolute;
+.game {
+	background-color: black;
 }
-.planFar {
-	width: 100%; height: 100%;
-	position: absolute;
+.scene {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
 }
-.planFar.background {
-	z-index: -200;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.plan.background {
-	z-index: -100;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.plan.stage {
-	z-index: 0;
-}
-.frontground {
-	opacity : 0.7;
-}
-.plan.frontground {
-	z-index: 100;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.planFar.frontground {
-	z-index: 200;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+.camera {
+    width: 100%;
+    height: 100%;
 }
 
-.element {
+/**
+* les differents plans
+**/
+plan, planFar, element {
 	position: absolute;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+    background-size: 100% 100%;
 }
-.back {
-	z-index: -50;
-	position: absolute;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
+planFar {width: 100%; height: 100%;}
+planFar.background {z-index: 0;}
+plan.background {z-index: 1;}
+plan.stage {z-index: 2;}
+plan.frontground {z-index: 1000;}
+planFar.frontground {z-index: 1001;}
+.frontground {opacity : 0.7;}
+
+.game * {pointer-events: none;}
+element {pointer-events: all !important;}
 
 /**
 * Utils
 **/
-.pause {
-	z-index: 10000;
-}
-.pause .mask {
-	background: gray;
-	opacity : 0.5;
-}
 .text {
 	font-family: fantasy;
 	font-size : 2em;
 	max-width: 100%;
 	word-wrap: break-word;
-}
-.preload {
-	position: absolute;
-	left: -9999px;
-	top : -9999px;
-}
-#end {
-	z-index: 9000;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-image: url("../img/menu/menu-fond.jpg");
-}
-
-.shake {
-    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-}
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
 }

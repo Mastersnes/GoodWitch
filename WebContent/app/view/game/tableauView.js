@@ -8,13 +8,14 @@ define(["jquery",
 function($, _, Utils, Tableaux, Items) {
 	'use strict';
 
-	return function(parent, Textes) {
-		this.init = function(parent, Textes) {
+	return function(parent, Textes, Scene) {
+		this.init = function(parent, Textes, Scene) {
 			this.el = ".game";
 			this.Textes = Textes;
 			this.parent = parent;
 			this.mediatheque = parent.mediatheque;
 			this.pause = false;
+			this.scene = Scene;
 			this.position = {
 					top : 0,
 					left : 0
@@ -23,30 +24,11 @@ function($, _, Utils, Tableaux, Items) {
 
 		this.go = function(lieu, save) {
 			this.tableau = Tableaux.get(lieu);
-			this.screen = {
-					w : $("body").width(),
-					h : $("body").height()
-			};
 			
 			this.mediatheque.stopAllMusic();
 			if (this.tableau.music) this.mediatheque.play(this.tableau.music);
 			
-			var that = this;
-			$(".game .plan").each(function() {
-				$(this).css({
-					width : that.tableau.width + "px",
-					height : "100%"				
-				});
-			});
-			$(".game .planFar.background").attr("class", "planFar background "+lieu);
-			$(".game .plan.background").attr("class", "plan background "+lieu);
-			$(".game .plan.frontground").attr("class", "plan frontground "+lieu);
-			$(".game .planFar.frontground").attr("class", "planFar frontground "+lieu);
-			
-			for (var index in this.tableau.elements) {
-				var element = this.tableau.elements[index];
-				$(".game .stage").append(this.createElement(element, index));
-			}
+			this.scene.initScene(lieu, this.tableau);
 			
 			if (save) {
 				//load Save
@@ -70,20 +52,6 @@ function($, _, Utils, Tableaux, Items) {
 
 		this.load = function(save) {
 			this.go(save.lieu, save);
-		};
-		
-		this.createElement = function(element, index, type) {
-			if (!type) type = "element";
-			var dom = $("<div></div>");
-			dom.attr("id", element.id);
-			if (element.sound) dom.attr("sound", element.sound);
-			dom.attr("index", index);
-			dom.attr("class", type + " "+ element.id);
-			dom.css({
-				left : element.x + "px",
-				top : element.y + "%"
-			});
-			return dom;
 		};
 		
 		this.loop = function() {
@@ -125,33 +93,28 @@ function($, _, Utils, Tableaux, Items) {
 		
 		this.makeEvents = function() {
 			var that = this;
-			$(document).mousemove(function(event){
-				that.mouse = {
-						xPercent : (event.pageX * 100) / that.screen.w,
-						yPercent : (event.pageY * 100) / that.screen.h
-				};
-			});
-			
-			$("body").click(function(e) {
-				e.preventDefault();
-			});
-			
-			$(".element").click(function(event) {
-				event.preventDefault();
-				var id = $(this).attr("id");
-				var element = Items.get(id);
-				console.log("button : " + event.which);
-				switch (event.which) {
-			        case 1:
-			            element.use(that, $(this));
-			            break;
-			        case 3:
-			            element.see(that, $(this));
-			            break;
-			    }
+			$(document).on("contextmenu", function(evt){
+                evt.preventDefault();
+                var target = $(evt.target);
+                console.log("click on : ", target, $(this));
+                if (target.is("element")) {
+                    var id = target.attr("id");
+                    var element = Items.get(id);
+                    element.see(that, target);
+                }
+            });
+			$(document).on("click", function(evt){
+			    evt.preventDefault();
+			    var target = $(evt.target);
+			    console.log("click on : ", target, $(this));
+			    if (target.is("element")) {
+                    var id = target.attr("id");
+                    var element = Items.get(id);
+                    element.use(that, target);
+                }
 			});
 		};
 		
-		this.init(parent, Textes);
+		this.init(parent, Textes, Scene);
 	};
 });

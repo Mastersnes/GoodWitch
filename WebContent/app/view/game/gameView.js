@@ -2,18 +2,25 @@
 define(["jquery",
         'underscore',
         "app/utils/utils",
+        "app/utils/scene",
         "text!app/template/game/game.html",
         "app/view/game/tableauView"],
-function($, _, Utils, page, TableauView) {
+function($, _, Utils, Scene, page, TableauView) {
 	'use strict';
 
 	return function(parent, load, code, Textes, Mediatheque) {
 		this.init = function(parent, load, code, Textes, Mediatheque) {
 			this.el = $("#app");
 			this.Textes = Textes;
+			this.scene = new Scene();
 			this.mediatheque = Mediatheque;
-			this.tableauView = new TableauView(this, Textes);
+			this.tableauView = new TableauView(this, Textes, this.scene);
 			this.render(load, code);
+			
+			var that = this;
+			$( window ).resize(function() {
+			    that.scene.resize();
+			});
 		};
 
 		this.render = function(load, code) {
@@ -24,6 +31,7 @@ function($, _, Utils, page, TableauView) {
 			};
 			this.el.html(template(templateData));
 			
+			this.scene.resize();
 			var save;
 			if (code) save = JSON.parse(Utils.decode(code));
 			else if (load) {

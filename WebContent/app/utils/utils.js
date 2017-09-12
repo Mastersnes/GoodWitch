@@ -44,6 +44,9 @@ define(["jquery", "sha"], function($, sha){
 		percent : function(value, percentage) {
 			return (value * percentage)/100;
 		},
+        toPercent : function(value, base) {
+            return (value * 100)/base;
+        },
 		clone : function(value) {
 			return $.extend(true, {}, value);
 		}

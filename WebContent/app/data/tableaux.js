@@ -4,7 +4,7 @@ define(["jquery"], function($){
 		"coffre" : {
 			width:1024, height : 768,
 			elements : [
-			      {id: "serrure", x:"300", y:"60"}
+			      {id: "serrure", x:"440.32", y:"376.32"}
 			]
 		}
 	};
