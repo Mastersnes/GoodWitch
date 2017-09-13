@@ -1,7 +1,7 @@
 'use strict';
 define(["jquery", "sha"], function($, sha){
 	return {
-		name : "bebelPointAndClick",
+		name : "bebelGoodWitch",
 		
 		/**
 		* Permet d'appeler un WS
