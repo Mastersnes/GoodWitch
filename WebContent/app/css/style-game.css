@@ -32,16 +32,6 @@ plan.frontground {z-index: 1000;}
 planFar.frontground {z-index: 1001;}
 .frontground {opacity : 0.7;}
 
-.game * {pointer-events: none;}
-element {
-	cursor: pointer;
-	pointer-events: all !important;
-}
-fleche {
-    cursor: pointer;
-    pointer-events: all !important;
-}
-
 /**
 * Fleches
 **/
@@ -82,6 +72,18 @@ fleche.bas {
     transform: scaleY(-1);
     filter: FlipV;
     -ms-filter: "FlipV";
+}
+
+/**
+* Actions
+**/
+.game * {pointer-events: none;}
+element, fleche {
+	cursor: default;
+	pointer-events: all !important;
+}
+element:hover, fleche:hover {
+	cursor: pointer;
 }
 
 /**

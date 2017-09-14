@@ -2,32 +2,42 @@
 define(["jquery", 
         "app/utils/utils",
         "app/data/items"], function($, Utils, Items){
-	return function(){
-		this.resize = function() {
-			var w = $("body").width();
-			var h = $("body").height();
-			var rapport = {
-			        w : 1024 / 768,
-			        h : 768 / 1024
-			};
-			
-			if (w >= h) {
-			    $(".scene").css({
-	                width : h * rapport.w + "px",
-	                height : "100%"
-	            });
-			}else {
-			    $(".scene").css({
+    return function(parent){
+        this.init = function(parent) {
+            this.parent = parent;
+            var that = this;
+            $( window ).resize(function() {
+                that.scene.resize();
+            });
+        };
+        
+        this.resize = function() {
+            var w = $("body").width();
+            var h = $("body").height();
+            var rapport = {
+                    w : 1024 / 768,
+                    h : 768 / 1024
+            };
+            
+            if (w >= h) {
+                $(".scene").css({
+                    width : h * rapport.w + "px",
+                    height : "100%"
+                });
+            }else {
+                $(".scene").css({
                     width : "100%",
                     height : w * rapport.h + "px"
                 });
-			}
-		};
-		
-		this.initScene = function(lieu, parent) {
-		    this.parent = parent;
-		    var tableau = parent.tableau;
-		    $(".game plan").each(function() {
+            }
+        };
+        
+        this.initScene = function(lieu) {
+            this.resize();
+            
+            var parent = this.parent;
+            var tableau = parent.tableau;
+            $(".game plan").each(function() {
                 $(this).css({
                     width : Utils.toPercent(tableau.width, 1024) + "%",
                     height : Utils.toPercent(tableau.height, 768) + "%"
@@ -53,9 +63,9 @@ define(["jquery",
                 if (tableau.direction.gauche) $("fleche.gauche").show();
                 if (tableau.direction.droite) $("fleche.droite").show();
             }
-		};
-		
-		this.createElement = function(element, index, type) {
+        };
+        
+        this.createElement = function(element, index, type) {
             if (!type) type = "element";
             var dom = $("<element></element>");
             if (element.sound) dom.attr("sound", element.sound);
@@ -74,31 +84,43 @@ define(["jquery",
             });
             return dom;
         };
-		
-		this.makeEvents = function() {
+        
+        this.makeEvents = function() {
             var that = this;
             $(document).on("contextmenu", function(evt){
                 evt.preventDefault();
-                var target = $(evt.target);
-                if (target.is("element")) {
-                    var id = target.attr("id");
-                    var element = Items.get(id);
-                    element.see(that, target);
-                }
             });
-            $(document).on("click", function(evt){
+            $(document).on("mousedown", "element", function(evt){
                 evt.preventDefault();
                 var target = $(evt.target);
-                if (target.is("element")) {
-                    var id = target.attr("id");
-                    var element = Items.get(id);
-                    element.use(that, target);
-                }else if (target.is("fleche")) {
-                    var type = target.attr("class");
+                var id = target.attr("id");
+                var element = Items.get(id);
+                
+                switch(evt.which) {
+                    case 1 : element.use(that, target); break;
+                    case 3 : element.see(that, target); break;
+                    default : break;
+                }
+            });
+            
+            $(document).on("mousedown", "fleche", function(evt){
+                evt.preventDefault();
+                var target = $(evt.target);
+                var type = target.attr("class");
+                
+                if (evt.which == 1) {
                     var newLieu = that.parent.tableau.direction[type];
                     that.parent.go(newLieu);
                 }
             });
+            
+            $("element").hover(function(){
+                console.log("onHover");
+            }, function() {
+                console.log("go");
+            });
         };
-	};
+        
+        this.init(parent);
+    };
 });
