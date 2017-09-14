@@ -40,7 +40,7 @@ function($, _, Utils, Scene, page, TableauView) {
 			}
 			
 			if (save && save.lieu) this.tableauView.load(save);
-			else this.tableauView.go("coffre");
+			else this.tableauView.go("coffre-haut");
 		};
 		
 		this.init(parent, load, code, Textes, Mediatheque);

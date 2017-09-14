@@ -1,13 +1,22 @@
 /**
-* Coffre
+* Coffre-Haut
 **/
-plan.background.coffre {
+plan.background.coffre-haut {
 	background-image: url("../img/game/coffre/background.jpg");	
 }
-plan.frontground.coffre {
+plan.frontground.coffre-haut {
 	background-image: url("../img/game/coffre/frontground.png");	
 }
 element.serrure {
 	width: 168; height: 182;
 	background-image: url("../img/game/coffre/items/serrure.png");
+}
+/**
+* Coffre-Bas
+**/
+plan.background.coffre-bas {
+    background-image: url("../img/game/coffre/background.jpg");    
+}
+plan.frontground.coffre-bas {
+    background-image: url("../img/game/coffre/frontground.png");   
 }

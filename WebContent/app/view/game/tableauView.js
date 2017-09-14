@@ -28,7 +28,7 @@ function($, _, Utils, Tableaux, Items) {
 			this.mediatheque.stopAllMusic();
 			if (this.tableau.music) this.mediatheque.play(this.tableau.music);
 			
-			this.scene.initScene(lieu, this.tableau);
+			this.scene.initScene(lieu, this);
 			
 			if (save) {
 				//load Save
@@ -36,8 +36,8 @@ function($, _, Utils, Tableaux, Items) {
 				//Init cinematique
 			}
 
-			this.makeEvents();
 			if (!this.alreadyLoop) {
+			    this.scene.makeEvents();
 				this.loop();
 			}
 		};
@@ -89,30 +89,6 @@ function($, _, Utils, Tableaux, Items) {
 			}else {
 				$("#pause").hide();
 			}
-		};
-		
-		this.makeEvents = function() {
-			var that = this;
-			$(document).on("contextmenu", function(evt){
-                evt.preventDefault();
-                var target = $(evt.target);
-                console.log("click on : ", target, $(this));
-                if (target.is("element")) {
-                    var id = target.attr("id");
-                    var element = Items.get(id);
-                    element.see(that, target);
-                }
-            });
-			$(document).on("click", function(evt){
-			    evt.preventDefault();
-			    var target = $(evt.target);
-			    console.log("click on : ", target, $(this));
-			    if (target.is("element")) {
-                    var id = target.attr("id");
-                    var element = Items.get(id);
-                    element.use(that, target);
-                }
-			});
 		};
 		
 		this.init(parent, Textes, Scene);

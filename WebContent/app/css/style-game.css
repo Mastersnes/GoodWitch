@@ -3,7 +3,7 @@
 * Game
 **/
 .game {
-	background-color: black;
+	background-color: dimgray;
 }
 .scene {
 	position: relative;
@@ -19,7 +19,7 @@
 /**
 * les differents plans
 **/
-plan, planFar, element {
+plan, planFar, element, fleche {
 	position: absolute;
 	background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -33,7 +33,56 @@ planFar.frontground {z-index: 1001;}
 .frontground {opacity : 0.7;}
 
 .game * {pointer-events: none;}
-element {pointer-events: all !important;}
+element {
+	cursor: pointer;
+	pointer-events: all !important;
+}
+fleche {
+    cursor: pointer;
+    pointer-events: all !important;
+}
+
+/**
+* Fleches
+**/
+fleche {
+    display: none;
+    background-color: red;
+    z-index: 10;
+    width: 50; height: 42;
+    opacity: 0.3;
+    -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+}
+fleche:hover {opacity: 1;}
+fleche.gauche {
+    left: 0; top : 50%;
+    background-image: url("../img/game/flecheH.png");
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+fleche.droite {
+    right: 0; top : 50%;
+    background-image: url("../img/game/flecheH.png");
+}
+fleche.haut {
+    left: 50%; top : 0;
+    background-image: url("../img/game/flecheV.png");
+}
+fleche.bas {
+    left: 50%; bottom : 0;
+    background-image: url("../img/game/flecheV.png");
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
 
 /**
 * Utils
