@@ -34,7 +34,7 @@ function($, _, Utils, page, TableauView) {
 			}
 			
 			if (save && save.lieu) this.tableauView.load(save);
-			else this.tableauView.go("coffre-haut");
+			else this.tableauView.go("coffre");
 		};
 		
 		this.init(parent, load, code, Textes, Mediatheque);

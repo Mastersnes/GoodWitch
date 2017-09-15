@@ -1,22 +1,39 @@
 /**
-* Coffre-Haut
+* Coffre
 **/
-plan.background.coffre-haut {
+plan.background.coffre {
 	background-image: url("../img/game/coffre/background.jpg");	
 }
-plan.frontground.coffre-haut {
+plan.frontground.coffre {
 	background-image: url("../img/game/coffre/frontground.png");	
 }
 element.serrure {
 	width: 168; height: 182;
 	background-image: url("../img/game/coffre/items/serrure.png");
 }
+
 /**
 * Coffre-Bas
 **/
 plan.background.coffre-bas {
-    background-image: url("../img/game/coffre/background.jpg");    
+    background-image: url("../img/game/coffre-bas/background.jpg");    
 }
 plan.frontground.coffre-bas {
-    background-image: url("../img/game/coffre/frontground.png");   
+    background-image: url("../img/game/coffre-bas/frontground.png");   
+}
+element.boite {
+	width: 250; height: 166;
+    background-image: url("../img/game/coffre-bas/items/boite.png");
+}
+element.athame {
+	width: 206; height: 267;
+    background-image: url("../img/game/coffre-bas/items/athame.png");
+}
+element.collier {
+	width: 189; height: 167;
+    background-image: url("../img/game/coffre-bas/items/collier.png");
+}
+element.Nori {
+	width: 388; height: 527;
+    background-image: url("../img/game/coffre-bas/items/Nori.png");
 }

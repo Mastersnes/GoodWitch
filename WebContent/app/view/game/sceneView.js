@@ -1,10 +1,11 @@
 'use strict';
 define(["jquery", 
         "app/utils/utils",
-        "app/data/items"], function($, Utils, Items){
+        "app/view/game/elementView"], function($, Utils, ElementView){
     return function(parent){
         this.init = function(parent) {
             this.parent = parent;
+            this.elementView = new ElementView(this, this.parent);
             var that = this;
             $( window ).resize(function() {
                 that.scene.resize();
@@ -54,7 +55,7 @@ define(["jquery",
             
             for (var index in tableau.elements) {
                 var element = tableau.elements[index];
-                $(".game .stage").append(this.createElement(element, index));
+                this.createElement(element, index, $(".game .stage"));
             }
             
             if (tableau.direction) {
@@ -65,23 +66,25 @@ define(["jquery",
             }
         };
         
-        this.createElement = function(element, index, type) {
-            if (!type) type = "element";
+        this.createElement = function(element, index, parent) {
             var dom = $("<element></element>");
             if (element.sound) dom.attr("sound", element.sound);
             dom.attr("id", element.id);
             
-            var item = Items.get(element.id);
-            
             dom.attr("index", index);
             dom.attr("class", element.id);
+
+            parent.append(dom);
+            
+            console.log("taille : ", dom.width(), dom.height());
             
             dom.css({
                 left : Utils.toPercent(element.x, 1024) + "%",
                 top : Utils.toPercent(element.y, 768) + "%",
-                width : Utils.toPercent(item.w, 1024) + "%",
-                height : Utils.toPercent(item.h, 768) + "%"
+                width : Utils.toPercent(dom.width(), 1024) + "%",
+                height : Utils.toPercent(dom.height(), 768) + "%"
             });
+            
             return dom;
         };
         
@@ -89,18 +92,6 @@ define(["jquery",
             var that = this;
             $(document).on("contextmenu", function(evt){
                 evt.preventDefault();
-            });
-            $(document).on("mousedown", "element", function(evt){
-                evt.preventDefault();
-                var target = $(evt.target);
-                var id = target.attr("id");
-                var element = Items.get(id);
-                
-                switch(evt.which) {
-                    case 1 : element.use(that, target); break;
-                    case 3 : element.see(that, target); break;
-                    default : break;
-                }
             });
             
             $(document).on("mousedown", "fleche", function(evt){
@@ -114,11 +105,7 @@ define(["jquery",
                 }
             });
             
-            $("element").hover(function(){
-                console.log("onHover");
-            }, function() {
-                console.log("go");
-            });
+            this.elementView.makeEvents();
         };
         
         this.init(parent);

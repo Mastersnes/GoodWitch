@@ -5,7 +5,6 @@ define(["jquery"], function($){
 		 * Items
 		 */
 		"serrure" : {
-		    w : 168, h : 182,
 			see : function(game, dom) {
 				console.log("C'est une serrure");
 			},
