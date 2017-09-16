@@ -12,7 +12,7 @@ function($, _, Utils, page, TableauView) {
 			this.el = $("#app");
 			this.Textes = Textes;
 			this.mediatheque = Mediatheque;
-			this.tableauView = new TableauView(this, Textes);
+			this.tableauView = new TableauView(this);
 			this.render(load, code);
 			
 			var that = this;

@@ -19,7 +19,7 @@
 /**
 * les differents plans
 **/
-plan, planFar, element, fleche {
+plan, planFar, element, fleche, actions {
 	position: absolute;
 	background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -76,12 +76,8 @@ fleche.haut {
 /**
 * Actions
 **/
-.game * {pointer-events: none;}
-element, fleche {
-	cursor: default;
-	pointer-events: all !important;
-}
-element:hover, fleche:hover {
+.frontground {pointer-events: none;}
+element:hover, fleche:hover, action:hover {
 	cursor: pointer;
 }
 

@@ -80,6 +80,32 @@ define(["jquery"], function($){
 			fr : "Merci de ne pas la modifier ou la partager de fa&ccedil;on commerciale sans notre accord.",
 			en : "Please don't modify and share it commercially without our consent."
 		},
+		/**
+		 * Actions
+		 */
+		"regarder" : {
+			fr : "Regarder",
+			en : "Look At"
+		},
+		"gouter" : {
+			fr : "Gouter",
+			en : "Taste"
+		},
+		"ecouter" : {
+			fr : "Ecouter",
+			en : "Listen"
+		},
+		"ouvrir" : {
+			fr : "Ouvrir",
+			en : "Open"
+		},
+		"utiliser" : {
+			fr : "Utiliser",
+			en : "Use"
+		},
+		/**
+		 * Fin
+		 */
 		"end0" : {
 			fr : "F&eacute;licitation, vous avez termin&eacute; le jeu !",
 			en : "Congratulations, you won !"

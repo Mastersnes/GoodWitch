@@ -5,10 +5,13 @@ define(["jquery",
     return function(parent){
         this.init = function(parent) {
             this.parent = parent;
-            this.elementView = new ElementView(this, this.parent);
+            this.Textes = parent.Textes;
+            this.mediatheque = parent.mediatheque;
+            
+            this.elementView = new ElementView(this);
             var that = this;
             $( window ).resize(function() {
-                that.scene.resize();
+                that.resize();
             });
         };
         
@@ -58,6 +61,8 @@ define(["jquery",
                 this.createElement(element, index, $(".game .stage"));
             }
             
+            this.elementView.makeEvents();
+            
             if (tableau.direction) {
                 if (tableau.direction.haut) $("fleche.haut").show();
                 if (tableau.direction.bas) $("fleche.bas").show();
@@ -90,11 +95,13 @@ define(["jquery",
         
         this.makeEvents = function() {
             var that = this;
+            $(document).off("contextmenu");
             $(document).on("contextmenu", function(evt){
                 evt.preventDefault();
             });
             
-            $(document).on("mousedown", "fleche", function(evt){
+            $("fleche").off("mousedown");
+            $("fleche").on("mousedown", function(evt){
                 evt.preventDefault();
                 var target = $(evt.target);
                 var type = target.attr("class");
@@ -104,8 +111,6 @@ define(["jquery",
                     that.parent.go(newLieu);
                 }
             });
-            
-            this.elementView.makeEvents();
         };
         
         this.init(parent);

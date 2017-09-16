@@ -1,0 +1,9 @@
+<actionGroup>
+	<%
+		for (var action in data.element) {
+	%>
+		<action class="<%=action%>" title="<%=data.text.get(action)%>"></action>
+	<%
+		}
+	%>
+</actionGroup>

@@ -9,12 +9,13 @@ define(["jquery",
 function($, _, Utils, Scene, Tableaux, Items) {
 	'use strict';
 
-	return function(parent, Textes) {
-		this.init = function(parent, Textes) {
+	return function(parent) {
+		this.init = function(parent) {
 			this.el = ".game";
-			this.Textes = Textes;
 			this.parent = parent;
+			this.Textes = parent.Textes;
 			this.mediatheque = parent.mediatheque;
+			
 			this.pause = false;
 			this.scene = new Scene(this);
 		};
@@ -55,6 +56,6 @@ function($, _, Utils, Scene, Tableaux, Items) {
 			}, 30);
 		};
 		
-		this.init(parent, Textes);
+		this.init(parent);
 	};
 });

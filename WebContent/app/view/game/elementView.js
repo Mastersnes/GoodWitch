@@ -1,35 +1,37 @@
 'use strict';
 define(["jquery", 
         "app/utils/utils",
-        "app/data/items"], function($, Utils, Items){
-    return function(scene, tableau){
-        this.init = function(scene, tableau) {
+        "app/data/items",
+        "app/view/game/actionView"], function($, Utils, Items, ActionView){
+    return function(scene){
+        this.init = function(scene) {
             this.scene = scene;
-            this.tableau = tableau;
+            this.tableau = scene.tableau;
+            this.Textes = scene.Textes;
+            this.mediatheque = scene.mediatheque;
+            
+            this.actionView = new ActionView(this);
         };
         
         this.makeEvents = function() {
             var that = this;
-            $(document).on("mousedown", "element", function(evt){
-                evt.preventDefault();
-                var target = $(evt.target);
+            $("element").unbind('mouseenter mouseleave');
+            $("element").hover(function(evt){
+            	var target = $(evt.target);
                 var id = target.attr("id");
                 var element = Items.get(id);
                 
-                switch(evt.which) {
-                    case 1 : element.use(that, target); break;
-                    case 3 : element.see(that, target); break;
-                    default : break;
-                }
+            	that.actionView.render($(this), element);
+            }, function(evt) {
+            	that.actionView.checkHide(evt);
             });
-            
-            $("element").hover(function(){
-                console.log("onHover");
-            }, function() {
-                console.log("go");
+            $("actions").unbind('mouseenter mouseleave');
+            $("actions").hover(function() {
+            }, function(evt) {
+            	that.actionView.checkHide(evt);
             });
         };
         
-        this.init(scene, tableau);
+        this.init(scene);
     };
 });
