@@ -81,8 +81,6 @@ define(["jquery",
 
             parent.append(dom);
             
-            console.log("taille : ", dom.width(), dom.height());
-            
             dom.css({
                 left : Utils.toPercent(element.x, 1024) + "%",
                 top : Utils.toPercent(element.y, 768) + "%",

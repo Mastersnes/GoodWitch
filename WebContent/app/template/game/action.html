@@ -1,8 +1,17 @@
 <actionGroup>
 	<%
+		var nbAction = 0;;
 		for (var action in data.element) {
+		nbAction++;
 	%>
 		<action class="<%=action%>" title="<%=data.text.get(action)%>"></action>
+	<%
+		}
+	%>
+	<%
+		for (var i=nbAction; i<8; i++) {
+	%>
+		<action class="vide"></action>
 	<%
 		}
 	%>

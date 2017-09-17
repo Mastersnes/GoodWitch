@@ -1,0 +1,10 @@
+<itemGroup>
+	<%
+		for (var index in data.inventaire) {
+		var item = data.inventaire[index];
+	%>
+		<item class="<%=item%>" title="<%=data.text.get(item)%>"></item>
+	<%
+		}
+	%>
+</itemGroup>

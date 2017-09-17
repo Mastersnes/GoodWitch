@@ -28,25 +28,55 @@ action:nth-child(1) {
 	top : -18%;
 }
 action:nth-child(2) {
-	left : 35%;
-	top : 82%;
+	left : 67%;
+	top : -3%;
 }
 action:nth-child(3) {
-	left : -15%;
-	top : 32%;
-}
-action:nth-child(4) {
 	left : 85%;
 	top : 32%;
 }
+action:nth-child(4) {
+	left : 67%;
+	top : 66%;
+}
 action:nth-child(5) {
+	left : 35%;
+	top : 82%;
+}
+action:nth-child(6) {
+	left : 4%;
+	top : 66%;
+}
+action:nth-child(7) {
+	left : -15%;
+	top : 32%;
+}
+action:nth-child(8) {
 	left : 4%;
 	top : -3%;
 }
 
+action.vide {
+	background-image: url("../img/game/actions/vide.jpg");
+}
 action.regarder {
 	background-image: url("../img/game/actions/regarder.jpg");
 }
 action.gouter {
 	background-image: url("../img/game/actions/gouter.jpg");
+}
+action.ecouter {
+	background-image: url("../img/game/actions/ecouter.jpg");
+}
+action.ouvrir {
+	background-image: url("../img/game/actions/ouvrir.jpg");
+}
+action.utiliser {
+	background-image: url("../img/game/actions/utiliser.jpg");
+}
+action.examiner {
+	background-image: url("../img/game/actions/examiner.jpg");
+}
+action.prendre {
+	background-image: url("../img/game/actions/prendre.jpg");
 }

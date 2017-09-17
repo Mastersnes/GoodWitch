@@ -15,6 +15,7 @@ function($, _, Utils, page) {
 		};
 
 		this.render = function(elementDom, element) {
+			this.elementDom = elementDom;
 			this.element = element;
 			
 			_.templateSettings.variable = "data";
@@ -52,7 +53,8 @@ function($, _, Utils, page) {
 			$("action").mousedown(function(evt) {
 				var target = $(evt.target);
 				var type = target.attr("class");
-				if (that.element[type])that.element[type].call();
+				var tableau = that.parent.scene.parent;
+				if (that.element[type])that.element[type].call(that, tableau, that.elementDom);
 			});
 		};
 		

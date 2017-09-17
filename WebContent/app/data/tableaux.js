@@ -2,17 +2,24 @@
 define(["jquery"], function($){
 	var data = {
 		"coffre" : {
+			visite : false,
+			cinematique : ["cinematique-coffre1","cinematique-coffre2", "coffre-text1", "coffre-text2"],
 			width:1024, height : 768,
 			elements : [
-			      {id: "serrure", x:"440.32", y:"376.32"}
+			      {id: "serrure", x:"440.32", y:"376.32"},
+			      {id: "tige", x:"372", y:"416"},
+			      {id: "tige", x:"597", y:"426"},
+			      {id: "tige-abime", x:"369", y:"484"},
+			      {id: "tige", x:"590", y:"484"},
 			],
 	        direction : {
-	                bas : "coffre-bas",
-	                gauche : "coffre-bas"
+	                bas : "coffre-bas"
 	        }
 		},
 		"coffre-bas" : {
-            width:1024, height : 768,
+			visite : false,
+			cinematique : ["coffre-haut-text1", "coffre-haut-text2", "coffre-haut-text3"],
+			width:1024, height : 768,
             elements : [
                   {id: "boite", x:"90", y:"130"},
                   {id: "collier", x:"113", y:"413"},
@@ -20,8 +27,7 @@ define(["jquery"], function($){
                   {id: "Nori", x:"526", y:"197"}
             ],
             direction : {
-                haut : "coffre",
-                droite : "coffre"
+                haut : "coffre"
             }
         }
 	};
@@ -31,7 +37,7 @@ define(["jquery"], function($){
 		* Permet d'appeler un WS
 		**/
 		get : function(key) {
-			return $.extend(true, {}, data[key]);
+			return data[key];
 		}
 	};
 });

@@ -11,6 +11,22 @@ element.serrure {
 	width: 168; height: 182;
 	background-image: url("../img/game/coffre/items/serrure.png");
 }
+element.serrure-tige {
+	width: 168; height: 182;
+	background-image: url("../img/game/coffre/items/serrure-tige.png");
+}
+element.serrure-done {
+	width: 168; height: 182;
+	background-image: url("../img/game/coffre/items/serrure-tige.png");
+}
+element.tige {
+	width: 94; height: 18;
+	background-image: url("../img/game/coffre/items/tige_normal.png");
+}
+element.tige-abime {
+	width: 93; height: 18;
+	background-image: url("../img/game/coffre/items/tige_abime.png");
+}
 
 /**
 * Coffre-Bas

@@ -15,15 +15,13 @@ define(["jquery",
         
         this.makeEvents = function() {
             var that = this;
-            $("element").unbind('mouseenter mouseleave');
-            $("element").hover(function(evt){
+            $("element").unbind("mousedown");
+			$("element").mousedown(function(evt) {
             	var target = $(evt.target);
                 var id = target.attr("id");
                 var element = Items.get(id);
                 
             	that.actionView.render($(this), element);
-            }, function(evt) {
-            	that.actionView.checkHide(evt);
             });
             $("actions").unbind('mouseenter mouseleave');
             $("actions").hover(function() {

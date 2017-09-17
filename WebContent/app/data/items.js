@@ -5,37 +5,124 @@ define(["jquery"], function($){
 		 * Items
 		 */
 		"serrure" : {
-			regarder : function(game, dom) {
-				alert("Non Nori, non ! Je n’ose pas regarder par le trou ! Et si les méchants sont encore là ?...");
+			regarder : function(tableau, dom) {
+				tableau.showText(["serrure-regarder"]);
 			},
-			gouter : function(game, dom) {
-			    alert("C’est pas bon! c’est piquant et ca a un goût de rouille. Berk");
+			gouter : function(tableau, dom) {
+				tableau.showText(["serrure-gouter"]);
 			},
-			ecouter : function(game, dom) {
-			    alert("Seul le bruit du vent parle");
+			ecouter : function(tableau, dom) {
+				tableau.showText(["serrure-ecouter"]);
 			},
-			ouvrir : function(game, dom) {
-			    alert("Pour cela, il faudrait que je sorte de ce coffre. Mais, Maman a prit la clé.");
+			ouvrir : function(tableau, dom) {
+				tableau.showText(["serrure-ouvrir"]);
 			},
-			utiliser : function(game, dom) {
-			    alert("afficher inventaire");
+			utiliser : function(tableau, dom, item) {
+				if (!item) tableau.showInventaire(this);
+				else {
+					switch (item) {
+					case "tournevis":
+						tableau.showText(["serrure-utiliser-tournevis"]);
+						break;
+					case "tige":
+						tableau.showText(["serrure-utiliser-tige"]);
+						tableau.removeItem("tige");
+						dom.attr("class", "serrure-tige");
+						dom.attr("id", "serrure-tige");
+						break;
+					case "nori":
+						tableau.showText(["serrure-utiliser-nori"]);
+						break;
+					default:
+						tableau.showText(["utiliser-non-prevu"]);
+						break;
+					}
+				}
 			}
 		},
 		"serrure-tige" : {
-			regarder : function(game, dom) {
-				alert("Non Nori, non ! Je n’ose pas regarder par le trou ! Et si les méchants sont encore là ?...");
+			examiner : function(tableau, dom) {
+				tableau.showText(["serrure-tige-examiner"]);
 			},
-			gouter : function(game, dom) {
-			    alert("C’est pas bon! c’est piquant et ca a un goût de rouille. Berk");
+			prendre : function(tableau, dom) {
+				tableau.showText(["serrure-tige-prendre"]);
 			},
-			ecouter : function(game, dom) {
-			    alert("Seul le bruit du vent parle");
+			utiliser : function(tableau, dom, item) {
+				if (!item) tableau.showInventaire(this);
+				else {
+					switch (item) {
+					case "tournevis":
+						tableau.showText(["serrure-tige-utiliser-tournevis"]);
+						dom.attr("class", "serrure-done");
+						dom.attr("id", "serrure-done");
+						tableau.go("piece-sombre");
+						break;
+					case "nori":
+						tableau.showText(["serrure-tige-utiliser-nori"]);
+						break;
+					default:
+						tableau.showText(["utiliser-non-prevu"]);
+						break;
+					}
+				}
+			}
+		},
+		"serrure-done" : {
+			ouvrir : function(tableau, dom) {
+				tableau.go("piece-sombre");
+			}
+		},
+		"tige" : {
+			examiner : function(tableau, dom) {
+				tableau.showText(["tige-examiner"]);
 			},
-			ouvrir : function(game, dom) {
-			    alert("Pour cela, il faudrait que je sorte de ce coffre. Mais, Maman a prit la clé.");
+			prendre : function(tableau, dom) {
+				tableau.showText(["tige-prendre"]);
 			},
-			utiliser : function(game, dom) {
-			    alert("afficher inventaire");
+			utiliser : function(tableau, dom, item) {
+				if (!item) tableau.showInventaire(this);
+				else {
+					switch (item) {
+					case "tournevis":
+						tableau.showText(["tige-utiliser-tournevis"]);
+						break;
+					case "nori":
+						tableau.showText(["tige-utiliser-nori"]);
+						break;
+					case "tige":
+						tableau.showText(["tige-utiliser-tige"]);
+						break;
+					default:
+						tableau.showText(["utiliser-non-prevu"]);
+						break;
+					}
+				}
+			}
+		},
+		"tige-abime" : {
+			examiner : function(tableau, dom) {
+				tableau.showText(["tige-abime-examiner"]);
+			},
+			prendre : function(tableau, dom) {
+				tableau.showText(["tige-abime-prendre"]);
+			},
+			utiliser : function(tableau, dom, item) {
+				if (!item) tableau.showInventaire(this);
+				else {
+					switch (item) {
+					case "tournevis":
+						tableau.showText(["tige-abime-utiliser-tournevis"]);
+						tableau.addItem("tige");
+						dom.remove();
+						break;
+					case "nori":
+						tableau.showText(["tige-utiliser-nori"]);
+						break;
+					default:
+						tableau.showText(["utiliser-non-prevu"]);
+						break;
+					}
+				}
 			}
 		}
 	};

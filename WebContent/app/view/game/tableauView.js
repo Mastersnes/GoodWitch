@@ -3,10 +3,12 @@ define(["jquery",
         'underscore',
         "app/utils/utils",
         "app/view/game/sceneView",
+        "app/view/game/textView",
+        "app/view/game/inventaireView",
         "app/data/tableaux",
         "app/data/items"
         ],
-function($, _, Utils, Scene, Tableaux, Items) {
+function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 	'use strict';
 
 	return function(parent) {
@@ -18,6 +20,8 @@ function($, _, Utils, Scene, Tableaux, Items) {
 			
 			this.pause = false;
 			this.scene = new Scene(this);
+			this.textView = new TextView(this);
+			this.inventaireView = new InventaireView(this);
 		};
 
 		this.go = function(lieu, save) {
@@ -31,11 +35,14 @@ function($, _, Utils, Scene, Tableaux, Items) {
 			if (save) {
 				//load Save
 			}else {
-				//Init cinematique
+				if (this.tableau.cinematique && !this.tableau.visite) 
+					this.textView.show(this.tableau.cinematique);
 			}
+			
+			this.tableau.visite = true;
 
 			if (!this.alreadyLoop) {
-			    this.scene.makeEvents();
+			    this.makeEvents();
 				this.loop();
 			}
 		};
@@ -44,9 +51,17 @@ function($, _, Utils, Scene, Tableaux, Items) {
 			this.go(save.lieu, save);
 		};
 		
+		this.showText = function(ids){
+			this.textView.show(ids);
+		};
+		
+		this.showInventaire = function(action){
+			this.inventaireView.show(action);
+		};
+		
 		this.loop = function() {
 			this.alreadyLoop = true;
-			if (!this.pause) {
+			if (!this.pause && this.textView.empty()) {
 			    //Action ici
 			}
 			
@@ -54,6 +69,13 @@ function($, _, Utils, Scene, Tableaux, Items) {
 			setTimeout(function() {
 				that.loop();
 			}, 30);
+		};
+		
+		this.makeEvents = function() {
+			var that = this;
+			
+			this.scene.makeEvents();
+			this.textView.makeEvents();
 		};
 		
 		this.init(parent);
