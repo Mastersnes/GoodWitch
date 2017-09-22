@@ -20,13 +20,14 @@ define(["jquery"], function($){
 			utiliser : function(tableau, dom, item) {
 				if (!item) tableau.showInventaire(this);
 				else {
+				    var inventaire = tableau.inventaireView;
 					switch (item) {
 					case "tournevis":
 						tableau.showText(["serrure-utiliser-tournevis"]);
 						break;
 					case "tige":
 						tableau.showText(["serrure-utiliser-tige"]);
-						tableau.removeItem("tige");
+						inventaire.removeItem("tige");
 						dom.attr("class", "serrure-tige");
 						dom.attr("id", "serrure-tige");
 						break;
@@ -109,10 +110,11 @@ define(["jquery"], function($){
 			utiliser : function(tableau, dom, item) {
 				if (!item) tableau.showInventaire(this);
 				else {
+				    var inventaire = tableau.inventaireView;
 					switch (item) {
 					case "tournevis":
 						tableau.showText(["tige-abime-utiliser-tournevis"]);
-						tableau.addItem("tige");
+						inventaire.addItem("tige");
 						dom.remove();
 						break;
 					case "nori":
@@ -124,7 +126,55 @@ define(["jquery"], function($){
 					}
 				}
 			}
-		}
+		},
+		"nori" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["nori-regarder"]);
+            },
+            prendre : function(tableau, dom) {
+                var inventaire = tableau.inventaireView;
+                if (inventaire.hasItem("tournevis")) {
+                    tableau.showText(["nori-prendre"]);
+                    inventaire.addItem("nori");
+                    dom.remove();
+                }else {
+                    tableau.showText(["nori-prendre-no"]);
+                }
+            },
+            examiner : function(tableau, dom) {
+                var inventaire = tableau.inventaireView;
+                if (inventaire.hasItem("tournevis")) {
+                    tableau.showText(["nori-tournevis-prendre-no"]);
+                }else {
+                    tableau.showText(["nori-tournevis-prendre"]);
+                    inventaire.addItem("tournevis");
+                }
+            },
+            utiliser : function(tableau, dom, item) {
+                if (!item) tableau.showInventaire(this);
+                else {
+                    switch (item) {
+                    case "tige":
+                        tableau.showText(["nori-utiliser-tige"]);
+                        break;
+                    default:
+                        tableau.showText(["utiliser-non-prevu"]);
+                        break;
+                    }
+                }
+            }
+		},
+        "collier" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["collier-regarder"]);
+            },
+            prendre : function(tableau, dom) {
+                tableau.showText(["collier-prendre-no"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["collier-examiner"]);
+            }
+        }
 	};
 	
 	return {

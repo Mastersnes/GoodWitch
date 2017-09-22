@@ -38,6 +38,10 @@ function($, _, page) {
 			var index = this.inventaire.indexOf(item);
 			this.inventaire.slice(index, index+1);
 		};
+		
+		this.hasItem = function(item) {
+            return this.inventaire.indexOf(item) > -1;
+        };
 
 		this.makeEvents = function() {
 			var that = this;

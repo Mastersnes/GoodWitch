@@ -18,13 +18,13 @@ define(["jquery"], function($){
 		},
 		"coffre-bas" : {
 			visite : false,
-			cinematique : ["coffre-haut-text1", "coffre-haut-text2", "coffre-haut-text3"],
+			cinematique : ["coffre-haut-text1", "coffre-haut-text2", "coffre-haut-text3", "coffre-haut-text4", "coffre-haut-text5", "coffre-haut-text6"],
 			width:1024, height : 768,
             elements : [
                   {id: "boite", x:"90", y:"130"},
                   {id: "collier", x:"113", y:"413"},
                   {id: "athame", x:"368", y:"94"},
-                  {id: "Nori", x:"526", y:"197"}
+                  {id: "nori", x:"526", y:"197"}
             ],
             direction : {
                 haut : "coffre"

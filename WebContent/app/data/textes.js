@@ -111,13 +111,25 @@ define(["jquery"], function($){
 			en : "— Chuuut! … Nori? There's nothing… I think we'll be able to get out. Fortunately, it's the full moon tonight."
 		},
 		"coffre-haut-text2" : {
-			fr : "J’aime beaucoup les reflets de la pleine lune. Maman aussi. Nous mettons toujours quelques fleurs sur la petite table prêt de la cheminée quand c’est la pleine lune. Maman chante des chansons.",
-			en : "I really like the reflections of the full moon. Mother too. We always put some flowers on the small table ready from the fireplace when it's full moon. Mother sings songs."
+			fr : "J’aime beaucoup les reflets de la pleine lune. Maman aussi. <br/>Nous mettons toujours quelques fleurs sur la petite table prêt de la cheminée quand c’est la pleine lune. Maman chante des chansons.",
+			en : "I really like the reflections of the full moon. Mother too. <br/>We always put some flowers on the small table ready from the fireplace when it's full moon. Mother sings songs."
 		},
 		"coffre-haut-text3" : {
-			fr : "J’aime beaucoup les reflets de la pleine lune. Maman aussi. Nous mettons toujours quelques fleurs sur la petite table prêt de la cheminée quand c’est la pleine lune. Maman chante des chansons.",
-			en : "I really like the reflections of the full moon. Mother too. We always put some flowers on the small table ready from the fireplace when it's full moon. Mother sings songs."
+			fr : "Elle a une jolie voix maman. Peut-être reviendra-t- elle ? Si la dame vêtue de blanc est là, elle reviendra surement !",
+			en : "She has a pretty voice mommy. Perhaps she will come back? If the lady dressed in white is there, she will surely come back !"
 		},
+        "coffre-haut-text4" : {
+            fr : "Maman lui fait beaucoup confiance, et moi aussi.<br/>Mais maman à fermer le coffre et je ne peux pas sortir d’ici.",
+            en : "Mother trusts him, and so do I.<br/>But mom closes the chest and I can't get out of here."
+        },
+        "coffre-haut-text5" : {
+            fr : "Ce qu’elle n’a jamais su, c’est que j’ai trouvé comment l’ouvrir de l’intérieur ! N’est-ce pas Nori ?",
+            en : "What she never knew was that I found how to open it from the inside ! isn't it Nori?"
+        },
+        "coffre-haut-text6" : {
+            fr : "Après tout, j’y suis tellement souvent et tellement longtemps, qu’il faut bien que je m’occupe.<br/>Heureusement que tu es la mon Nori à moi. Toi, qui garde tous mes secrets !",
+            en : "After all, I am there so often and so long, that I have to take care of myself.<br/>Luckily you're here my little Nori. You who keep all my secrets !"
+        },
 		/**
 		 * Actions
 		 */
@@ -241,6 +253,48 @@ define(["jquery"], function($){
 			fr : "Ça y est ! Je l’ai !",
 			en : "That's it ! I got it !"
 		},
+		/**
+		 * Nori
+		 */
+		"nori-regarder" : {
+		    fr : "C’est Nori ma peluche rien qu’à moi qui me suit partout.",
+		    en : "It's Nori my stuff just at me who follows me everywhere."
+		},
+		"nori-prendre" : {
+            fr : "Viens là mon Nori.",
+            en : "Come here my Nori."
+        },
+        "nori-prendre-no" : {
+            fr : "Je devrais peut-être prendre mon secret avant...",
+            en : "Maybe I should take my secret before..."
+        },
+        "nori-tournevis-prendre-no" : {
+            fr : "Les entrailles de Nori. Il a l’air en bonne santé !",
+            en : "The guts of Nori. He looks healthy !"
+        },
+        "nori-tournevis-prendre" : {
+            fr : "C’est mon tournevis secret ! Je l’ai volé à Ted la dernière fois.",
+            en : "It's my secret screwdriver! I flew it to Ted last time."
+        },
+        "nori-utiliser-tige" : {
+            fr : "Aïe ! Ça ne sert à rien...",
+            en : "Ouch! It's useless..."
+        },
+        /**
+         * Collier
+         */
+        "collier-regarder" : {
+            fr : "C’est le petite coffre à bijoux de maman.",
+            en : "This is Mom's little jewelry chest."
+        },
+        "collier-prendre-no" : {
+            fr : "Je pense que je devrais plutôt le laisser ici.",
+            en : "I think I should rather leave it here."
+        },
+        "collier-examiner" : {
+            fr : "Il n’y a pas grand chose mise à part quelques pierres de protections.",
+            en : "There is not much besides a few stones of protection."
+        },
 		
 		/**
 		 * Non prevu
@@ -257,7 +311,7 @@ define(["jquery"], function($){
 			fr : "Un tournevis.",
 			en : "A screwdriver."
 		},
-		"Nori" : {
+		"nori" : {
 			fr : "Mon Nori.",
 			en : "My Nori."
 		},
