@@ -146,6 +146,7 @@ define(["jquery"], function($){
                 }else {
                     tableau.showText(["nori-tournevis-prendre"]);
                     inventaire.addItem("tournevis");
+                    tableau.saveGame();
                 }
             },
             utiliser : function(tableau, dom, item) {

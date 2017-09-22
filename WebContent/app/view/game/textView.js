@@ -40,7 +40,8 @@ function($, _) {
 		};
 		
 		this.empty = function() {
-			return this.currrent >= this.ids.length;
+		    if (!this.ids) return false;
+		    return this.currrent >= this.ids.length;
 		};
 
 		this.makeEvents = function() {

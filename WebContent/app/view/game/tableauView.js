@@ -12,7 +12,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 	'use strict';
 
 	return function(parent) {
-	    this.postRender = [];
+	    this.postRender = {};
 	    
 		this.init = function(parent) {
 			this.el = ".game";
@@ -76,6 +76,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		        id : id
 		    });
 		    domElement.remove();
+		    this.saveGame();
 		};
 		
 		this.modifyElement = function(domElement, newId) {
@@ -87,6 +88,17 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
             });
 		    domElement.attr("class", newId);
 		    domElement.attr("id", newId);
+		    this.saveGame();
+		};
+		
+		this.saveGame = function() {
+		    var save = {
+		            lieu : this.lieu,
+		            inventaire : this.inventaireView.inventaire,
+		            postRender : this.postRender
+		    };
+		    console.log("save : ", JSON.stringify(this.postRender));
+		    window.localStorage.setItem(Utils.name, Utils.encode(JSON.stringify(save)));
 		};
 		
 		this.loop = function() {
