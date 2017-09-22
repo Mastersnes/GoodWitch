@@ -28,8 +28,7 @@ define(["jquery"], function($){
 					case "tige":
 						tableau.showText(["serrure-utiliser-tige"]);
 						inventaire.removeItem("tige");
-						dom.attr("class", "serrure-tige");
-						dom.attr("id", "serrure-tige");
+						tableau.modifyElement(dom, "serrure-tige");
 						break;
 					case "nori":
 						tableau.showText(["serrure-utiliser-nori"]);
@@ -54,8 +53,7 @@ define(["jquery"], function($){
 					switch (item) {
 					case "tournevis":
 						tableau.showText(["serrure-tige-utiliser-tournevis"]);
-						dom.attr("class", "serrure-done");
-						dom.attr("id", "serrure-done");
+						tableau.modifyElement(dom, "serrure-done");
 						tableau.go("piece-sombre");
 						break;
 					case "nori":
@@ -115,7 +113,7 @@ define(["jquery"], function($){
 					case "tournevis":
 						tableau.showText(["tige-abime-utiliser-tournevis"]);
 						inventaire.addItem("tige");
-						dom.remove();
+						tableau.removeElement(dom);
 						break;
 					case "nori":
 						tableau.showText(["tige-utiliser-nori"]);
@@ -136,7 +134,7 @@ define(["jquery"], function($){
                 if (inventaire.hasItem("tournevis")) {
                     tableau.showText(["nori-prendre"]);
                     inventaire.addItem("nori");
-                    dom.remove();
+                    tableau.removeElement(dom);
                 }else {
                     tableau.showText(["nori-prendre-no"]);
                 }

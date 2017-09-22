@@ -12,6 +12,8 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 	'use strict';
 
 	return function(parent) {
+	    this.postRender = [];
+	    
 		this.init = function(parent) {
 			this.el = ".game";
 			this.parent = parent;
@@ -25,6 +27,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		};
 
 		this.go = function(lieu, save) {
+		    this.lieu = lieu;
 			this.tableau = Tableaux.get(lieu);
 			
 			this.mediatheque.stopAllMusic();
@@ -33,13 +36,20 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			this.scene.initScene(lieu);
 			
 			if (save) {
-				//load Save
+				this.postRender = save.postRender;
+				this.inventaireView.inventaire = save.inventaire;
 			}else {
-				if (this.tableau.cinematique && !this.tableau.visite) 
-					this.textView.show(this.tableau.cinematique);
+			    var visited = this.postRender[lieu] != null && this.postRender[lieu].visited;
+				if (this.tableau.cinematique && !visited) this.textView.show(this.tableau.cinematique);
 			}
 			
-			this.tableau.visite = true;
+			if (!this.postRender[lieu]) {
+    			this.postRender[lieu] = {
+    			        visited : true,
+    			        removes : [],
+    			        modifys : []
+    			}
+			}else this.scene.postRender(this.postRender[lieu]);
 
 			if (!this.alreadyLoop) {
 			    this.makeEvents();
@@ -57,6 +67,26 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		
 		this.showInventaire = function(action){
 			this.inventaireView.show(action);
+		};
+		
+		this.removeElement = function(domElement) {
+		    var id = domElement.attr("id");
+		    
+		    this.postRender[this.lieu].removes.push({
+		        id : id
+		    });
+		    domElement.remove();
+		};
+		
+		this.modifyElement = function(domElement, newId) {
+		    var id = domElement.attr("id");
+		    
+            this.postRender[this.lieu].modifys.push({
+                id : id,
+                newId : newId
+            });
+		    domElement.attr("class", newId);
+		    domElement.attr("id", newId);
 		};
 		
 		this.loop = function() {

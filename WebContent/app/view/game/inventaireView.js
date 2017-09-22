@@ -35,8 +35,8 @@ function($, _, page) {
 		};
 		
 		this.removeItem = function(item) {
-			var index = this.inventaire.indexOf(item);
-			this.inventaire.slice(index, index+1);
+		    var index = this.inventaire.indexOf(item);
+		    this.inventaire.splice(index, index+1);
 		};
 		
 		this.hasItem = function(item) {

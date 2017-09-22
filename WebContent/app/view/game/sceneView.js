@@ -98,6 +98,18 @@ define(["jquery",
             return dom;
         };
         
+        this.postRender = function(postRender) {
+            for (var index in postRender.removes) {
+                var toRemove = postRender.removes[index];
+                $("#"+toRemove.id).remove();
+            }
+            for (var index in postRender.modifys) {
+                var toModify = postRender.modifys[index];
+                $("#"+toModify.id).attr("class", toModify.newId);
+                $("#"+toModify.id).attr("id", toModify.newId);
+            }
+        };
+        
         this.makeEvents = function() {
             var that = this;
             $(document).off("contextmenu");
