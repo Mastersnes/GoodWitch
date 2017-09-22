@@ -47,14 +47,11 @@ ul li {
 	width: 100vw;
 	height: 100vh;
 	
-	background-image: url("../img/menu/popup.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	
 	top: 0;
 	display: none;
 }
 .popup > .content {
+	background-color: #555;
 	width: 70%;
 	height: 70%;
 	margin-left: auto;

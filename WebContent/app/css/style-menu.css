@@ -14,9 +14,7 @@
 * Menu
 **/
 .menu-page {
-	background-image: url("../img/menu/menu-fond.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-color: #060606;
 }
 .menu-cadre {
 	width: 75%;
@@ -54,12 +52,12 @@ ul.menu > li {
 }
 
 ul.menu > li:hover {
-	background: #f2f9fe;
-	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: #f5f5f5;
+	background: linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -webkit-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -moz-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -ms-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -o-linear-gradient(top, #f5f5f5 5%, #555 100%);
 }
 
 ul.popup-menu {
@@ -87,23 +85,27 @@ ul.popup-menu > li {
 }
 
 ul.popup-menu > li:hover {
-	background: #f2f9fe;
-	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: #f5f5f5;
+	background: linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -webkit-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -moz-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -ms-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -o-linear-gradient(top, #f5f5f5 5%, #555 100%);
 }
 
 .popup .close {
 	width: 30px; height: 30px;
 	position: absolute;
-	top: -18vh;
-	right: -7vw;
-	background-image: url("../img/menu/croix.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	top: -2vh;
+	right: -1vw;
 	opacity : 1;
+	background-color: #a91313;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+a {
+	color : #333;
 }
 
 .flag-container {

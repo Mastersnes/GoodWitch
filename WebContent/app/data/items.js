@@ -54,7 +54,7 @@ define(["jquery"], function($){
 					case "tournevis":
 						tableau.showText(["serrure-tige-utiliser-tournevis"]);
 						tableau.modifyElement(dom, "serrure-done");
-						tableau.go("piece-sombre-centre");
+						tableau.go("piece-sombre");
 						break;
 					case "nori":
 						tableau.showText(["serrure-tige-utiliser-nori"]);
@@ -68,7 +68,7 @@ define(["jquery"], function($){
 		},
 		"serrure-done" : {
 			ouvrir : function(tableau, dom) {
-				tableau.go("piece-sombre-centre");
+				tableau.go("piece-sombre");
 			}
 		},
 		"tige" : {
@@ -149,6 +149,9 @@ define(["jquery"], function($){
                     tableau.saveGame();
                 }
             },
+            gouter : function(tableau, dom) {
+                tableau.showText(["nori-gouter"]);
+            },
             utiliser : function(tableau, dom, item) {
                 if (!item) tableau.showInventaire(this);
                 else {
@@ -163,15 +166,34 @@ define(["jquery"], function($){
                 }
             }
 		},
+        "boite" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["boite-regarder"]);
+            },
+            prendre : function(tableau, dom) {
+                tableau.showText(["boite-prendre-no"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["boite-examiner"]);
+            }
+        },
         "collier" : {
             regarder : function(tableau, dom) {
                 tableau.showText(["collier-regarder"]);
             },
-            prendre : function(tableau, dom) {
-                tableau.showText(["collier-prendre-no"]);
+            gouter : function(tableau, dom) {
+                tableau.showText(["collier-gouter"]);
             },
-            examiner : function(tableau, dom) {
-                tableau.showText(["collier-examiner"]);
+            casser : function(tableau, dom) {
+                tableau.showText(["collier-casser"]);
+            }
+        },
+        "athame" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["athame-regarder"]);
+            },
+            prendre : function(tableau, dom) {
+                tableau.showText(["athame-prendre"]);
             }
         }
 	};

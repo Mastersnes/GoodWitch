@@ -41,10 +41,16 @@ define(["jquery",
             
             var parent = this.parent;
             var tableau = parent.tableau;
+            
+            this.size = {
+            		width : Utils.toPercent(tableau.width, 1024),
+            		height : Utils.toPercent(tableau.height, 768)
+            };
+            var that = this;
             $(".game plan").each(function() {
                 $(this).css({
-                    width : Utils.toPercent(tableau.width, 1024) + "%",
-                    height : Utils.toPercent(tableau.height, 768) + "%"
+                    width : that.size.width + "%",
+                    height : that.size.height + "%"
                 });
             });
             $(".game planFar.background").attr("class", "background "+lieu);
@@ -64,10 +70,10 @@ define(["jquery",
             this.elementView.makeEvents();
             
             if (tableau.direction) {
-                this.checkDirection(tableau.direction, "haut")
-                this.checkDirection(tableau.direction, "bas")
-                this.checkDirection(tableau.direction, "gauche")
-                this.checkDirection(tableau.direction, "droite")
+                this.checkDirection(tableau.direction, "haut");
+                this.checkDirection(tableau.direction, "bas");
+                this.checkDirection(tableau.direction, "gauche");
+                this.checkDirection(tableau.direction, "droite");
             }
         };
         
@@ -125,9 +131,10 @@ define(["jquery",
                 
                 if (evt.which == 1) {
                     var newLieu = that.parent.tableau.direction[type];
-                    that.parent.go(newLieu);
+                    if (newLieu) that.parent.go(newLieu);
                 }
             });
+            
         };
         
         this.init(parent);

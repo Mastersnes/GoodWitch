@@ -55,52 +55,27 @@ element.nori {
 }
 
 /**
-* Piece Gauche
+* Piece
 **/
-plan.background.piece-sombre-gauche {
-    background-image: url("../img/game/piece/background/gauche.jpg");    
+planFar.background.piece-sombre {
+    background-image: url("../img/game/piece/background.jpg");    
 }
-plan.frontground.piece-sombre-gauche {
-    background-image: url("../img/game/piece/frontground-nuit/gauche.png");   
+plan.background.piece-sombre {
+    background-image: url("../img/game/piece/piece.png");    
 }
-plan.background.piece-gauche {
-    background-image: url("../img/game/piece/background/gauche.jpg");    
+plan.frontground.piece-sombre {
+    background-image: url("../img/game/piece/frontground-nuit.png");   
+}
+planFar.background.piece {
+    background-image: url("../img/game/piece/background.jpg");    
+}
+plan.background.piece {
+    background-image: url("../img/game/piece/piece.png");    
 }
 plan.frontground.piece-gauche {
-    background-image: url("../img/game/piece/frontground-jour/gauche.png");   
+    background-image: url("../img/game/piece/frontground-jour.png");   
 }
 
-/**
-* Piece centre
-**/
-plan.background.piece-sombre-centre {
-    background-image: url("../img/game/piece/background/centre.jpg");    
-}
-plan.frontground.piece-sombre-centre {
-    background-image: url("../img/game/piece/frontground-nuit/centre.png");   
-}
-plan.background.piece-centre {
-    background-image: url("../img/game/piece/background/centre.jpg");    
-}
-plan.frontground.piece-centre {
-    background-image: url("../img/game/piece/frontground-jour/centre.png");   
-}
-
-/**
-* Piece droite
-**/
-plan.background.piece-sombre-droite {
-    background-image: url("../img/game/piece/background/droite.jpg");    
-}
-plan.frontground.piece-sombre-droite {
-    background-image: url("../img/game/piece/frontground-nuit/droite.png");   
-}
-plan.background.piece-droite {
-    background-image: url("../img/game/piece/background/droite.jpg");    
-}
-plan.frontground.piece-droite {
-    background-image: url("../img/game/piece/frontground-jour/droite.png");   
-}
 element.lampe {
     width: 156; height: 288;
     background-image: url("../img/game/coffre-bas/items/boite.png");

@@ -103,14 +103,14 @@ fleche:hover, action:hover {
 	z-index: 1900;
 }
 .popupText content {
-	top: 80%;
+	top: 50%;
     position: absolute;
     z-index: 2000;
 	overflow: hidden;
 	
 	background-color: #060606;
 	
-	width: 100%; height: 20%;
+	width: 100%; height: 50%;
 }
 .popupText .text {
 	color: ghostwhite;

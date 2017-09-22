@@ -11,6 +11,7 @@ function($, _) {
 			this.parent = parent;
 			this.Textes = parent.Textes;
 			this.mediatheque = parent.mediatheque;
+			this.visible = false;
 		};
 
 		this.show = function(ids) {
@@ -20,6 +21,7 @@ function($, _) {
 			this.next();
 			
 			$("#popupText").show();
+			this.visible = true;
 		};
 		
 		this.next = function() {
@@ -41,12 +43,14 @@ function($, _) {
 				}else {
 				    $("#popupText .text").html(id);
 				}
-			}else $("#popupText").hide();
+			}else {
+				this.visible = false;
+				$("#popupText").hide();
+			}
 		};
 		
 		this.empty = function() {
-		    if (!this.ids) return false;
-		    return this.currrent >= this.ids.length;
+		    return !this.visible;
 		};
 
 		this.makeEvents = function() {

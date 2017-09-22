@@ -29,8 +29,8 @@ define(["jquery"], function($){
 			en : "Load"
 		},
 		"or" : {
-			fr : "...Ou...",
-			en : "...Or..."
+			fr : "…Ou…",
+			en : "…Or…"
 		},
 		"fromNavigateur" : {
 			fr : "Charger depuis la sauvegarde navigateur",
@@ -96,8 +96,8 @@ define(["jquery"], function($){
 			en : "I can not hear him any more. Where did he take her? And Me, I'm left alone?"
 		},
 		"coffre-text1" : {
-			fr : "— Maman ?<br/>Non ! Non ! Sarah a dit de ne pas sortir d’ici. Sarah m’a demandée de ne pas bouger... Alors, Dorcas ne bougera pas.",
-			en : "— Mom ?<br/>No ! No ! Sarah said not to get out of here. Sarah asked me not to move ... So, Dorcas will not budge."
+			fr : "— Maman ?<br/>Non ! Non ! Sarah a dit de ne pas sortir d’ici. Sarah m’a demandée de ne pas bouger… Alors, Dorcas ne bougera pas.",
+			en : "— Mom ?<br/>No ! No ! Sarah said not to get out of here. Sarah asked me not to move … So, Dorcas will not budge."
 		},
 		"coffre-text2" : {
 			fr : "Non. Je dois être sage, sinon ils vont me prendre, moi aussi. Tu entends Nori ? Maman a dit de ne pas bouger.",
@@ -161,6 +161,10 @@ define(["jquery"], function($){
 			fr : "Prendre",
 			en : "Take"
 		},
+		"casser" : {
+			fr : "Casser",
+			en : "Break"
+		},
 		
 		/**
 		 * Actions sur les elements
@@ -169,16 +173,16 @@ define(["jquery"], function($){
 		 * Serrure
 		 */
 		"serrure-regarder" : {
-			fr : "Non Nori, non ! Je n’ose pas regarder par le trou ! Et si les méchants sont encore là ?...",
-			en : "No, Nori, no ! I don't dare to look in the hole ! Maybe the bad guys are still here ?..."
+			fr : "Non Nori, non ! Je n’ose pas regarder par le trou ! Et si les méchants sont encore là ?…",
+			en : "No, Nori, no ! I don't dare to look in the hole ! Maybe the bad guys are still here ?…"
 		},
 		"serrure-gouter" : {
 			fr : "Berk ! Ça pique la langue ! Il parait qu’un peu de rouille est bon pour la santé.",
 			en : "Yuck! It stings the tongue! It seems that a little rust is good for your health."
 		},
 		"serrure-ecouter" : {
-			fr : "Seul le bruit du vent parle...",
-			en : "Only the sound of the wind speaks..."
+			fr : "Seul le bruit du vent parle…",
+			en : "Only the sound of the wind speaks…"
 		},
 		"serrure-ouvrir" : {
 			fr : "J’aimerais bien, mais Maman a prit la clé.",
@@ -186,7 +190,7 @@ define(["jquery"], function($){
 		},
 		"serrure-utiliser-tournevis" : {
 			fr : "Hum… Le tournevis entre, mais le coffre s’ouvre pas. Il manque peut-être quelque chose?",
-			en : "Hmm ... The screwdriver comes in, but the trunk does not open. Perhaps something is missing?"
+			en : "Hmm … The screwdriver comes in, but the trunk does not open. Perhaps something is missing?"
 		},
 		"serrure-utiliser-tige" : {
 			fr : "Chouette, ça semble entrée !",
@@ -194,18 +198,18 @@ define(["jquery"], function($){
 		},
 		"serrure-utiliser-nori" : {
 			fr : "Non Nori, tu es bien trop gros ! Et ça vas encore t’abimer…",
-			en : "No Nori, you're way too big! And it'll still ruin you ..."
+			en : "No Nori, you're way too big! And it'll still ruin you …"
 		},
 		/**
 		 * Serrure tige
 		 */
 		"serrure-tige-examiner" : {
 			fr : "La tige est coincée… Il me faudrait quelque chose en plus. Une idée Nori ?",
-			en : "The stem is stuck ... I need something more. Nori, any idea?"
+			en : "The stem is stuck … I need something more. Nori, any idea?"
 		},
 		"serrure-tige-prendre" : {
 			fr : "Raa… C’est coincé !",
-			en : "Raa ... It's stuck!"
+			en : "Raa … It's stuck!"
 		},
 		"serrure-tige-utiliser-tournevis" : {
 			fr : "Ça marche Nori ! Ça marche !",
@@ -219,8 +223,8 @@ define(["jquery"], function($){
 		 * Tige
 		 */
 		"tige-examiner" : {
-			fr : "Ce sont les renfort du coffre...",
-			en : "These are the trunk reinforcements ..."
+			fr : "Ce sont les renfort du coffre…",
+			en : "These are the trunk reinforcements …"
 		},
 		"tige-prendre" : {
 			fr : "Impossible, c’est trop bien fixé !",
@@ -257,16 +261,16 @@ define(["jquery"], function($){
 		 * Nori
 		 */
 		"nori-regarder" : {
-		    fr : "C’est Nori ma peluche rien qu’à moi qui me suit partout.",
-		    en : "It's Nori my stuff just at me who follows me everywhere."
+		    fr : "C’est Nori, ma peluche rien qu’à moi qui me suit partout.",
+		    en : "It's Nori, my stuff just at me who follows me everywhere."
 		},
 		"nori-prendre" : {
             fr : "Viens là mon Nori.",
             en : "Come here my Nori."
         },
         "nori-prendre-no" : {
-            fr : "Je devrais peut-être prendre mon secret avant...",
-            en : "Maybe I should take my secret before..."
+            fr : "Je devrais peut-être prendre mon secret avant…",
+            en : "Maybe I should take my secret before…"
         },
         "nori-tournevis-prendre-no" : {
             fr : "Les entrailles de Nori. Il a l’air en bonne santé !",
@@ -276,48 +280,78 @@ define(["jquery"], function($){
             fr : "C’est mon tournevis secret ! Je l’ai volé à Ted la dernière fois.",
             en : "It's my secret screwdriver! I flew it to Ted last time."
         },
+        "nori-gouter" : {
+            fr : "Hum… Ça a le goût d’algue…",
+            en : "Hum… It taste like seaweed…"
+        },
         "nori-utiliser-tige" : {
-            fr : "Aïe ! Ça ne sert à rien...",
-            en : "Ouch! It's useless..."
+            fr : "Aïe ! Ça ne sert à rien…",
+            en : "Ouch! It's useless…"
+        },
+        /**
+         * Boite
+         */
+        "boite-regarder" : {
+            fr : "C’est le petite coffre à bijoux de maman.",
+            en : "This is Mom's little jewelry chest."
+        },
+        "boite-prendre-no" : {
+            fr : "Je pense que je devrais plutôt le laisser ici.",
+            en : "I think I should rather leave it here."
+        },
+        "boite-examiner" : {
+            fr : "Il n’y a pas grand chose mise à part quelques pierres de protections.",
+            en : "There is not much besides a few stones of protection."
         },
         /**
          * Collier
          */
         "collier-regarder" : {
-            fr : "C’est le petite coffre à bijoux de maman.",
-            en : "This is Mom's little jewelry chest."
+            fr : "C’est le collier de perle de maman. Elle déteste quand je le grignote.",
+            en : "This is Mom's Pearl Necklace. She hates when I nibble."
         },
-        "collier-prendre-no" : {
-            fr : "Je pense que je devrais plutôt le laisser ici.",
-            en : "I think I should rather leave it here."
+        "collier-gouter" : {
+            fr : "J’aimerais bien ! Mais je dois sortir d’ici.",
+            en : "I would like ! But I have to get out of here."
         },
-        "collier-examiner" : {
-            fr : "Il n’y a pas grand chose mise à part quelques pierres de protections.",
-            en : "There is not much besides a few stones of protection."
+        "collier-casser" : {
+            fr : "Ho non ! Il paraît qu’il a beaucoup de valeur.",
+            en : "Oh no ! He seems to have a lot of value."
+        },
+        /**
+         * Athame
+         */
+        "athame-regarder" : {
+            fr : "C’est la petite serpe de Sarah. On s’en sert pour cueillir les herbes.",
+            en : "This is Sarah's little scepter. It is used to gather herbs."
+        },
+        "athame-prendre" : {
+            fr : "Je n’ai pas d’herbe à couper.",
+            en : "I do not have any grass to cut."
         },
 		
 		/**
 		 * Non prevu
 		 */
 		"utiliser-non-prevu" : {
-			fr : "Ça ne fonctionne pas...",
-			en : "It doesn't work..."
+			fr : "Ça ne fonctionne pas…",
+			en : "It doesn't work…"
 		},
 		
 		/**
 		 * Objets d'inventaire
 		 */
 		"tournevis" : {
-			fr : "Un tournevis.",
-			en : "A screwdriver."
+			fr : "Un tournevis",
+			en : "A screwdriver"
 		},
 		"nori" : {
-			fr : "Mon Nori.",
-			en : "My Nori."
+			fr : "Mon Nori",
+			en : "My Nori"
 		},
 		"tige" : {
-			fr : "Un des renforts du coffre.",
-			en : "One of the trunk reinforcements."
+			fr : "Un des renforts du coffre",
+			en : "One of the trunk reinforcements"
 		},
 		
 		/**
@@ -330,6 +364,18 @@ define(["jquery"], function($){
         "tableau-coffre-bas" : {
             fr : "Bas du coffre",
             en : "Bottom of trunk"
+        },
+        "tableau-piece-sombre-gauche" : {
+            fr : "À gauche de la salle",
+            en : "To the left of the room"
+        },
+        "tableau-piece-sombre-centre" : {
+            fr : "Au centre de la salle",
+            en : "To the center of the room"
+        },
+        "tableau-piece-sombre-droite" : {
+            fr : "À droite de la salle",
+            en : "To the right of the room"
         },
 		
 		

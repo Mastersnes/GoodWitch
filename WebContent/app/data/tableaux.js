@@ -30,36 +30,28 @@ define(["jquery"], function($){
                 haut : "coffre"
             }
         },
-        "piece-sombre-gauche" : {
+        "piece-sombre" : {
             visite : false,
-            cinematique : ["piece-sombre-text1"],
-            width:1024, height : 768,
+            width:3072, height : 768,
             elements : [
+                  {id: "fenetre", x:"58", y:"0"},
+                  {id: "meuble", x:"95", y:"125"},
+                  {id: "chaise", x:"188", y:"166"},
+                  {id: "table", x:"126", y:"201"},
+                  {id: "chemine", x:"605", y:"2"},
+                  {id: "casserole1", x:"605", y:"2"}
             ],
             direction : {
-                droite : "piece-sombre-centre"
-            }
-        },
-        "piece-sombre-centre" : {
-            visite : false,
-            cinematique : [],
-            width:1024, height : 768,
-            elements : [
-            ],
-            direction : {
-                gauche : "piece-sombre-gauche",
-                droite : "piece-sombre-droite",
                 bas : "coffre"
             }
         },
-        "piece-sombre-droite" : {
+        "piece" : {
             visite : false,
-            cinematique : [],
-            width:1024, height : 768,
+            width:3072, height : 768,
             elements : [
             ],
             direction : {
-                gauche : "piece-sombre-centre"
+                bas : "coffre"
             }
         }
 	};

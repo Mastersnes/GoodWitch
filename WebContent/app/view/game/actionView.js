@@ -55,6 +55,7 @@ function($, _, Utils, page) {
 				var type = target.attr("class");
 				var tableau = that.parent.scene.parent;
 				if (that.element[type])that.element[type].call(that, tableau, that.elementDom);
+				$(that.el).hide();
 			});
 		};
 		

@@ -20,6 +20,9 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			this.Textes = parent.Textes;
 			this.mediatheque = parent.mediatheque;
 			
+			this.position = 0;
+			this.move = "stop";
+			
 			this.pause = false;
 			this.scene = new Scene(this);
 			this.textView = new TextView(this);
@@ -48,7 +51,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
     			        visited : true,
     			        removes : [],
     			        modifys : []
-    			}
+    			};
 			}else this.scene.postRender(this.postRender[lieu]);
 
 			if (!this.alreadyLoop) {
@@ -104,14 +107,28 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		
 		this.loop = function() {
 			this.alreadyLoop = true;
+			console.log("cinematique : ", this.textView);
 			if (!this.pause && this.textView.empty()) {
-			    //Action ici
+	            if (this.move == "left") {
+	            	this.position++;
+	            	if (this.position > 0) this.position = 0;
+	            	$(".camera").css({
+		        		left : this.position + "%"
+		        	});
+	            }else if (this.move == "right") {
+	            	var sceneWidth = this.scene.size.width;
+	            	this.position--;
+	            	if (this.position < (100-sceneWidth)) this.position = (100-sceneWidth);
+	            	$(".camera").css({
+		        		left : this.position + "%"
+		        	});
+	            }
 			}
 			
 			var that = this;
-//			setTimeout(function() {
-//				that.loop();
-//			}, 30);
+			setTimeout(function() {
+				that.loop();
+			}, 30);
 		};
 		
 		this.makeEvents = function() {
@@ -137,6 +154,22 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
                         break;
                 };
 			});
+			
+			$(".scene").off("mousemove");
+            $(".scene").on("mousemove", function(evt){
+            	var decalage = parseInt($(".scene").css("margin-left"));
+            	var taille = parseInt($(".scene").css("width"));
+            	var x = evt.pageX - decalage;
+            	var xPercent = Utils.toPercent(x, taille);
+            	
+            	if (xPercent < 5) {
+            		that.move = "left";
+            	}else if (xPercent > 95) {
+            		that.move = "right";
+            	}else {
+            		that.move = "stop";
+            	}
+            });
 		};
 		
 		this.init(parent);
