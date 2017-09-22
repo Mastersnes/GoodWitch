@@ -122,7 +122,6 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			
 			$(document).unbind("keydown");
 			$(document).keydown(function(e) {
-			    e.preventDefault();
                 var code = e.keyCode || e.which;
                 switch (code) {
                     case 27: // PAUSE
