@@ -54,7 +54,7 @@ define(["jquery"], function($){
 					case "tournevis":
 						tableau.showText(["serrure-tige-utiliser-tournevis"]);
 						tableau.modifyElement(dom, "serrure-done");
-						tableau.go("piece-sombre");
+						tableau.go("piece-sombre-centre");
 						break;
 					case "nori":
 						tableau.showText(["serrure-tige-utiliser-nori"]);
@@ -68,7 +68,7 @@ define(["jquery"], function($){
 		},
 		"serrure-done" : {
 			ouvrir : function(tableau, dom) {
-				tableau.go("piece-sombre");
+				tableau.go("piece-sombre-centre");
 			}
 		},
 		"tige" : {

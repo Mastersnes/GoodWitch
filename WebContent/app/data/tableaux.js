@@ -29,6 +29,38 @@ define(["jquery"], function($){
             direction : {
                 haut : "coffre"
             }
+        },
+        "piece-sombre-gauche" : {
+            visite : false,
+            cinematique : ["piece-sombre-text1"],
+            width:1024, height : 768,
+            elements : [
+            ],
+            direction : {
+                droite : "piece-sombre-centre"
+            }
+        },
+        "piece-sombre-centre" : {
+            visite : false,
+            cinematique : [],
+            width:1024, height : 768,
+            elements : [
+            ],
+            direction : {
+                gauche : "piece-sombre-gauche",
+                droite : "piece-sombre-droite",
+                bas : "coffre"
+            }
+        },
+        "piece-sombre-droite" : {
+            visite : false,
+            cinematique : [],
+            width:1024, height : 768,
+            elements : [
+            ],
+            direction : {
+                gauche : "piece-sombre-centre"
+            }
         }
 	};
 	
