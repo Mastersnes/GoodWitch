@@ -64,10 +64,17 @@ define(["jquery",
             this.elementView.makeEvents();
             
             if (tableau.direction) {
-                if (tableau.direction.haut) $("fleche.haut").show();
-                if (tableau.direction.bas) $("fleche.bas").show();
-                if (tableau.direction.gauche) $("fleche.gauche").show();
-                if (tableau.direction.droite) $("fleche.droite").show();
+                this.checkDirection(tableau.direction, "haut")
+                this.checkDirection(tableau.direction, "bas")
+                this.checkDirection(tableau.direction, "gauche")
+                this.checkDirection(tableau.direction, "droite")
+            }
+        };
+        
+        this.checkDirection = function(direction, id) {
+            if (direction[id]) {
+                $("fleche."+id).attr("title", this.Textes.get("tableau-"+direction[id]));
+                $("fleche."+id).show();
             }
         };
         

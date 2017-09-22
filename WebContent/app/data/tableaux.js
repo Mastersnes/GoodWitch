@@ -18,7 +18,7 @@ define(["jquery"], function($){
 		},
 		"coffre-bas" : {
 			visite : false,
-			cinematique : ["coffre-haut-text1", "coffre-haut-text2", "coffre-haut-text3", "coffre-haut-text4", "coffre-haut-text5", "coffre-haut-text6"],
+			cinematique : ["coffre-bas-text1", "coffre-bas-text2", "coffre-bas-text3", "coffre-bas-text4", "coffre-bas-text5", "coffre-bas-text6"],
 			width:1024, height : 768,
             elements : [
                   {id: "boite", x:"90", y:"130"},

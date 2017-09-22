@@ -106,27 +106,27 @@ define(["jquery"], function($){
 		/**
 		 * Coffre Haut
 		 */
-		"coffre-haut-text1" : {
+		"coffre-bas-text1" : {
 			fr : "— Chuuut ! … Nori ? Il n’y a rien… Je crois que l’on va pouvoir sortir. Heureusement, c’est la pleine lune ce soir.",
 			en : "— Chuuut! … Nori? There's nothing… I think we'll be able to get out. Fortunately, it's the full moon tonight."
 		},
-		"coffre-haut-text2" : {
+		"coffre-bas-text2" : {
 			fr : "J’aime beaucoup les reflets de la pleine lune. Maman aussi. <br/>Nous mettons toujours quelques fleurs sur la petite table prêt de la cheminée quand c’est la pleine lune. Maman chante des chansons.",
 			en : "I really like the reflections of the full moon. Mother too. <br/>We always put some flowers on the small table ready from the fireplace when it's full moon. Mother sings songs."
 		},
-		"coffre-haut-text3" : {
+		"coffre-bas-text3" : {
 			fr : "Elle a une jolie voix maman. Peut-être reviendra-t- elle ? Si la dame vêtue de blanc est là, elle reviendra surement !",
 			en : "She has a pretty voice mommy. Perhaps she will come back? If the lady dressed in white is there, she will surely come back !"
 		},
-        "coffre-haut-text4" : {
+        "coffre-bas-text4" : {
             fr : "Maman lui fait beaucoup confiance, et moi aussi.<br/>Mais maman à fermer le coffre et je ne peux pas sortir d’ici.",
             en : "Mother trusts him, and so do I.<br/>But mom closes the chest and I can't get out of here."
         },
-        "coffre-haut-text5" : {
+        "coffre-bas-text5" : {
             fr : "Ce qu’elle n’a jamais su, c’est que j’ai trouvé comment l’ouvrir de l’intérieur ! N’est-ce pas Nori ?",
             en : "What she never knew was that I found how to open it from the inside ! isn't it Nori?"
         },
-        "coffre-haut-text6" : {
+        "coffre-bas-text6" : {
             fr : "Après tout, j’y suis tellement souvent et tellement longtemps, qu’il faut bien que je m’occupe.<br/>Heureusement que tu es la mon Nori à moi. Toi, qui garde tous mes secrets !",
             en : "After all, I am there so often and so long, that I have to take care of myself.<br/>Luckily you're here my little Nori. You who keep all my secrets !"
         },
@@ -319,6 +319,19 @@ define(["jquery"], function($){
 			fr : "Un des renforts du coffre.",
 			en : "One of the trunk reinforcements."
 		},
+		
+		/**
+		 * Tableaux
+		 */
+		"tableau-coffre" : {
+            fr : "Haut du coffre",
+            en : "Top of trunk"
+        },
+        "tableau-coffre-bas" : {
+            fr : "Bas du coffre",
+            en : "Bottom of trunk"
+        },
+		
 		
 		/**
 		 * Fin
