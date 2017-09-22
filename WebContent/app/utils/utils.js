@@ -1,5 +1,5 @@
 'use strict';
-define(["jquery", "sha"], function($, sha){
+define(["jquery", "sha"], function($, sha, clipboard){
 	return {
 		name : "bebelGoodWitch",
 		

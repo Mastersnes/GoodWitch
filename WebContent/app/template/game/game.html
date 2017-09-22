@@ -14,7 +14,7 @@
         </div>
         <planFar class="frontground"></planFar>
         
-        <div class="collapse popupText">
+        <div class="collapse popupText" id="popupText">
 			<mask></mask>
 			<content>
 				<div class="text"></div>
@@ -24,5 +24,12 @@
 			<mask></mask>
 			<content class="h-center v-center"></content>
 		</inventaire>
+		
+		<div class="collapse popupText" id="pause">
+		    <mask></mask>
+		    <content>
+		        <div class="text"><%=data.text.get("codeHolder")%> : <span id="code"></span></div>
+		    </content>
+		</div>
     </div>
 </div>

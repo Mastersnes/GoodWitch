@@ -7,7 +7,7 @@ function($, _) {
 
 	return function(parent) {
 		this.init = function(parent) {
-			this.el = ".popupText";
+			this.el = "#popupText";
 			this.parent = parent;
 			this.Textes = parent.Textes;
 			this.mediatheque = parent.mediatheque;
@@ -19,7 +19,7 @@ function($, _) {
 			
 			this.next();
 			
-			$(".popupText").show();
+			$("#popupText").show();
 		};
 		
 		this.next = function() {
@@ -28,15 +28,20 @@ function($, _) {
 				
 				var id = this.ids[this.current];
 				
-				if (id.indexOf("cinematique") > -1) $(".popupText mask").css({
+				if (id.indexOf("cinematique") > -1) $("#popupText mask").css({
 					"opacity" : "1"
 				});
-				else $(".popupText mask").css({
+				else $("#popupText mask").css({
 					"opacity": "0.5"
 				});
 				
-				$(".popupText .text").html(this.Textes.get(id));
-			}else $(".popupText").hide();
+				var value = this.Textes.get(id);
+				if (value) {				
+				    $("#popupText .text").html(this.Textes.get(id));
+				}else {
+				    $("#popupText .text").html(id);
+				}
+			}else $("#popupText").hide();
 		};
 		
 		this.empty = function() {
@@ -46,8 +51,8 @@ function($, _) {
 
 		this.makeEvents = function() {
 			var that = this;
-			$(".popupText").off("mousedown");
-			$(".popupText").on("mousedown", function() {
+			$("#popupText").off("mousedown");
+			$("#popupText").on("mousedown", function() {
 				that.next();
 			});
 		};

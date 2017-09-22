@@ -97,8 +97,9 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		            inventaire : this.inventaireView.inventaire,
 		            postRender : this.postRender
 		    };
-		    console.log("save : ", JSON.stringify(this.postRender));
-		    window.localStorage.setItem(Utils.name, Utils.encode(JSON.stringify(save)));
+		    var saveJeton = Utils.encode(JSON.stringify(save));
+		    window.localStorage.setItem(Utils.name, saveJeton);
+		    return saveJeton;
 		};
 		
 		this.loop = function() {
@@ -108,9 +109,9 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			}
 			
 			var that = this;
-			setTimeout(function() {
-				that.loop();
-			}, 30);
+//			setTimeout(function() {
+//				that.loop();
+//			}, 30);
 		};
 		
 		this.makeEvents = function() {
@@ -118,6 +119,25 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			
 			this.scene.makeEvents();
 			this.textView.makeEvents();
+			
+			$(document).unbind("keydown");
+			$(document).keydown(function(e) {
+			    e.preventDefault();
+                var code = e.keyCode || e.which;
+                switch (code) {
+                    case 27: // PAUSE
+                        if (that.pause) {
+                            that.pause = false;
+                            $("#pause").hide();
+                        }else {
+                            that.pause = true;
+                            var code = that.saveGame();
+                            $("#pause #code").html(code);
+                            $("#pause").show();
+                        }
+                        break;
+                };
+			});
 		};
 		
 		this.init(parent);
