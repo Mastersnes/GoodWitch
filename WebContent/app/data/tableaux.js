@@ -32,28 +32,111 @@ define(["jquery"], function($){
         },
         "piece-sombre" : {
             visite : false,
+            cinematique : ["piece-sombre-text1", "piece-sombre-text2", "piece-sombre-text3", "piece-sombre-text4", "piece-sombre-text5"],
             width:3072, height : 768,
             elements : [
-                  {id: "fenetre", x:"58", y:"0"},
-                  {id: "meuble", x:"95", y:"125"},
-                  {id: "chaise", x:"188", y:"166"},
-                  {id: "table", x:"126", y:"201"},
-                  {id: "chemine", x:"605", y:"2"},
-                  {id: "casserole1", x:"605", y:"2"}
+                  {id: "fenetre", x:"173", y:"0"},
+                  {id: "meuble", x:"246", y:"307"},
+                  {id: "echelle", x:"1109", y:"69"},
+                  {id: "chemine", x:"1797", y:"0"},
+                  {id: "tapis", x:"1444", y:"614"},
+                  {id: "table", x:"307", y:"468"},
+                  {id: "tonneau", x:"1383", y:"315"},
+                  {id: "lampe", x:"876", y:"445"},
+                  {id: "casserole1", x:"1949", y:"94"},
+                  {id: "casserole2", x:"2077", y:"108"},
+                  {id: "casserole3", x:"2209", y:"108"},
+                  {id: "casserole4", x:"2326", y:"126"},
+                  {id: "casserole5", x:"2447", y:"140"},
+                  {id: "pot-charbon", x:"1931", y:"500"},
+                  {id: "allumette", x:"2550", y:"445"}
             ],
             direction : {
                 bas : "coffre"
             }
-        },
-        "piece" : {
-            visite : false,
-            width:3072, height : 768,
-            elements : [
-            ],
-            direction : {
-                bas : "coffre"
-            }
-        }
+           },
+           "piece" : {
+               visite : false,
+               cinematique : ["piece-text1"],
+               width:3072, height : 768,
+               elements : [
+                     {id: "fenetre-rideau", x:"173", y:"0"},
+                     {id: "meuble", x:"246", y:"307"},
+                     {id: "echelle", x:"1109", y:"69"},
+                     {id: "chemine", x:"1797", y:"0"},
+                     {id: "tapis", x:"1444", y:"614"},
+                     {id: "table", x:"307", y:"468"},
+                     {id: "tonneau", x:"1383", y:"315"},
+                     {id: "lampe", x:"876", y:"445"},
+                     {id: "casserole1", x:"1949", y:"94"},
+                     {id: "casserole2", x:"2077", y:"108"},
+                     {id: "casserole3", x:"2209", y:"108"},
+                     {id: "casserole4", x:"2326", y:"126"},
+                     {id: "casserole5", x:"2447", y:"140"},
+                     {id: "pot-charbon", x:"1931", y:"500"}
+               ],
+               direction : {
+               }
+           },
+           "piece-ted" : {
+               visite : false,
+               cinematique : ["piece-ted1","piece-ted2","piece-ted3","piece-ted4","piece-ted5"],
+               width:3072, height : 768,
+               elements : [
+                     {id: "fenetre-rideau", x:"173", y:"0"},
+                     {id: "meuble", x:"246", y:"307"},
+                     {id: "echelle", x:"1109", y:"69"},
+                     {id: "chemine", x:"1797", y:"0"},
+                     {id: "tapis", x:"1444", y:"614"},
+                     {id: "tonneau", x:"1383", y:"315"},
+                     {id: "ted", x:"944", y:"31"},
+                     {id: "table", x:"307", y:"468"},
+                     {id: "lampe", x:"876", y:"445"},
+                     {id: "casserole1", x:"1949", y:"94"},
+                     {id: "casserole2", x:"2077", y:"108"},
+                     {id: "casserole3", x:"2209", y:"108"},
+                     {id: "casserole4", x:"2326", y:"126"},
+                     {id: "casserole5", x:"2447", y:"140"},
+                     {id: "pot-charbon", x:"1931", y:"500"}
+               ],
+               direction : {
+               }
+           },
+           "piece2" : {
+               visite : false,
+               cinematique : ["piece2-text1","piece2-text2"],
+               width:3072, height : 768,
+               elements : [
+                     {id: "fenetre-rideau", x:"173", y:"0"},
+                     {id: "meuble", x:"246", y:"307"},
+                     {id: "echelle", x:"1109", y:"69"},
+                     {id: "chemine", x:"1797", y:"0"},
+                     {id: "planque-livre", x:"1690", y:"699"},
+                     {id: "tapis", x:"1444", y:"614"},
+                     {id: "ted-assome", x:"1382", y:"630"},
+                     {id: "table", x:"307", y:"468"},
+                     {id: "tonneau", x:"1383", y:"315"},
+                     {id: "lampe", x:"876", y:"445"},
+                     {id: "casserole1", x:"1949", y:"94"},
+                     {id: "casserole3", x:"2209", y:"108"},
+                     {id: "casserole4", x:"2326", y:"126"},
+                     {id: "casserole5", x:"2447", y:"140"},
+                     {id: "pot-charbon", x:"1931", y:"500"}
+               ],
+               direction : {
+               }
+           },
+           "fin" : {
+				visite : false,
+				cinematique : ["cinematique-fin1","cinematique-fin2","cinematique-fin3","cinematique-fin4",
+				               "cinematique-fin5","cinematique-fin6","cinematique-fin7","cinematique-fin8",
+				               "cinematique-fin9","cinematique-fin10","cinematique-fin11"],
+				width:1024, height : 768,
+				elements : [
+				],
+		        direction : {
+		        }
+			}
 	};
 	
 	return {

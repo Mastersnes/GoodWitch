@@ -52,9 +52,10 @@ define(["jquery"], function($){
 				else {
 					switch (item) {
 					case "tournevis":
-						tableau.showText(["serrure-tige-utiliser-tournevis"]);
 						tableau.modifyElement(dom, "serrure-done");
-						tableau.go("piece-sombre");
+						tableau.showText(["serrure-tige-utiliser-tournevis"], function() {
+							tableau.go("piece-sombre");
+						});
 						break;
 					case "nori":
 						tableau.showText(["serrure-tige-utiliser-nori"]);
@@ -194,6 +195,537 @@ define(["jquery"], function($){
             },
             prendre : function(tableau, dom) {
                 tableau.showText(["athame-prendre"]);
+            }
+        },
+        "table" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["table-regarder"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["table-examiner"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["table-gouter"]);
+            },
+            cacher : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["table-cacher-no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["table-cacher"], function() {
+							tableau.go("piece-ted");
+						});
+						break;
+					case "piece-ted":
+						tableau.showText(["table-cacher-no-ted"]);
+						break;
+					case "piece2":
+						tableau.showText(["table-cacher-no-ted-assome"]);
+						break;
+					default:
+						tableau.showText(["table-cacher-no-sombre"]);
+						break;
+				}
+            }
+        },
+        "chemine" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["chemine-regarder"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["chemine-ecouter"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["chemine-examiner"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["chemine-gouter"]);
+            }
+        },
+        "pot-charbon" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["pot-charbon-regarder"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["pot-charbon-ecouter"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["pot-charbon-examiner"]);
+            }
+        },
+        "casserole1" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["casserole-regarder"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["casserole-gouter"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["casserole-ecouter"]);
+            },
+            prendre : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					default:
+						tableau.showText(["casserole-prendre-no"]);
+						break;
+				}
+            }
+        },
+        "casserole3" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["casserole-regarder"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["casserole-gouter"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["casserole-ecouter"]);
+            },
+            prendre : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					default:
+						tableau.showText(["casserole-prendre-no"]);
+						break;
+				}
+	        }
+        },
+        "casserole4" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["casserole-regarder"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["casserole-gouter"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["casserole-ecouter"]);
+            },
+            prendre : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					default:
+						tableau.showText(["casserole-prendre-no"]);
+						break;
+				}
+	        }
+        },
+        "casserole5" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["casserole-regarder"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["casserole-gouter"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["casserole-ecouter"]);
+            },
+            prendre : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					default:
+						tableau.showText(["casserole-prendre-no"]);
+						break;
+				}
+            }
+        },
+        /**
+         * Bonne casserole
+         */
+        "casserole2" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["casserole-ok-regarder"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["casserole-gouter"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["casserole-ok-ecouter"]);
+            },
+            prendre : function(tableau, dom) {
+            	var inventaire = tableau.inventaireView;
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					case "piece-ted":
+						tableau.showText(["casserole-ok-prendre"]);
+		            	inventaire.addItem("casserole");
+		            	tableau.removeElement(dom);
+						break;
+					default:
+						tableau.showText(["casserole-prendre-no"]);
+						break;
+				}
+            }
+        },
+        "tonneau" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["tonneau-regarder"]);
+            },
+            examiner : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					case "piece-ted":
+						tableau.showText(["no-ted"]);
+						break;
+					case "piece2":
+						var inventaire = tableau.inventaireView;
+		            	if (inventaire.hasItem("eventCordePris", true)) {
+		            		tableau.showText(["tonneau-vide"]);
+		            	}else {
+		            		tableau.showText(["tonneau-examiner"]);
+		            		inventaire.addItem("corde");
+		            		inventaire.addItem("eventCordePris", true);
+		            	}
+						break;
+					default:
+						tableau.showText(["tonneau-vide"]);
+						break;
+				}
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["tonneau-ecouter"]);
+            }
+        },
+        "meuble" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["meuble-regarder"]);
+            },
+            examiner : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+	            		var inventaire = tableau.inventaireView;
+		            	if (inventaire.hasItem("eventDessinPris", true)) {
+		            		tableau.showText(["meuble-examiner-vide"]);
+		            	}else {
+		            		tableau.showText(["meuble-examiner"]);
+		            		inventaire.addItem("dessin");
+		            		inventaire.addItem("eventDessinPris", true);
+		            	}
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					case "piece-ted":
+						tableau.showText(["no-ted"]);
+						break;
+					case "piece2":
+						tableau.showText(["meuble-examiner-vide"]);
+						break;
+					default:
+						tableau.showText(["meuble-examiner-vide"]);
+						break;
+				}
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["meuble-gouter"]);
+            }
+        },
+        "tapis" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["tapis-regarder"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["tapis-examiner"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["tapis-gouter"]);
+            },
+            vide1 : {},
+            vide2 : {},
+            vide3 : {},
+            vide4 : {},
+            soulever : function(tableau, dom) {
+            	switch (tableau.lieu) {
+	            	case "piece-sombre":
+						tableau.showText(["no-sombre"]);
+						break;
+	            	case "piece":
+						tableau.showText(["attention-ted-arrive"]);
+						break;
+					case "piece-ted":
+						tableau.showText(["no-ted"]);
+						break;
+					case "piece2":
+						tableau.showText(["tapis-soulever"]);
+		            	tableau.removeElement(dom);
+						break;
+					default:
+						tableau.showText(["utiliser-non-prevu"]);
+						break;
+				}
+            }
+        },
+        "planque-livre" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["planque-livre-regarder"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["planque-livre-examiner"]);
+            },
+            ouvrir : function(tableau, dom) {
+                tableau.showText(["planque-livre-ouvrir"]);
+            },
+            vide1 : function() {},
+            vide2 : function() {},
+            vide3 : function() {},
+            ecouter : function(tableau, dom) {
+                tableau.showText(["planque-livre-ecouter"]);
+            },
+            utiliser : function(tableau, dom, item) {
+            	if (!item) tableau.showInventaire(this);
+                else {
+                	var inventaire = tableau.inventaireView;
+                    switch (item) {
+                    case "nori":
+                        tableau.showText(["planque-livre-utiliser-nori"]);
+                        break;
+                    case "casserole":
+                    	tableau.showText(["planque-livre-utiliser-casserole"]);
+                    	break;
+                    case "dessin":
+                    	tableau.showText(["planque-livre-utiliser-dessin"]);
+                    	break;
+                    case "tournevis":
+                    	tableau.showText(["planque-livre-utiliser-tournevis"]);
+                    	break;
+                    case "couteau":
+                    	tableau.showText(["planque-livre-utiliser-couteau", "livre-lire", "livre-lire1", "livre-lire2"
+                    	                  , "livre-lire3", "livre-lire4", "livre-lire5", "livre-lire6", "livre-lire7"]
+                    	,function() {
+                    		tableau.go("fin");
+                    	});
+                    	break;
+                    default:
+                        tableau.showText(["utiliser-non-prevu"]);
+                        break;
+                    }
+                }
+            }
+        },
+        "ted" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["ted-regarder"]);
+            },
+            ecouter : function(tableau, dom) {
+                tableau.showText(["ted-ecouter"]);
+            },
+            utiliser : function(tableau, dom, item) {
+            	if (!item) tableau.showInventaire(this);
+                else {
+                	var inventaire = tableau.inventaireView;
+                    switch (item) {
+                    case "nori":
+                        tableau.showText(["ted-utiliser-nori"]);
+                        break;
+                    case "tournevis":
+                    	tableau.showText(["ted-utiliser-tournevis"]);
+                    	break;
+                    case "casserole":
+                    	inventaire.removeItem("casserole");
+                    	tableau.showText(["ted-utiliser-casserole"], function() {
+                    		tableau.go("piece2");
+                    	});
+                    	break;
+                    default:
+                        tableau.showText(["utiliser-non-prevu"]);
+                        break;
+                    }
+                }
+            }
+        },
+        "ted-assome" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["ted-assome-regarder"]);
+            },
+            examiner : function(tableau, dom) {
+            	var inventaire = tableau.inventaireView;
+            	if (inventaire.hasItem("eventTedAttache", true)) {
+	            	if (inventaire.hasItem("eventCouteauPris", true)) {
+	            		tableau.showText(["ted-assome-examiner-no"]);
+	            	}else {
+	            		tableau.showText(["ted-assome-examiner"]);
+	            		inventaire.addItem("couteau");
+	            		inventaire.addItem("eventCouteauPris", true);
+	            	}
+            	}else {
+            		tableau.showText(["ted-assome-examiner-peur"]);
+            	}
+            },
+            ouvrir : function(tableau, dom) {
+                tableau.showText(["ted-assome-ouvrir"]);
+            },
+            vide1 : {},
+            vide2 : {},
+            vide3 : {},
+            vide4 : {},
+            utiliser : function(tableau, dom, item) {
+            	if (!item) tableau.showInventaire(this);
+                else {
+                	var inventaire = tableau.inventaireView;
+                    switch (item) {
+                    case "nori":
+                        tableau.showText(["ted-assome-utiliser-nori"]);
+                        break;
+                    case "tournevis":
+                    	tableau.showText(["ted-assome-utiliser-tournevis"]);
+                    	break;
+                    case "couteau":
+                    	tableau.showText(["ted-assome-utiliser-couteau"]);
+                    	break;
+                    case "corde":
+                    	tableau.showText(["ted-assome-utiliser-corde"]);
+                    	inventaire.removeItem("corde");
+                    	inventaire.addItem("eventTedAttache", true);
+                    	break;
+                    default:
+                        tableau.showText(["utiliser-non-prevu"]);
+                        break;
+                    }
+                }
+            }
+        },
+        "echelle" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["echelle-regarder"]);
+            },
+            gouter : function(tableau, dom) {
+                tableau.showText(["echelle-gouter"]);
+            },
+            examiner : function(tableau, dom) {
+                tableau.showText(["echelle-examiner"]);
+            }
+        },
+        "lampe" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["lampe-regarder"]);
+            },
+            ouvrir : function(tableau, dom) {
+                tableau.showText(["lampe-ouvrir"]);
+            },
+            allumer : function(tableau, dom) {
+            	tableau.showText(["lampe-allumer"]);
+            },
+            utiliser : function(tableau, dom, item) {
+            	if (!item) tableau.showInventaire(this);
+                else {
+                	var inventaire = tableau.inventaireView;
+                    switch (item) {
+                    case "nori":
+                        tableau.showText(["lampe-utiliser-nori"]);
+                        break;
+                    case "tournevis":
+                    	tableau.showText(["lampe-utiliser-tournevis"]);
+                    	break;
+                    case "casserole":
+                    	tableau.showText(["lampe-utiliser-casserole"]);
+                    	break;
+                    case "dessin":
+                    	tableau.showText(["lampe-utiliser-dessin"]);
+                    	break;
+                    case "allumette":
+                    	if (inventaire.hasItem("eventRideauMis", true)) {
+                    		inventaire.removeItem("allumette");
+                    		inventaire.addItem("eventTedArrive", true);
+                    		tableau.showText(["lampe-utiliser-allumette"], function() {
+                    			tableau.go("piece");
+                    		});
+                    	}else {
+                    		tableau.showText(["lampe-utiliser-allumette-no"]);
+                    	}
+                    	break;
+                    default:
+                        tableau.showText(["utiliser-non-prevu"]);
+                        break;
+                    }
+                }
+            }
+        },
+        "fenetre" : {
+            regarder : function(tableau, dom) {
+                tableau.showText(["fenetre-regarder"]);
+            },
+            examiner : function(tableau, dom) {
+            	tableau.showText(["fenetre-examiner"]);
+            },
+            ouvrir : function(tableau, dom) {
+                tableau.showText(["fenetre-ouvrir"]);
+            },
+            ecouter : function(tableau, dom) {
+            	tableau.showText(["fenetre-ecouter"]);
+            },
+            utiliser : function(tableau, dom, item) {
+            	if (!item) tableau.showInventaire(this);
+                else {
+                	var inventaire = tableau.inventaireView;
+                    switch (item) {
+                    case "nori":
+                        tableau.showText(["fenetre-utiliser-nori"]);
+                        break;
+                    case "tournevis":
+                    	tableau.showText(["fenetre-utiliser-tournevis"]);
+                    	break;
+                    case "casserole":
+                    	tableau.showText(["fenetre-utiliser-casserole"]);
+                    	break;
+                    case "dessin":
+                    	tableau.showText(["fenetre-utiliser-dessin"]);
+                    	inventaire.removeItem("dessin");
+                    	inventaire.addItem("eventRideauMis", true);
+                    	tableau.modifyElement(dom, "fenetre-rideau");
+                    	break;
+                    default:
+                        tableau.showText(["utiliser-non-prevu"]);
+                        break;
+                    }
+                }
+            }
+        },
+        "allumette" : {
+            gouter : function(tableau, dom) {
+                tableau.showText(["allumette-gouter"]);
+            },
+            regarder : function(tableau, dom) {
+                tableau.showText(["allumette-regarder"]);
+            },
+            prendre : function(tableau, dom) {
+            	var inventaire = tableau.inventaireView;
+            	tableau.showText(["allumette-prendre"]);
+            	inventaire.addItem("allumette");
+            	tableau.removeElement(dom);
+            },
+            ecouter : function(tableau, dom) {
+            	tableau.showText(["allumette-ecouter"]);
             }
         }
 	};

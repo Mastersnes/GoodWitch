@@ -55,7 +55,7 @@ element.nori {
 }
 
 /**
-* Piece
+* Piece-sombre
 **/
 planFar.background.piece-sombre {
     background-image: url("../img/game/piece/background.jpg");    
@@ -66,21 +66,119 @@ plan.background.piece-sombre {
 plan.frontground.piece-sombre {
     background-image: url("../img/game/piece/frontground-nuit.png");   
 }
+
+/**
+* Piece
+**/
 planFar.background.piece {
     background-image: url("../img/game/piece/background.jpg");    
 }
 plan.background.piece {
     background-image: url("../img/game/piece/piece.png");    
 }
-plan.frontground.piece-gauche {
+plan.frontground.piece {
     background-image: url("../img/game/piece/frontground-jour.png");   
 }
 
+/**
+* Piece-Ted
+**/
+planFar.background.piece-ted {
+    background-image: url("../img/game/piece/background.jpg");    
+}
+plan.background.piece-ted {
+    background-image: url("../img/game/piece/piece.png");    
+}
+plan.frontground.piece-ted {
+    background-image: url("../img/game/piece/frontground-ted.png");   
+}
+
+/**
+* Piece2
+**/
+planFar.background.piece2 {
+    background-image: url("../img/game/piece/background.jpg");    
+}
+plan.background.piece2 {
+    background-image: url("../img/game/piece/piece.png");    
+}
+plan.frontground.piece2 {
+    background-image: url("../img/game/piece/frontground-jour.png");   
+}
+
+element.allumette {
+    width: 59; height: 20;
+    background-image: url("../img/game/piece/items/allumette.png");
+}
+element.chemine {
+    width: 1048; height: 756;
+    background-image: url("../img/game/piece/items/chemine.png");
+}
+element.echelle {
+    width: 192; height: 435;
+    background-image: url("../img/game/piece/items/echelle.png");
+}
+element.fenetre {
+    width: 622; height: 626;
+    background-image: url("../img/game/piece/items/fenetre.png");
+}
+element.fenetre-rideau {
+    width: 622; height: 626;
+    background-image: url("../img/game/piece/items/fenetre-rideaux.png");
+}
 element.lampe {
     width: 156; height: 288;
-    background-image: url("../img/game/coffre-bas/items/boite.png");
+    background-image: url("../img/game/piece/items/lampe.png");
+}
+element.meuble {
+    width: 615; height: 360;
+    background-image: url("../img/game/piece/items/meuble.png");
+}
+element.planque-livre {
+    width: 204; height: 72;
+    background-image: url("../img/game/piece/items/planque-livre.png");
+}
+element.pot-charbon {
+    width: 94; height: 181;
+    background-image: url("../img/game/piece/items/pot-charbon.png");
+}
+element.table {
+    width: 1203; height: 301;
+    background-image: url("../img/game/piece/items/table.png");
+}
+element.tapis {
+    width: 954; height: 156;
+    background-image: url("../img/game/piece/items/tapis.png");
+}
+element.ted {
+    width: 460; height: 664;
+    background-image: url("../img/game/piece/items/ted.png");
+}
+element.ted-assome {
+    width: 322; height: 140;
+    background-image: url("../img/game/piece/items/ted-assome.png");
 }
 element.tonneau {
     width: 181; height: 243;
-    background-image: url("../img/game/coffre-bas/items/athame.png");
+    background-image: url("../img/game/piece/items/tonneau.png");
+}
+element.casserole5 {
+    width: 112; height: 212;
+    background-image: url("../img/game/piece/items/casserole/1.png");
+}
+element.casserole4 {
+    width: 103; height: 194;
+    background-image: url("../img/game/piece/items/casserole/2.png");
+}
+element.casserole3 {
+    width: 88; height: 168;
+    background-image: url("../img/game/piece/items/casserole/3.png");
+}
+element.casserole2 {
+    width: 77; height: 143;
+    background-image: url("../img/game/piece/items/casserole/4.png");
+}
+element.casserole1 {
+    width: 66; height: 124;
+    background-image: url("../img/game/piece/items/casserole/5.png");
 }

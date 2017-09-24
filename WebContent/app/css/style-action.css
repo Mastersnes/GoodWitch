@@ -83,3 +83,12 @@ action.prendre {
 action.casser {
 	background-image: url("../img/game/actions/prendre.jpg");
 }
+action.cacher {
+	background-image: url("../img/game/actions/prendre.jpg");
+}
+action.soulever {
+	background-image: url("../img/game/actions/prendre.jpg");
+}
+action.allumer {
+	background-image: url("../img/game/actions/prendre.jpg");
+}

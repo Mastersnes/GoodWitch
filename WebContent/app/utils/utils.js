@@ -41,11 +41,12 @@ define(["jquery", "sha"], function($, sha, clipboard){
 			str = "JHGKJHGjhkgkhjgxcvkjgKHJGJH4455456s4dfsdfkhgHJKGJHGdckldsjvkljklLHKH54654" + str + "sdfqsHJGKJGHG5465564HJGHJFJHGJHG23465dfgdfg34654GHFHGF";
 			return sha.sha256(str);
 		},
-		percent : function(value, percentage) {
-			return (value * percentage)/100;
+		percent : function(value, percentage, base) {
+			if (!base) base = 100;
+			return (value * percentage)/base;
 		},
         toPercent : function(value, base) {
-            return (value * 100)/base;
+        	return (value * 100)/base;
         },
 		clone : function(value) {
 			return $.extend(true, {}, value);

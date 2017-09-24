@@ -23,6 +23,13 @@ define(["jquery",
                 
             	that.actionView.render($(this), element);
             });
+			
+			$("element").unbind("mouseenter mouseleave");
+			$("element").hover(function() {
+            }, function(evt) {
+            	that.actionView.checkHide(evt);
+            });
+			
             $("actions").unbind('mouseenter mouseleave');
             $("actions").hover(function() {
             }, function(evt) {

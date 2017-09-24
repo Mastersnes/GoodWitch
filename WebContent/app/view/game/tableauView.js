@@ -30,6 +30,12 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		};
 
 		this.go = function(lieu, save) {
+			$(".camera").css({
+				left : "0%"
+			});
+			this.position = 0;
+			this.move = "stop";
+			
 		    this.lieu = lieu;
 			this.tableau = Tableaux.get(lieu);
 			
@@ -41,6 +47,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			if (save) {
 				this.postRender = save.postRender;
 				this.inventaireView.inventaire = save.inventaire;
+				this.inventaireView.events = save.events;
 			}else {
 			    var visited = this.postRender[lieu] != null && this.postRender[lieu].visited;
 				if (this.tableau.cinematique && !visited) this.textView.show(this.tableau.cinematique);
@@ -64,8 +71,8 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			this.go(save.lieu, save);
 		};
 		
-		this.showText = function(ids){
-			this.textView.show(ids);
+		this.showText = function(ids, callback){
+			this.textView.show(ids, callback);
 		};
 		
 		this.showInventaire = function(action){
@@ -98,6 +105,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		    var save = {
 		            lieu : this.lieu,
 		            inventaire : this.inventaireView.inventaire,
+		            events : this.inventaireView.events,
 		            postRender : this.postRender
 		    };
 		    var saveJeton = Utils.encode(JSON.stringify(save));
@@ -107,7 +115,6 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		
 		this.loop = function() {
 			this.alreadyLoop = true;
-			console.log("cinematique : ", this.textView);
 			if (!this.pause && this.textView.empty()) {
 	            if (this.move == "left") {
 	            	this.position++;

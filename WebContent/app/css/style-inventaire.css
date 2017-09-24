@@ -82,3 +82,18 @@ item.tige {
 item.nori {
 	background-image: url("../img/game/inventaire/nori.png");
 }
+item.corde {
+	background-image: url("../img/game/inventaire/corde.png");
+}
+item.casserole {
+	background-image: url("../img/game/inventaire/casserole.png");
+}
+item.dessin {
+	background-image: url("../img/game/inventaire/dessin.png");
+}
+item.couteau {
+	background-image: url("../img/game/inventaire/couteau.png");
+}
+item.allumette {
+	background-image: url("../img/game/inventaire/allumette.png");
+}

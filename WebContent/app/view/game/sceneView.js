@@ -47,6 +47,11 @@ define(["jquery",
             		height : Utils.toPercent(tableau.height, 768)
             };
             var that = this;
+            
+            $("actions").css({
+            	width : (3000 / that.size.width) + "%",
+            	height : (3000 / that.size.height) + "%"
+            });
             $(".game plan").each(function() {
                 $(this).css({
                     width : that.size.width + "%",
@@ -94,11 +99,13 @@ define(["jquery",
 
             parent.append(dom);
             
+            var tableau = this.parent.tableau;
+            
             dom.css({
-                left : Utils.toPercent(element.x, 1024) + "%",
-                top : Utils.toPercent(element.y, 768) + "%",
-                width : Utils.toPercent(dom.width(), 1024) + "%",
-                height : Utils.toPercent(dom.height(), 768) + "%"
+                left : Utils.toPercent(element.x, tableau.width) + "%",
+                top : Utils.toPercent(element.y, tableau.height) + "%",
+                width : Utils.toPercent(dom.width(), tableau.width) + "%",
+                height : Utils.toPercent(dom.height(), tableau.height) + "%"
             });
             
             return dom;
@@ -131,7 +138,10 @@ define(["jquery",
                 
                 if (evt.which == 1) {
                     var newLieu = that.parent.tableau.direction[type];
-                    if (newLieu) that.parent.go(newLieu);
+                    if (newLieu) {
+                    	$("actions").hide();
+                    	that.parent.go(newLieu);
+                    }
                 }
             });
             

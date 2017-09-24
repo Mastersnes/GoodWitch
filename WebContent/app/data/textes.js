@@ -92,7 +92,7 @@ define(["jquery"], function($){
 			en : "— Mom ? … Mom ?"
 		},
 		"cinematique-coffre2" : {
-			fr : "Je ne l’entends plus. Où l’ont-ils emmené ? Et Moi, je reste toute seule ?",
+			fr : "Je ne l’entends plus. Où l’ont-ils emmenée ? Et Moi, je reste toute seule ?",
 			en : "I can not hear him any more. Where did he take her? And Me, I'm left alone?"
 		},
 		"coffre-text1" : {
@@ -130,6 +130,121 @@ define(["jquery"], function($){
             fr : "Après tout, j’y suis tellement souvent et tellement longtemps, qu’il faut bien que je m’occupe.<br/>Heureusement que tu es la mon Nori à moi. Toi, qui garde tous mes secrets !",
             en : "After all, I am there so often and so long, that I have to take care of myself.<br/>Luckily you're here my little Nori. You who keep all my secrets !"
         },
+        /**
+         * Piece sombre
+         */
+        "piece-sombre-text1" : {
+            fr : "J’ai peur… Et il fait sombre. Je devrais peut-être allumer la lampe à huile sur la grande table.",
+            en : "I'm afraid… And it's dark. Maybe I should light the oil lamp on the big table."
+        },
+        "piece-sombre-text2" : {
+            fr : "Mais, je n’ai pas de feu… Le vieux Ted a ramené des bougies hier soir.",
+            en : "But, I don't have a fire… Old Ted brought back a candle last night."
+        },
+        "piece-sombre-text3" : {
+            fr : "Il a encore regardé ma maman d’un drôle d’air. Sarah n’aime pas ça. Elle dit que c’est un méchant pervers.",
+            en : "He still looked at my mother with a funny look. Sarah does not like it. She says it's a wicked pervert."
+        },
+        "piece-sombre-text4" : {
+            fr : "Moi, il me fait peur… Surtout quand il me caresse les cheveux, avec sa vieille main toute sale.",
+            en : "He frightens me… Especially when he caresses my hair with his old, dirty hand."
+        },
+        "piece-sombre-text5" : {
+            fr : "— Je voudrais qu’il brûle en enfer comme un chien de Satan !<br/>Je me demande où sont les allumettes… Dans le tiroir de la cuisine ?",
+            en : "— I wish he burned in hell like a dog of Satan!<br/>I wonder where are the matches… In the drawer of the kitchen?"
+        },
+        
+        /**
+         * Piece
+         */
+        "piece-text1" : {
+            fr : "Chut ! Un bruit ! Cachons-nous Nori ! Non, non, pas là ! Sous la table !",
+            en : "Hush! A noise ! Let's Hide Nori! No, no, not there! Under the table !"
+        },
+
+        /**
+         * Piece Ted
+         */
+        "piece-ted1" : {
+        	fr : "C’est monsieur Ted… Il ne faut pas qu’il nous trouve ! Qu’est-ce qu’il fait ici ?... On dirait qu’il cherche quelque chose…",
+        	en : "It's Mr. Ted ... He must not find us! What is he doing here? Looks like he is looking for something ..."
+        },
+        "piece-ted2" : {
+        	fr : "— Baaarf, cette vieille sorcière l’avait bien cherché !<br/> Il est saoul, comme d’habitude…",
+        	en : "— Baaarf, this old witch had looked for it! <br/> He is drunk, as usual ..."
+        },
+        "piece-ted3" : {
+        	fr : "— Allez, sors de là, p ‘tit démon de l’enfer ! Je sais qu’ta mère t’a cachée ici… Ils vont vous faire griller comme des rôtis de porc ! Mouahahaha !",
+        	en : "— Come on, get out of here, demon of hell! I know your mother hid you here ... They're going to grill you like roast pork! Mouahahaha!"
+        },
+        "piece-ted4" : {
+        	fr : "Pfff, il ne tient même plus debout. Il faut qu’on trouve une solution Nori. On pourrait peut-être l’assommer ? Il faudrait que j’atteigne la cheminée sans me faire remarquer…",
+        	en : "He does not even stand up. We need a Nori solution. Maybe we could knock him out? I would have to reach the fire without being noticed..."
+        },
+        "piece-ted5" : {
+        	fr : "— Allez, montre-toi, suppôt de Satan ! Haa, où est cette sale petite morveuse… Tu vas voir si je t’attrape…",
+        	en : "— Come on, show yourself, Satan's supporter! Haa, where's that dirty little snotcher? You'll see if I catch you..."
+        },
+        
+        /**
+         * Piece2
+         */
+        "piece2-text1" : {
+        	fr : "On l’a eu ! Et maintenant ? Que va-t-on faire de lui ? S’il se réveille, nous serons en danger.",
+        	en : "We got it! And now ? What are we going to do with him? If he wakes up, we will be in danger."
+        },
+        "piece2-text2" : {
+        	fr : "Je sais ! Faisons en sorte qu’il ne puisse plus bouger, Nori ! Ensuite, nous irons sauver maman avec le gros bouquin plein de jolies images !",
+        	en : "I know ! Let's make sure he can not move, Nori! Then we will save Mom with the big book full of pretty pictures!"
+        },
+        /**
+         * Fin
+         */
+        "cinematique-fin1" : {
+        	fr : "Retournons dans le coffre ! Ici, personne ne pourra nous voir… Écoute…",
+        	en : "Let's go back to the trunk! Here, nobody can see us ... Listen ..."
+        },
+        "cinematique-fin2" : {
+        	fr : "— Dorcas ?! Dorcas ?! Où es-tu ! Monsieur Ted ? Mais, qu’est-ce que vous faites ici ? Et que vous est-il arrivé ?",
+        	en : "— Dorcas ?! Dorcas? Where are you ! Mr. Ted? But, what are you doing here? And what happened to you?"
+        },
+        "cinematique-fin3" : {
+        	fr : "Maman ?!",
+        	en : "Mum ?!"
+        },
+        "cinematique-fin4" : {
+        	fr : "— Hm hmm hm hmm hmmmm !<br/>— Attendez ! Cessez donc de gigoter enfin… Voilà.",
+        	en : "— Hm hmm hm hmm hmmmm! <br/> - Wait! Stop wiggling at last ... Here."
+        },
+        "cinematique-fin5" : {
+        	fr : "On va avoir de gros ennuis Nori…",
+        	en : "We're going to have big trouble Nori..."
+        },
+        "cinematique-fin6" : {
+        	fr : "— Maudite sorcière ! Vous ne payerez rien pour attendre ! Vous allez voir ! Je vous brûlerai moi-même, vous et votre sale petite peste !",
+        	en : "— Cursed sorceress! You will pay nothing to wait! You'll see ! I will burn you and your dirty little plague!"
+        },
+        "cinematique-fin7" : {
+        	fr : "— Ho, je comprends ! C’est donc vous qui avez raconté ces mensonges. Sortez de mon auberge monsieur ! Vous êtes un monstre !",
+        	en : "— Ho, I understand! So it was you who told these lies. Get out of my inn sir! You are a monster!"
+        },
+        "cinematique-fin8" : {
+        	fr : "— Maman !!!!<br/> — Dorcas ! Ma petite fille… J’ai eu si peur.",
+        	en : "— Mother !!!! <br/> — Dorcas! My little girl... I was so scared."
+        },
+        "cinematique-fin9" : {
+        	fr : "— Moi aussi, Sarah ! Moi aussi ! Je suis contente que tu sois revenue !",
+        	en : "— Me too, Sarah! Me too ! I'm glad you came back!"
+        },
+        "cinematique-fin10" : {
+        	fr : "— Oui, ma fille… Il n’y a un qu’un fou pour croire à de telles histoires… Viens, allons manger un bon repas bien chaud ! Prépare les bougies, ce soir, c’est la pleine lune…",
+        	en : "— Yes, my daughter. There's only one fool to believe in such stories. Come, let's eat a good hot meal! Prepare the candles tonight is the full moon ..."
+        },
+        "cinematique-fin11" : {
+        	fr : "— Ouiii ! Vient Nori, allons-y !",
+        	en : "— Yes! Come Nori, let's go!"
+        },
+        
 		/**
 		 * Actions
 		 */
@@ -164,6 +279,18 @@ define(["jquery"], function($){
 		"casser" : {
 			fr : "Casser",
 			en : "Break"
+		},
+		"cacher" : {
+			fr : "Se cacher",
+			en : "To hide"
+		},
+		"soulever" : {
+			fr : "Soulever",
+			en : "Raise"
+		},
+		"allumer" : {
+			fr : "Allumer",
+			en : "Light up"
 		},
 		
 		/**
@@ -217,7 +344,7 @@ define(["jquery"], function($){
 		},
 		"serrure-tige-utiliser-nori" : {
 			fr : "C’est gentil de vouloir m’aider Nori, mais tu n’as pas assez de force.",
-			en : "It's nice to want to help Nori, but you do not have enough strength."
+			en : "It's nice to want to help Nori, but you don't have enough strength."
 		},
 		/**
 		 * Tige
@@ -326,16 +453,437 @@ define(["jquery"], function($){
             en : "This is Sarah's little scepter. It is used to gather herbs."
         },
         "athame-prendre" : {
-            fr : "Je n’ai pas d’herbe à couper.",
-            en : "I do not have any grass to cut."
+            fr : "Je n’ai pas d’herbes à couper.",
+            en : "I don't have any grass to cut."
         },
-		
+        /**
+         * Table
+         */
+        "table-regarder" : {
+            fr : "Cette table a vue de nombreux repas !",
+            en : "This table views many meal !"
+        },
+        "table-examiner" : {
+        	fr : "Parfois, je me cache là-dessous pour écouter les gens.",
+        	en : "Sometimes I hide underneath to listen to people."
+        },
+        "table-gouter" : {
+        	fr : "Un reste de goût d’ail…",
+        	en : "A rest of garlic taste..."
+        },
+        "table-cacher" : {
+        	fr : "Vite, Nori ! Sous la table !!!",
+        	en : "Quickly, Nori! Under the table !!!"
+        },
+        "table-cacher-no-sombre" : {
+        	fr : "Je n'ai pas besoin de me cacher.",
+        	en : "I do not need to hide."
+        },
+        "table-cacher-no-ted" : {
+        	fr : "Je suis déjà cachée.",
+        	en : "I'm already hidden."
+        },
+        "table-cacher-no-ted-assome" : {
+        	fr : "Cette cachette n'est plus sûr.",
+        	en : "This hiding place is no longer safe."
+        },
+        
+        /**
+         * Cheminée
+         */
+        "chemine-regarder" : {
+        	fr : "Une bonne grande cheminée ! Idéale pour les longs mois d’hivers !",
+        	en : "A good big fireplace! Ideal for long winters!"
+        },
+        "chemine-ecouter" : {
+        	fr : "On entend le vent dans le conduit !",
+        	en : "We hear the wind in the pipe!"
+        },
+        "chemine-examiner" : {
+        	fr : "De la suie !",
+        	en : "Soot!"
+        },
+        "chemine-gouter" : {
+        	fr : "Ç'est râpeux !",
+        	en : "It's rough!"
+        },
+        /**
+         * Pot à charbon
+         */
+        "pot-charbon-regarder" : {
+        	fr : "Un gros pot tout noir à l’intérieur",
+        	en : "A big black pot inside"
+        },
+        "pot-charbon-ecouter" : {
+        	fr : "Ça résonne !",
+        	en : "It's ringing!"
+        },
+        "pot-charbon-examiner" : {
+        	fr : "Il n’y a rien là-dedans…",
+        	en : "There's nothing in there…"
+        },
+        /**
+         * Casseroles
+         */
+        "casserole-regarder" : {
+        	fr : "Ces casseroles sont jolies, mais c’est un vrai cauchemar à nettoyer !",
+        	en : "These pans are pretty, but it's a real nightmare to clean!"
+        },
+        "casserole-gouter" : {
+        	fr : "Berk ! Le lustrant a un goût amer !",
+        	en : "Yuck ! The shine has a bitter taste !"
+        },
+        "casserole-ecouter" : {
+        	fr : "Doooong !",
+        	en : "Doooong !"
+        },
+        "casserole-prendre-no" : {
+        	fr : "Hum, non, pas celle-ci !",
+        	en : "Um, no, not this one !"
+        },
+        /**
+         * Casserole OK
+         */
+        "casserole-ok-regarder" : {
+        	fr : "Une jolie casserole en cuivre.",
+        	en : "A pretty copper saucepan."
+        },
+        "casserole-ok-ecouter" : {
+        	fr : "Diiiing !",
+        	en : "Diiiing !"
+        },
+        "casserole-ok-prendre" : {
+        	fr : "Ha ! Ma casserole préférée !",
+        	en : "Ha! My favorite pan !"
+        },
+        
+        /**
+         * Tonneau
+         */
+        "tonneau-regarder" : {
+        	fr : "Un vieux tonneau qui nous sert de rangements.",
+        	en : "An old barrel that serves as storage."
+        },
+        "tonneau-examiner" : {
+        	fr : "Chouette ! Une corde ! Exactement ce qu’il me fallait Nori !",
+        	en : "Super ! A rope ! Exactly what I needed Nori!"
+        },
+        "tonneau-vide" : {
+        	fr : "Il n'y a plus rien d'intéressant…",
+        	en : "There is nothing more interesting…"
+        },
+        "tonneau-ecouter" : {
+        	fr : "Ça sonne creux…",
+        	en : "It sounds hollow…"
+        },
+        /**
+         * Meuble
+         */
+        "meuble-regarder" : {
+        	fr : "Un grand meuble rempli de tout un tas de trucs…",
+        	en : "A big piece of furniture filled with a lot of stuff..."
+        },
+        "meuble-examiner" : {
+        	fr : "Chouette ! Mes dessins !",
+        	en : "Yeah ! My draws"
+        },
+        "meuble-examiner-vide" : {
+        	fr : "Il n'y a plus que des vieux couverts...",
+        	en : "There are only old cutlery..."
+        },
+        "meuble-gouter" : {
+        	fr : "Bof… Un goût de vieux bois ciré.",
+        	en : "Bof ... A taste of old waxed wood."
+        },
+        /**
+         * Tapis
+         */
+        "tapis-regarder" : {
+        	fr : "C’est un vieux tapis tout sale et poussiéreux.",
+        	en : "It's an old carpet all dirty and dusty."
+        },
+        "tapis-examiner" : {
+        	fr : "Il y a quelque chose de caché en dessous ! Moi, je le sais !",
+        	en : "There's something hidden underneath! I know that!"
+        },
+        "tapis-gouter" : {
+        	fr : "Non, ce ne doit pas être bon…",
+        	en : "No, it does not have to be good..."
+        },
+        "tapis-soulever" : {
+        	fr : "Voyons voir là-dessous…",
+        	en : "Let's see below..."
+        },
+        /**
+         * Planque
+         */
+        "planque-livre-regarder" : {
+        	fr : "Cette latte à l’air d’être abîmée.",
+        	en : "This slat looks to be damaged."
+        },
+        "planque-livre-examiner" : {
+        	fr : "La cachette idéal !",
+        	en : "The perfect hiding place!"
+        },
+        "planque-livre-ouvrir" : {
+        	fr : "Aïe ! Je n’y arrive pas avec mes doigts…",
+        	en : "Ouch! I can not do it with my fingers..."
+        },
+        "planque-livre-ecouter" : {
+        	fr : "Ha !! Ça sonne creux ici !",
+        	en : "Ha! It sounds hollow here!"
+        },
+        "planque-livre-utiliser-nori" : {
+        	fr : "Tu n’y arrivera pas non plus Nori.",
+        	en : "You can not do Nori either."
+        },
+        "planque-livre-utiliser-casserole" : {
+        	fr : "Taper dessus n’a pas l’air de fonctionner…",
+        	en : "Tapping on does not seem to work ..."
+        },
+        "planque-livre-utiliser-dessin" : {
+        	fr : "Non, je ne vais pas les ranger ici.",
+        	en : "No, I will not put them in here."
+        },
+        "planque-livre-utiliser-tournevis" : {
+        	fr : "Ce tournevis est bien trop gros…",
+        	en : "This screwdriver is far too big..."
+        },
+        "planque-livre-utiliser-couteau" : {
+        	fr : "Super ! Ça s’ouvre !",
+        	en : "Yeah ! It's open"
+        },
+        "planque-livre-no" : {
+        	fr : "J'ai déjà le livre.",
+        	en : "I already have the book."
+        },
+        /**
+         * Lire livre
+         */
+        "livre-lire" : {
+        	fr : "Voilà le livre Nori ! Nous allons pouvoir sauver maman ! Il suffit de trouver la bonne page et de réciter l’incantation. Tu es prêt ?",
+        	en : "This is the book Black! We can save Mom! Just find the right page and recite the incantation. You're ready ?"
+        },
+        "livre-lire1" : {
+        	fr : "Dans le temps et l’espace,<br/> De la lune à la Terre,",
+        	en : "In time and space,<br/> From the moon to the Earth,"
+        },
+        "livre-lire2" : {
+        	fr : "Les astres jamais ne s’effacent<br/> Et contemple le monde.",
+        	en : "The stars never fade<br/> And contemplate the world."
+        },
+        "livre-lire3" : {
+        	fr : "Que la colère d’Hecate gronde,<br/> Et rétablisse la vérité",
+        	en : "Let Hecate's anger rumble,<br/> And restore the truth"
+        },
+        "livre-lire4" : {
+        	fr : "Afin qu’ici soit retrouvé<br/> Le bien qui m’a été enlevé.",
+        	en : "So that here is found<br/> The good that was taken away from me."
+        },
+        "livre-lire5" : {
+        	fr : "Dans la lueur du clair de lune<br/> Que mes paroles soient entendues.",
+        	en : "In the light of the moonlight<br/> Let my words be heard."
+        },
+        "livre-lire6" : {
+        	fr : "Ainsi soit-il",
+        	en : "So be it"
+        },
+        "livre-lire7" : {
+        	fr : "...<br/> Nori ? Tu entends ? Vite, vite, quelqu’un arrive !! Cachons-nous !",
+        	en : "...<br/> Nori? You hear ? Quick, fast, someone arrives !! Let's hide!"
+        },
+        
+        /**
+         * Ted
+         */
+        "ted-regarder" : {
+        	fr : "Berk, ce vieux Ted est une laideur ! Il me fait très peur !!",
+        	en : "Berck, this old Ted is ugliness! It makes me very scared !!"
+        },
+        "ted-ecouter" : {
+        	fr : "Il dit des bêtises, comme toujours ! Je le déteste !",
+        	en : "He says nonsense, as always! I hate it !"
+        },
+        "ted-utiliser-nori" : {
+        	fr : "Certainement pas ! Ted serait capable de le brûler !",
+        	en : "Certainly not ! Ted would be able to burn it!"
+        },
+        "ted-utiliser-tournevis" : {
+        	fr : "Si je pouvais…",
+        	en : "If I could…"
+        },
+        "ted-utiliser-casserole" : {
+        	fr : "Et bim ! Prend ça vieux monstre dégoûtant !",
+        	en : "And boom ! Take that old disgusting monster!"
+        },
+        /**
+         * Ted assome
+         */
+        "ted-assome-regarder" : {
+        	fr : "Un vieux Ted allongé comme un rat mort ! Bien fait pour lui !",
+        	en : "An old Ted lying like a dead rat! Well done for him!"
+        },
+        "ted-assome-examiner" : {
+        	fr : "Ted se balade toujours avec son couteau de chasse. Je vais le prendre au cas où.",
+        	en : "Ted always walks with his hunting knife. I'll take it in case."
+        },
+        "ted-assome-examiner-no" : {
+        	fr : "Rien de bien intéressant...",
+        	en : "Nothing very interesting..."
+        },
+        "ted-assome-examiner-peur" : {
+        	fr : "J'ai beaucoup trop peur qu'il se reveil !",
+        	en : "I'm too afraid he'll wake up!"
+        },
+        "ted-assome-ouvrir" : {
+        	fr : "Ce ne serait pas raisonnable…",
+        	en : "It would not be reasonable..."
+        },
+        "ted-assome-utiliser-nori" : {
+        	fr : "Non Nori, tu vas te salir !",
+        	en : "No Nori, you're going to get dirty!"
+        },
+        "ted-assome-utiliser-tournevis" : {
+        	fr : "Même démonté, il ne servirait à rien !",
+        	en : "Even disassembled, it would serve no purpose!"
+        },
+        "ted-assome-utiliser-couteau" : {
+        	fr : "Si j’avais plus de temps… Peut-être...",
+        	en : "If I had more time... Maybe..."
+        },
+        "ted-assome-utiliser-corde" : {
+        	fr : "Voilà qui devrait l'empêcher de bouger ! Espèce de vieille saucisse de lard pourrie !",
+        	en : "That should keep him from moving! You old rotten bacon sausage!"
+        },
+        /**
+         * Echelle
+         */
+        "echelle-regarder" : {
+        	fr : "Une échelle bien pratique ! Mais il faut bien faire attention de ne pas tomber !",
+        	en : "A very practical ladder! But be careful not to fall!"
+        },
+        "echelle-gouter" : {
+        	fr : "Ça a un petit goût de terre…",
+        	en : "It has a little taste of soil ..."
+        },
+        "echelle-examiner" : {
+        	fr : "Je ne dois aller nulle part…",
+        	en : "I do not have to go anywhere..."
+        },
+        
+        /**
+         * Lampe
+         */
+        "lampe-regarder" : {
+        	fr : "C’est une lampe à huile en cuivre. Elle est plus jolie quand elle est allumée.",
+        	en : "It is a copper oil lamp. She's prettier when she's on."
+        },
+        "lampe-ouvrir" : {
+        	fr : "Non ! Maman m’a dit de ne pas toucher !",
+        	en : "No ! Mom told me not to touch!"
+        },
+        "lampe-utiliser-nori" : {
+        	fr : "Nori, tu es encore trop petit pour jouer avec le feu…",
+        	en : "Nori, you're still too small to play with fire..."
+        },
+        "lampe-utiliser-tournevis" : {
+        	fr : "Hum… Non.",
+        	en : "Hum… No."
+        },
+        "lampe-utiliser-casserole" : {
+        	fr : "Si je vide la lampe, je ne pourrai pas l’allumer voyons…",
+        	en : "If I empty the lamp, I will not be able to light it..."
+        },
+        "lampe-utiliser-dessin" : {
+        	fr : "Je n’ai pas envie de les brûler !",
+        	en : "I do not want to burn them!"
+        },
+        "lampe-utiliser-allumette" : {
+        	fr : "Super ! On va y voir un peu plus clair à présent !",
+        	en : "Great ! We'll see a little clearer now!"
+        },
+        "lampe-utiliser-allumette-no" : {
+        	fr : "Non Nori ! On va se faire repérer !",
+        	en : "No Nori! We'll be spotted!"
+        },
+        "lampe-allumer" : {
+        	fr : "Sans allumette? Je ne sais pas encore faire ce tour de magie.",
+        	en : "Without a match? I do not know how to do this magic trick yet."
+        },
+        /**
+         * Fenetre
+         */
+        "fenetre-regarder" : {
+        	fr : "Le ciel est magnifique à cette heure-ci !",
+        	en : "The sky is beautiful at this hour!"
+        },
+        "fenetre-examiner" : {
+        	fr : "Je verrai bien de beaux rideaux ici...",
+        	en : "I'll see nice curtains here..."
+        },
+        "fenetre-ouvrir" : {
+        	fr : "Il fait un peu froid dehors ! Et ce ne serait pas très discret.",
+        	en : "It's a little cold outside! And it would not be very discreet."
+        },
+        "fenetre-ecouter" : {
+        	fr : "On n’entend pas grand chose. C’est calme dehors.",
+        	en : "We do not hear much. It's quiet outside."
+        },
+        "fenetre-utiliser-nori" : {
+        	fr : "Tu as vu comme la lune est belle Nori ?",
+        	en : "You saw how beautiful the moon is Nori?"
+        },
+        "fenetre-utiliser-tournevis" : {
+        	fr : "Heu… Je n’ai pas envie de faire ça maintenant.",
+        	en : "Uh ... I do not want to do that now."
+        },
+        "fenetre-utiliser-casserole" : {
+        	fr : "Je vais casser une fenêtre avec ça !",
+        	en : "I'll break a window with that!"
+        },
+        "fenetre-utiliser-dessin" : {
+        	fr : "C’est bien mieux comme ça ! On sera plus en sécurité maintenant.",
+        	en : "It's much better this way ! We'll be safer now."
+        },
+        
+        /**
+         * Allumette
+         */
+        "allumette-gouter" : {
+        	fr : "Un petit goût de souffre…",
+        	en : "A little taste of sulfur..."
+        },
+        "allumette-regarder" : {
+        	fr : "Ces allumettes servent à allumer beaucoup de choses dans l’auberge.",
+        	en : "This matches serve to light a lot of things in the inn."
+        },
+        "allumette-prendre" : {
+        	fr : "Je vais prendre ça au cas où !",
+        	en : "I'll take that in case of!"
+        },
+        "allumette-ecouter" : {
+        	fr : "J’aime bien le bruit d’une boîte d’allumettes quand on la secoue !",
+        	en : "I like the sound of a matchbox when you shake it!"
+        },
+        
 		/**
 		 * Non prevu
 		 */
 		"utiliser-non-prevu" : {
 			fr : "Ça ne fonctionne pas…",
 			en : "It doesn't work…"
+		},
+		"attention-ted-arrive" : {
+			fr : "Pas le temps, je dois vite me cacher !",
+			en : "No time, I must hide quickly!"
+		},
+		"no-sombre" : {
+			fr : "Il fait beaucoup trop sombre, je n'y vois rien !",
+			en : "It's far too dark, I do not see anything!"
+		},
+		"no-ted" : {
+			fr : "Impossible avec Ted qui rode !",
+			en : "Impossible with Ted who rode!"
 		},
 		
 		/**
@@ -353,6 +901,26 @@ define(["jquery"], function($){
 			fr : "Un des renforts du coffre",
 			en : "One of the trunk reinforcements"
 		},
+		"corde" : {
+			fr : "Une corde bien solide",
+			en : "A strong rope"
+		},
+		"casserole" : {
+			fr : "Une casserole",
+			en : "A saucepan"
+		},
+		"dessin" : {
+			fr : "Ma plus belle oeuvre",
+			en : "My most beautiful work"
+		},
+		"couteau" : {
+			fr : "Le couteau de chasse de Ted",
+			en : "Ted's hunting knife"
+		},
+		"allumette" : {
+			fr : "Des allumettes",
+			en : "Matches"
+		},
 		
 		/**
 		 * Tableaux
@@ -364,18 +932,6 @@ define(["jquery"], function($){
         "tableau-coffre-bas" : {
             fr : "Bas du coffre",
             en : "Bottom of trunk"
-        },
-        "tableau-piece-sombre-gauche" : {
-            fr : "À gauche de la salle",
-            en : "To the left of the room"
-        },
-        "tableau-piece-sombre-centre" : {
-            fr : "Au centre de la salle",
-            en : "To the center of the room"
-        },
-        "tableau-piece-sombre-droite" : {
-            fr : "À droite de la salle",
-            en : "To the right of the room"
         },
 		
 		

@@ -12,6 +12,7 @@ function($, _, page) {
 			this.parent = parent;
 			this.Textes = parent.Textes;
 			this.inventaire = [];
+			this.events = [];
 			this.mediatheque = parent.mediatheque;
 		};
 
@@ -30,17 +31,24 @@ function($, _, page) {
 			this.makeEvents();
 		};
 		
-		this.addItem = function(item) {
-			this.inventaire.push(item);
+		this.addItem = function(item, isEvent) {
+			if (isEvent) this.events.push(item);
+			else this.inventaire.push(item);
 		};
 		
-		this.removeItem = function(item) {
-		    var index = this.inventaire.indexOf(item);
-		    this.inventaire.splice(index, index+1);
+		this.removeItem = function(item, isEvent) {
+			if (isEvent) {
+				var index = this.events.indexOf(item);
+			    this.events.splice(index, index+1);
+			}else {
+			    var index = this.inventaire.indexOf(item);
+			    this.inventaire.splice(index, index+1);
+			}
 		};
 		
-		this.hasItem = function(item) {
-            return this.inventaire.indexOf(item) > -1;
+		this.hasItem = function(item, isEvent) {
+			if (isEvent) return this.events.indexOf(item) > -1;
+			else return this.inventaire.indexOf(item) > -1;
         };
 
 		this.makeEvents = function() {

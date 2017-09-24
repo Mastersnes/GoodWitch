@@ -14,8 +14,9 @@ function($, _) {
 			this.visible = false;
 		};
 
-		this.show = function(ids) {
+		this.show = function(ids, callback) {
 			this.ids = ids;
+			this.callback = callback;
 			this.current = -1;
 			
 			this.next();
@@ -46,6 +47,9 @@ function($, _) {
 			}else {
 				this.visible = false;
 				$("#popupText").hide();
+				if (this.callback) {
+					this.callback.call();
+				}
 			}
 		};
 		
