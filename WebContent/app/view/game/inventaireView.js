@@ -53,16 +53,16 @@ function($, _, page) {
 
 		this.makeEvents = function() {
 			var that = this;
-			$("inventaire item").off("mousedown");
-			$("inventaire item").on("mousedown", function() {
+			$("inventaire item").off("mousedown touch");
+			$("inventaire item").on("mousedown touch", function() {
 				var item = $(this).attr("class");
 				var tableau = that.action.parent.scene.parent;
 				$(that.el).hide();
 				that.action.element.utiliser(tableau, that.action.elementDom, item);
 			});
 			
-			$("inventaire mask").off("mousedown");
-			$("inventaire mask").on("mousedown", function() {
+			$("inventaire mask").off("mousedown touch");
+			$("inventaire mask").on("mousedown touch", function() {
 				$(that.el).hide();
 			});
 		};

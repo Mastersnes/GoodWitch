@@ -130,8 +130,8 @@ define(["jquery",
                 evt.preventDefault();
             });
             
-            $("fleche").off("mousedown");
-            $("fleche").on("mousedown", function(evt){
+            $("fleche").off("mousedown touch");
+            $("fleche").on("mousedown touch", function(evt){
                 evt.preventDefault();
                 var target = $(evt.target);
                 var type = target.attr("class");

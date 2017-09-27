@@ -59,8 +59,8 @@ function($, _) {
 
 		this.makeEvents = function() {
 			var that = this;
-			$("#popupText").off("mousedown");
-			$("#popupText").on("mousedown", function() {
+			$("#popupText").off("mousedown touch");
+			$("#popupText").on("mousedown touch", function() {
 				that.next();
 			});
 		};

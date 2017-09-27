@@ -49,8 +49,8 @@ function($, _, Utils, page) {
 		this.makeEvents = function() {
 			var that = this;
 			
-			$("action").unbind("mousedown");
-			$("action").mousedown(function(evt) {
+			$("action").unbind("mousedown touch");
+			$("action").on("mousedown touch", function(evt) {
 				var target = $(evt.target);
 				var type = target.attr("class");
 				var tableau = that.parent.scene.parent;

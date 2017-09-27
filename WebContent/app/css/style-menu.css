@@ -27,7 +27,7 @@ ul.menu {
 ul.menu > li {
 	display: block;
 	text-align: center;
-	font-size: 2em;
+	font-size: 3vh;
 	font-family: serif;
 	
 	width: 60%;

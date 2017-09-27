@@ -90,7 +90,7 @@ fleche:hover, action:hover {
 **/
 .text {
 	font-family: serif;
-	font-size : 2em;
+	font-size : 3vh;
 	max-width: 100%;
 	word-wrap: break-word;
 }
