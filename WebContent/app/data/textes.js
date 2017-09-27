@@ -96,12 +96,12 @@ define(["jquery"], function($){
 			en : "I can not hear him any more. Where did he take her? And Me, I'm left alone?"
 		},
 		"coffre-text1" : {
-			fr : "— Maman ?<br/>Non ! Non ! Sarah a dit de ne pas sortir d’ici. Sarah m’a demandée de ne pas bouger… Alors, Dorcas ne bougera pas.",
+			fr : "— Maman ?<br/>Non ! Non ! Sarah a dit de ne pas sortir d’ici. Sarah m’a demandé de ne pas bouger… Alors, Dorcas ne bougera pas.",
 			en : "— Mom ?<br/>No ! No ! Sarah said not to get out of here. Sarah asked me not to move … So, Dorcas will not budge."
 		},
 		"coffre-text2" : {
-			fr : "Non. Je dois être sage, sinon ils vont me prendre, moi aussi. Tu entends Nori ? Maman a dit de ne pas bouger.",
-			en : "No. I must be wise, otherwise they will take me, too. Do you hear Nori? Mom said not to move."
+			fr : "Non. Je dois être sage, sinon ils vont me prendre moi aussi. Tu entends, Nori ? Maman a dit de ne pas bouger.",
+			en : "No. I must be wise, otherwise they will take me too. Do you hear, Nori? Mom said not to move."
 		},
 		/**
 		 * Coffre Haut
@@ -253,11 +253,11 @@ define(["jquery"], function($){
 			en : "Look At"
 		},
 		"gouter" : {
-			fr : "Gouter",
+			fr : "Goûter",
 			en : "Taste"
 		},
 		"ecouter" : {
-			fr : "Ecouter",
+			fr : "Écouter",
 			en : "Listen"
 		},
 		"ouvrir" : {
