@@ -96,10 +96,10 @@ ul.popup-menu > li:hover {
 .popup .close {
 	width: 30px; height: 30px;
 	position: absolute;
-	top: -2vh;
-	right: -1vw;
+	top: -1.5vh;
+	right: -0.5vw;
 	opacity : 1;
-	background-color: #a91313;
+	background-color: #413f3f;
 	border: 1px solid black;
 	border-radius: 50%;
 }
