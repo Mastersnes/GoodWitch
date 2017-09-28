@@ -39,10 +39,10 @@ function($, _, page) {
 		this.removeItem = function(item, isEvent) {
 			if (isEvent) {
 				var index = this.events.indexOf(item);
-			    this.events.splice(index, index+1);
+			    this.events.splice(index, 1);
 			}else {
 			    var index = this.inventaire.indexOf(item);
-			    this.inventaire.splice(index, index+1);
+			    this.inventaire.splice(index, 1);
 			}
 		};
 		

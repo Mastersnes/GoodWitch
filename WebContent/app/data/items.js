@@ -50,11 +50,16 @@ define(["jquery"], function($){
 			utiliser : function(tableau, dom, item) {
 				if (!item) tableau.showInventaire(this);
 				else {
-					switch (item) {
+					var inventaire = tableau.inventaireView;
+				    switch (item) {
 					case "tournevis":
 						tableau.modifyElement(dom, "serrure-done");
 						tableau.showText(["serrure-tige-utiliser-tournevis"], function() {
-							tableau.go("piece-sombre");
+							if (inventaire.hasItem("nori")) {
+							    tableau.go("piece-sombre");
+							}else {
+							    tableau.showText(["coffre-oublie-nori"]);
+							}
 						});
 						break;
 					case "nori":
@@ -69,7 +74,12 @@ define(["jquery"], function($){
 		},
 		"serrure-done" : {
 			ouvrir : function(tableau, dom) {
-				tableau.go("piece-sombre");
+			    var inventaire = tableau.inventaireView;
+			    if (inventaire.hasItem("nori")) {
+                    tableau.go("piece-sombre");
+                }else {
+                    tableau.showText(["coffre-oublie-nori"]);
+                }
 			}
 		},
 		"tige" : {
@@ -160,6 +170,9 @@ define(["jquery"], function($){
                     case "tige":
                         tableau.showText(["nori-utiliser-tige"]);
                         break;
+                    case "tournevis":
+                        tableau.showText(["nori-utiliser-tournevis"]);
+                        break;
                     default:
                         tableau.showText(["utiliser-non-prevu"]);
                         break;
@@ -234,12 +247,37 @@ define(["jquery"], function($){
                 tableau.showText(["chemine-regarder"]);
             },
             ecouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
+                
                 tableau.showText(["chemine-ecouter"]);
             },
             examiner : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["chemine-examiner"]);
             },
             gouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["chemine-gouter"]);
             }
         },
@@ -248,9 +286,25 @@ define(["jquery"], function($){
                 tableau.showText(["pot-charbon-regarder"]);
             },
             ecouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["pot-charbon-ecouter"]);
             },
             examiner : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["pot-charbon-examiner"]);
             }
         },
@@ -414,6 +468,14 @@ define(["jquery"], function($){
 				}
             },
             ecouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["tonneau-ecouter"]);
             }
         },
@@ -448,6 +510,14 @@ define(["jquery"], function($){
 				}
             },
             gouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["meuble-gouter"]);
             }
         },
@@ -456,9 +526,25 @@ define(["jquery"], function($){
                 tableau.showText(["tapis-regarder"]);
             },
             examiner : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["tapis-examiner"]);
             },
             gouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["tapis-gouter"]);
             },
             vide1 : {},
@@ -620,9 +706,25 @@ define(["jquery"], function($){
                 tableau.showText(["echelle-regarder"]);
             },
             gouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["echelle-gouter"]);
             },
             examiner : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["echelle-examiner"]);
             }
         },
@@ -631,14 +733,45 @@ define(["jquery"], function($){
                 tableau.showText(["lampe-regarder"]);
             },
             ouvrir : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["lampe-ouvrir"]);
             },
             allumer : function(tableau, dom) {
-            	tableau.showText(["lampe-allumer"]);
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        break;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        break;
+                    case "piece-sombre":
+                        tableau.showText(["lampe-allumer"]);
+                        break;
+                    default:
+                        tableau.showText(["lampe-allumer-deja"]);
+                        break;
+            	}
             },
             utiliser : function(tableau, dom, item) {
             	if (!item) tableau.showInventaire(this);
                 else {
+                    
+                    switch (tableau.lieu) {
+                        case "piece":
+                            tableau.showText(["attention-ted-arrive"]);
+                            return;
+                        case "piece-ted":
+                            tableau.showText(["no-ted"]);
+                            return;
+                    }
+                    
                 	var inventaire = tableau.inventaireView;
                     switch (item) {
                     case "nori":
@@ -676,17 +809,50 @@ define(["jquery"], function($){
                 tableau.showText(["fenetre-regarder"]);
             },
             examiner : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
             	tableau.showText(["fenetre-examiner"]);
             },
             ouvrir : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
                 tableau.showText(["fenetre-ouvrir"]);
             },
             ecouter : function(tableau, dom) {
+                switch (tableau.lieu) {
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        return;
+                    case "piece-ted":
+                        tableau.showText(["no-ted"]);
+                        return;
+                }
             	tableau.showText(["fenetre-ecouter"]);
             },
             utiliser : function(tableau, dom, item) {
             	if (!item) tableau.showInventaire(this);
                 else {
+                    switch (tableau.lieu) {
+                        case "piece":
+                            tableau.showText(["attention-ted-arrive"]);
+                            return;
+                        case "piece-ted":
+                            tableau.showText(["no-ted"]);
+                            return;
+                    }
+                    
                 	var inventaire = tableau.inventaireView;
                     switch (item) {
                     case "nori":

@@ -107,27 +107,27 @@ define(["jquery"], function($){
 		 * Coffre Haut
 		 */
 		"coffre-bas-text1" : {
-			fr : "— Chuuut ! … Nori ? Il n’y a rien… Je crois que l’on va pouvoir sortir. Heureusement, c’est la pleine lune ce soir.",
-			en : "— Chuuut! … Nori? There's nothing… I think we'll be able to get out. Fortunately, it's the full moon tonight."
+			fr : "— Chuuut !… Nori ? Il n’y a rien… Je crois que l’on va pouvoir sortir. Heureusement, c’est la pleine lune ce soir.",
+			en : "— Chuuut !… Nori? There's nothing… I think we'll be able to get out. Fortunately, it's the full moon tonight."
 		},
 		"coffre-bas-text2" : {
-			fr : "J’aime beaucoup les reflets de la pleine lune. Maman aussi. <br/>Nous mettons toujours quelques fleurs sur la petite table prêt de la cheminée quand c’est la pleine lune. Maman chante des chansons.",
+			fr : "J’aime beaucoup les reflets de la pleine lune. Maman aussi. <br/>Nous mettons toujours quelques fleurs sur la petite table près de la cheminée quand c’est la pleine lune. Maman chante des chansons.",
 			en : "I really like the reflections of the full moon. Mother too. <br/>We always put some flowers on the small table ready from the fireplace when it's full moon. Mother sings songs."
 		},
 		"coffre-bas-text3" : {
-			fr : "Elle a une jolie voix maman. Peut-être reviendra-t- elle ? Si la dame vêtue de blanc est là, elle reviendra surement !",
+			fr : "Elle a une jolie voix maman. Peut-être reviendra-t- elle ? Si la dame vêtue de blanc est là, elle reviendra sûrement !",
 			en : "She has a pretty voice mommy. Perhaps she will come back? If the lady dressed in white is there, she will surely come back !"
 		},
         "coffre-bas-text4" : {
-            fr : "Maman lui fait beaucoup confiance, et moi aussi.<br/>Mais maman à fermer le coffre et je ne peux pas sortir d’ici.",
-            en : "Mother trusts him, and so do I.<br/>But mom closes the chest and I can't get out of here."
+            fr : "Elle lui fait beaucoup confiance, et moi aussi.<br/>Mais Sarah a fermé le coffre et je ne peux pas sortir d’ici.",
+            en : "She trusts him, and so do I.<br/>But Sarah closes the chest and I can't get out of here."
         },
         "coffre-bas-text5" : {
-            fr : "Ce qu’elle n’a jamais su, c’est que j’ai trouvé comment l’ouvrir de l’intérieur ! N’est-ce pas Nori ?",
-            en : "What she never knew was that I found how to open it from the inside ! isn't it Nori?"
+            fr : "Ce qu’elle n’a jamais su, c’est que j’ai trouvé comment l’ouvrir de l’intérieur ! N’est-ce pas, Nori ?",
+            en : "What she never knew was that I found how to open it from the inside ! isn't it, Nori?"
         },
         "coffre-bas-text6" : {
-            fr : "Après tout, j’y suis tellement souvent et tellement longtemps, qu’il faut bien que je m’occupe.<br/>Heureusement que tu es la mon Nori à moi. Toi, qui garde tous mes secrets !",
+            fr : "Après tout, j’y suis tellement souvent et tellement longtemps, qu’il faut bien que je m’occupe.<br/>Heureusement que tu es là mon Nori à moi. Toi, qui garde tous mes secrets !",
             en : "After all, I am there so often and so long, that I have to take care of myself.<br/>Luckily you're here my little Nori. You who keep all my secrets !"
         },
         /**
@@ -142,12 +142,12 @@ define(["jquery"], function($){
             en : "But, I don't have a fire… Old Ted brought back a candle last night."
         },
         "piece-sombre-text3" : {
-            fr : "Il a encore regardé ma maman d’un drôle d’air. Sarah n’aime pas ça. Elle dit que c’est un méchant pervers.",
-            en : "He still looked at my mother with a funny look. Sarah does not like it. She says it's a wicked pervert."
+            fr : "Il a encore regardé ma maman d’un drôle d’air. Sarah n’aime pas ça. Elle dit que c’est un méchant pervers !",
+            en : "He still looked at my mother with a funny look. Sarah does not like it. She says it's a wicked pervert !"
         },
         "piece-sombre-text4" : {
-            fr : "Moi, il me fait peur… Surtout quand il me caresse les cheveux, avec sa vieille main toute sale.",
-            en : "He frightens me… Especially when he caresses my hair with his old, dirty hand."
+            fr : "Moi, il me fait peur… Surtout quand il me caresse les cheveux avec sa vieille main toute sale.",
+            en : "He frightens me… Especially when he caresses my hair with his old dirty hand."
         },
         "piece-sombre-text5" : {
             fr : "— Je voudrais qu’il brûle en enfer comme un chien de Satan !<br/>Je me demande où sont les allumettes… Dans le tiroir de la cuisine ?",
@@ -166,24 +166,24 @@ define(["jquery"], function($){
          * Piece Ted
          */
         "piece-ted1" : {
-        	fr : "C’est monsieur Ted… Il ne faut pas qu’il nous trouve ! Qu’est-ce qu’il fait ici ?... On dirait qu’il cherche quelque chose…",
-        	en : "It's Mr. Ted ... He must not find us! What is he doing here? Looks like he is looking for something ..."
+        	fr : "C’est monsieur Ted… Il ne faut pas qu’il nous trouve ! Qu’est-ce qu’il fait ici ?… On dirait qu’il cherche quelque chose…",
+        	en : "It's Mr. Ted … He must not find us! What is he doing here? Looks like he is looking for something …"
         },
         "piece-ted2" : {
         	fr : "— Baaarf, cette vieille sorcière l’avait bien cherché !<br/> Il est saoul, comme d’habitude…",
-        	en : "— Baaarf, this old witch had looked for it! <br/> He is drunk, as usual ..."
+        	en : "— Baaarf, this old witch had looked for it! <br/> He is drunk, as usual …"
         },
         "piece-ted3" : {
         	fr : "— Allez, sors de là, p ‘tit démon de l’enfer ! Je sais qu’ta mère t’a cachée ici… Ils vont vous faire griller comme des rôtis de porc ! Mouahahaha !",
-        	en : "— Come on, get out of here, demon of hell! I know your mother hid you here ... They're going to grill you like roast pork! Mouahahaha!"
+        	en : "— Come on, get out of here, demon of hell! I know your mother hid you here … They're going to grill you like roast pork! Mouahahaha!"
         },
         "piece-ted4" : {
         	fr : "Pfff, il ne tient même plus debout. Il faut qu’on trouve une solution Nori. On pourrait peut-être l’assommer ? Il faudrait que j’atteigne la cheminée sans me faire remarquer…",
-        	en : "He does not even stand up. We need a Nori solution. Maybe we could knock him out? I would have to reach the fire without being noticed..."
+        	en : "He does not even stand up. We need a Nori solution. Maybe we could knock him out? I would have to reach the fire without being noticed…"
         },
         "piece-ted5" : {
         	fr : "— Allez, montre-toi, suppôt de Satan ! Haa, où est cette sale petite morveuse… Tu vas voir si je t’attrape…",
-        	en : "— Come on, show yourself, Satan's supporter! Haa, where's that dirty little snotcher? You'll see if I catch you..."
+        	en : "— Come on, show yourself, Satan's supporter! Haa, where's that dirty little snotcher? You'll see if I catch you…"
         },
         
         /**
@@ -202,7 +202,7 @@ define(["jquery"], function($){
          */
         "cinematique-fin1" : {
         	fr : "Retournons dans le coffre ! Ici, personne ne pourra nous voir… Écoute…",
-        	en : "Let's go back to the trunk! Here, nobody can see us ... Listen ..."
+        	en : "Let's go back to the trunk! Here, nobody can see us … Listen …"
         },
         "cinematique-fin2" : {
         	fr : "— Dorcas ?! Dorcas ?! Où es-tu ! Monsieur Ted ? Mais, qu’est-ce que vous faites ici ? Et que vous est-il arrivé ?",
@@ -214,11 +214,11 @@ define(["jquery"], function($){
         },
         "cinematique-fin4" : {
         	fr : "— Hm hmm hm hmm hmmmm !<br/>— Attendez ! Cessez donc de gigoter enfin… Voilà.",
-        	en : "— Hm hmm hm hmm hmmmm! <br/> - Wait! Stop wiggling at last ... Here."
+        	en : "— Hm hmm hm hmm hmmmm! <br/> - Wait! Stop wiggling at last … Here."
         },
         "cinematique-fin5" : {
         	fr : "On va avoir de gros ennuis Nori…",
-        	en : "We're going to have big trouble Nori..."
+        	en : "We're going to have big trouble Nori…"
         },
         "cinematique-fin6" : {
         	fr : "— Maudite sorcière ! Vous ne payerez rien pour attendre ! Vous allez voir ! Je vous brûlerai moi-même, vous et votre sale petite peste !",
@@ -230,7 +230,7 @@ define(["jquery"], function($){
         },
         "cinematique-fin8" : {
         	fr : "— Maman !!!!<br/> — Dorcas ! Ma petite fille… J’ai eu si peur.",
-        	en : "— Mother !!!! <br/> — Dorcas! My little girl... I was so scared."
+        	en : "— Mother !!!! <br/> — Dorcas! My little girl… I was so scared."
         },
         "cinematique-fin9" : {
         	fr : "— Moi aussi, Sarah ! Moi aussi ! Je suis contente que tu sois revenue !",
@@ -238,7 +238,7 @@ define(["jquery"], function($){
         },
         "cinematique-fin10" : {
         	fr : "— Oui, ma fille… Il n’y a un qu’un fou pour croire à de telles histoires… Viens, allons manger un bon repas bien chaud ! Prépare les bougies, ce soir, c’est la pleine lune…",
-        	en : "— Yes, my daughter. There's only one fool to believe in such stories. Come, let's eat a good hot meal! Prepare the candles tonight is the full moon ..."
+        	en : "— Yes, my daughter. There's only one fool to believe in such stories. Come, let's eat a good hot meal! Prepare the candles tonight is the full moon …"
         },
         "cinematique-fin11" : {
         	fr : "— Ouiii ! Vient Nori, allons-y !",
@@ -316,22 +316,22 @@ define(["jquery"], function($){
 			en : "I'd like, but Mom took the key."
 		},
 		"serrure-utiliser-tournevis" : {
-			fr : "Hum… Le tournevis entre, mais le coffre s’ouvre pas. Il manque peut-être quelque chose?",
+			fr : "Hum… Le tournevis entre, mais le coffre ne s’ouvre pas. Il manque peut-être quelque chose ?",
 			en : "Hmm … The screwdriver comes in, but the trunk does not open. Perhaps something is missing?"
 		},
 		"serrure-utiliser-tige" : {
-			fr : "Chouette, ça semble entrée !",
+			fr : "Chouette, ça semble entrer !",
 			en : "Yeah, it seems to be coming!"
 		},
 		"serrure-utiliser-nori" : {
-			fr : "Non Nori, tu es bien trop gros ! Et ça vas encore t’abimer…",
+			fr : "Non Nori, tu es bien trop gros ! Et ça va encore t’abîmer…",
 			en : "No Nori, you're way too big! And it'll still ruin you …"
 		},
 		/**
 		 * Serrure tige
 		 */
 		"serrure-tige-examiner" : {
-			fr : "La tige est coincée… Il me faudrait quelque chose en plus. Une idée Nori ?",
+			fr : "La tige est coincée… Il me faudrait quelque chose en plus. Une idée, Nori ?",
 			en : "The stem is stuck … I need something more. Nori, any idea?"
 		},
 		"serrure-tige-prendre" : {
@@ -339,8 +339,8 @@ define(["jquery"], function($){
 			en : "Raa … It's stuck!"
 		},
 		"serrure-tige-utiliser-tournevis" : {
-			fr : "Ça marche Nori ! Ça marche !",
-			en : "It works Nori! It works !"
+			fr : "Ça marche, Nori ! Ça marche !",
+			en : "It works, Nori! It works !"
 		},
 		"serrure-tige-utiliser-nori" : {
 			fr : "C’est gentil de vouloir m’aider Nori, mais tu n’as pas assez de force.",
@@ -350,8 +350,8 @@ define(["jquery"], function($){
 		 * Tige
 		 */
 		"tige-examiner" : {
-			fr : "Ce sont les renfort du coffre…",
-			en : "These are the trunk reinforcements …"
+			fr : "Ce sont les renforts du coffre…",
+			en : "These are the trunk reinforcements…"
 		},
 		"tige-prendre" : {
 			fr : "Impossible, c’est trop bien fixé !",
@@ -373,12 +373,12 @@ define(["jquery"], function($){
 		 * Tige abimée
 		 */
 		"tige-abime-examiner" : {
-			fr : "Ce renfort-ci à l’air d’être abîmé…",
+			fr : "Ce renfort-ci a l’air d’être abîmé…",
 			en : "This reinforcement looks to be damaged…"
 		},
 		"tige-abime-prendre" : {
-			fr : "Ha! Ça bouge Nori ! Mais je n’arrive pas à le détacher.",
-			en : "Ha! It moves Nori! But I can not detach it."
+			fr : "Ha ! Ça bouge, Nori ! Mais je n’arrive pas à le détacher…",
+			en : "Ha ! It moves, Nori! But I can not detach it…"
 		},
 		"tige-abime-utiliser-tournevis" : {
 			fr : "Ça y est ! Je l’ai !",
@@ -415,11 +415,15 @@ define(["jquery"], function($){
             fr : "Aïe ! Ça ne sert à rien…",
             en : "Ouch! It's useless…"
         },
+        "nori-utiliser-tournevis" : {
+            fr : "Je n’ai pas besoin de le cacher de nouveau.",
+            en : "Doesn't need to hide it again."
+        },
         /**
          * Boite
          */
         "boite-regarder" : {
-            fr : "C’est le petite coffre à bijoux de maman.",
+            fr : "C’est le petit coffre à bijoux de maman.",
             en : "This is Mom's little jewelry chest."
         },
         "boite-prendre-no" : {
@@ -427,15 +431,15 @@ define(["jquery"], function($){
             en : "I think I should rather leave it here."
         },
         "boite-examiner" : {
-            fr : "Il n’y a pas grand chose mise à part quelques pierres de protections.",
+            fr : "Il n’y a pas grand chose, mise à part quelques pierres de protections.",
             en : "There is not much besides a few stones of protection."
         },
         /**
          * Collier
          */
         "collier-regarder" : {
-            fr : "C’est le collier de perle de maman. Elle déteste quand je le grignote.",
-            en : "This is Mom's Pearl Necklace. She hates when I nibble."
+            fr : "C’est le collier de perles de maman. Elle déteste quand je le grignote.",
+            en : "This is Mom's Pearls Necklace. She hates when I nibble."
         },
         "collier-gouter" : {
             fr : "J’aimerais bien ! Mais je dois sortir d’ici.",
@@ -469,7 +473,7 @@ define(["jquery"], function($){
         },
         "table-gouter" : {
         	fr : "Un reste de goût d’ail…",
-        	en : "A rest of garlic taste..."
+        	en : "A rest of garlic taste…"
         },
         "table-cacher" : {
         	fr : "Vite, Nori ! Sous la table !!!",
@@ -554,7 +558,7 @@ define(["jquery"], function($){
         },
         "casserole-ok-prendre" : {
         	fr : "Ha ! Ma casserole préférée !",
-        	en : "Ha! My favorite pan !"
+        	en : "Ha ! My favorite pan !"
         },
         
         /**
@@ -581,19 +585,19 @@ define(["jquery"], function($){
          */
         "meuble-regarder" : {
         	fr : "Un grand meuble rempli de tout un tas de trucs…",
-        	en : "A big piece of furniture filled with a lot of stuff..."
+        	en : "A big piece of furniture filled with a lot of stuff…"
         },
         "meuble-examiner" : {
         	fr : "Chouette ! Mes dessins !",
         	en : "Yeah ! My draws"
         },
         "meuble-examiner-vide" : {
-        	fr : "Il n'y a plus que des vieux couverts...",
-        	en : "There are only old cutlery..."
+        	fr : "Il n'y a plus que des vieux plats…",
+        	en : "There are only old dishes…"
         },
         "meuble-gouter" : {
         	fr : "Bof… Un goût de vieux bois ciré.",
-        	en : "Bof ... A taste of old waxed wood."
+        	en : "Bof … A taste of old waxed wood."
         },
         /**
          * Tapis
@@ -608,11 +612,11 @@ define(["jquery"], function($){
         },
         "tapis-gouter" : {
         	fr : "Non, ce ne doit pas être bon…",
-        	en : "No, it does not have to be good..."
+        	en : "No, it does not have to be good…"
         },
         "tapis-soulever" : {
         	fr : "Voyons voir là-dessous…",
-        	en : "Let's see below..."
+        	en : "Let's see below…"
         },
         /**
          * Planque
@@ -627,11 +631,11 @@ define(["jquery"], function($){
         },
         "planque-livre-ouvrir" : {
         	fr : "Aïe ! Je n’y arrive pas avec mes doigts…",
-        	en : "Ouch! I can not do it with my fingers..."
+        	en : "Ouch! I can not do it with my fingers…"
         },
         "planque-livre-ecouter" : {
         	fr : "Ha !! Ça sonne creux ici !",
-        	en : "Ha! It sounds hollow here!"
+        	en : "Ha ! It sounds hollow here!"
         },
         "planque-livre-utiliser-nori" : {
         	fr : "Tu n’y arrivera pas non plus Nori.",
@@ -639,7 +643,7 @@ define(["jquery"], function($){
         },
         "planque-livre-utiliser-casserole" : {
         	fr : "Taper dessus n’a pas l’air de fonctionner…",
-        	en : "Tapping on does not seem to work ..."
+        	en : "Tapping on does not seem to work …"
         },
         "planque-livre-utiliser-dessin" : {
         	fr : "Non, je ne vais pas les ranger ici.",
@@ -647,7 +651,7 @@ define(["jquery"], function($){
         },
         "planque-livre-utiliser-tournevis" : {
         	fr : "Ce tournevis est bien trop gros…",
-        	en : "This screwdriver is far too big..."
+        	en : "This screwdriver is far too big…"
         },
         "planque-livre-utiliser-couteau" : {
         	fr : "Super ! Ça s’ouvre !",
@@ -689,8 +693,8 @@ define(["jquery"], function($){
         	en : "So be it"
         },
         "livre-lire7" : {
-        	fr : "...<br/> Nori ? Tu entends ? Vite, vite, quelqu’un arrive !! Cachons-nous !",
-        	en : "...<br/> Nori? You hear ? Quick, fast, someone arrives !! Let's hide!"
+        	fr : "…<br/> Nori ? Tu entends ? Vite, vite, quelqu’un arrive !! Cachons-nous !",
+        	en : "…<br/> Nori? You hear ? Quick, fast, someone arrives !! Let's hide!"
         },
         
         /**
@@ -728,8 +732,8 @@ define(["jquery"], function($){
         	en : "Ted always walks with his hunting knife. I'll take it in case."
         },
         "ted-assome-examiner-no" : {
-        	fr : "Rien de bien intéressant...",
-        	en : "Nothing very interesting..."
+        	fr : "Rien de bien intéressant…",
+        	en : "Nothing very interesting…"
         },
         "ted-assome-examiner-peur" : {
         	fr : "J'ai beaucoup trop peur qu'il se reveil !",
@@ -737,7 +741,7 @@ define(["jquery"], function($){
         },
         "ted-assome-ouvrir" : {
         	fr : "Ce ne serait pas raisonnable…",
-        	en : "It would not be reasonable..."
+        	en : "It would not be reasonable…"
         },
         "ted-assome-utiliser-nori" : {
         	fr : "Non Nori, tu vas te salir !",
@@ -748,8 +752,8 @@ define(["jquery"], function($){
         	en : "Even disassembled, it would serve no purpose!"
         },
         "ted-assome-utiliser-couteau" : {
-        	fr : "Si j’avais plus de temps… Peut-être...",
-        	en : "If I had more time... Maybe..."
+        	fr : "Si j’avais plus de temps… Peut-être…",
+        	en : "If I had more time… Maybe…"
         },
         "ted-assome-utiliser-corde" : {
         	fr : "Voilà qui devrait l'empêcher de bouger ! Espèce de vieille saucisse de lard pourrie !",
@@ -764,11 +768,11 @@ define(["jquery"], function($){
         },
         "echelle-gouter" : {
         	fr : "Ça a un petit goût de terre…",
-        	en : "It has a little taste of soil ..."
+        	en : "It has a little taste of soil …"
         },
         "echelle-examiner" : {
         	fr : "Je ne dois aller nulle part…",
-        	en : "I do not have to go anywhere..."
+        	en : "I do not have to go anywhere…"
         },
         
         /**
@@ -784,7 +788,7 @@ define(["jquery"], function($){
         },
         "lampe-utiliser-nori" : {
         	fr : "Nori, tu es encore trop petit pour jouer avec le feu…",
-        	en : "Nori, you're still too small to play with fire..."
+        	en : "Nori, you're still too small to play with fire…"
         },
         "lampe-utiliser-tournevis" : {
         	fr : "Hum… Non.",
@@ -792,7 +796,7 @@ define(["jquery"], function($){
         },
         "lampe-utiliser-casserole" : {
         	fr : "Si je vide la lampe, je ne pourrai pas l’allumer voyons…",
-        	en : "If I empty the lamp, I will not be able to light it..."
+        	en : "If I empty the lamp, I will not be able to light it…"
         },
         "lampe-utiliser-dessin" : {
         	fr : "Je n’ai pas envie de les brûler !",
@@ -807,8 +811,12 @@ define(["jquery"], function($){
         	en : "No Nori! We'll be spotted!"
         },
         "lampe-allumer" : {
-        	fr : "Sans allumette? Je ne sais pas encore faire ce tour de magie.",
-        	en : "Without a match? I do not know how to do this magic trick yet."
+        	fr : "Sans allumettes ? Je ne sais pas encore faire ce tour de magie.",
+        	en : "Without matches ? I do not know how to do this magic trick yet."
+        },
+        "lampe-allumer-deja" : {
+            fr : "Elle est déjà allumée.",
+            en : "It's already light."
         },
         /**
          * Fenetre
@@ -818,8 +826,8 @@ define(["jquery"], function($){
         	en : "The sky is beautiful at this hour!"
         },
         "fenetre-examiner" : {
-        	fr : "Je verrai bien de beaux rideaux ici...",
-        	en : "I'll see nice curtains here..."
+        	fr : "Je verrais bien de beaux rideaux ici…",
+        	en : "I'll see nice curtains here…"
         },
         "fenetre-ouvrir" : {
         	fr : "Il fait un peu froid dehors ! Et ce ne serait pas très discret.",
@@ -830,12 +838,12 @@ define(["jquery"], function($){
         	en : "We do not hear much. It's quiet outside."
         },
         "fenetre-utiliser-nori" : {
-        	fr : "Tu as vu comme la lune est belle Nori ?",
-        	en : "You saw how beautiful the moon is Nori?"
+        	fr : "Tu as vu comme la lune est belle, Nori ?",
+        	en : "You saw how beautiful the moon is, Nori?"
         },
         "fenetre-utiliser-tournevis" : {
         	fr : "Heu… Je n’ai pas envie de faire ça maintenant.",
-        	en : "Uh ... I do not want to do that now."
+        	en : "Uh … I do not want to do that now."
         },
         "fenetre-utiliser-casserole" : {
         	fr : "Je vais casser une fenêtre avec ça !",
@@ -851,7 +859,7 @@ define(["jquery"], function($){
          */
         "allumette-gouter" : {
         	fr : "Un petit goût de souffre…",
-        	en : "A little taste of sulfur..."
+        	en : "A little taste of sulfur…"
         },
         "allumette-regarder" : {
         	fr : "Ces allumettes servent à allumer beaucoup de choses dans l’auberge.",
@@ -884,6 +892,10 @@ define(["jquery"], function($){
 		"no-ted" : {
 			fr : "Impossible avec Ted qui rode !",
 			en : "Impossible with Ted who rode!"
+		},
+		"coffre-oublie-nori" : {
+		    fr : "Je ne peux tout de même pas laisser Nori ici tout seul !",
+            en : "I definitely can't let Nori alone here !"
 		},
 		
 		/**
