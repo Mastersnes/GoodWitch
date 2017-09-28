@@ -313,7 +313,7 @@ define(["jquery"], function($){
 		},
 		"serrure-gouter" : {
 			fr : "Berk ! Ça pique la langue ! Il parait qu’un peu de rouille est bon pour la santé.",
-			en : "Yuck! It stings the tongue! It seems that a little rust is good for your health."
+			en : "Ugh! It stings the tongue! It seems that a little rust is good for your health."
 		},
 		"serrure-ecouter" : {
 			fr : "Seul le bruit du vent parle…",
@@ -325,45 +325,45 @@ define(["jquery"], function($){
 		},
 		"serrure-utiliser-tournevis" : {
 			fr : "Hum… Le tournevis entre, mais le coffre ne s’ouvre pas. Il manque peut-être quelque chose ?",
-			en : "Hmm … The screwdriver comes in, but the trunk does not open. Perhaps something is missing?"
+			en : "Hmm… The screwdriver comes in, but the chest doesn't open. Perhaps something is missing ?"
 		},
 		"serrure-utiliser-tige" : {
 			fr : "Chouette, ça semble entrer !",
-			en : "Yeah, it seems to be coming!"
+			en : "Yeah, it seems to be coming !"
 		},
 		"serrure-utiliser-nori" : {
 			fr : "Non Nori, tu es bien trop gros ! Et ça va encore t’abîmer…",
-			en : "No Nori, you're way too big! And it'll still ruin you …"
+			en : "No Nori, you're too big! And it'll ruin you…"
 		},
 		/**
 		 * Serrure tige
 		 */
 		"serrure-tige-examiner" : {
 			fr : "La tige est coincée… Il me faudrait quelque chose en plus. Une idée, Nori ?",
-			en : "The stem is stuck … I need something more. Nori, any idea?"
+			en : "The rod is stuck… I need something more. Nori, any idea?"
 		},
 		"serrure-tige-prendre" : {
 			fr : "Raa… C’est coincé !",
-			en : "Raa … It's stuck!"
+			en : "Raa … It's stuck !"
 		},
 		"serrure-tige-utiliser-tournevis" : {
 			fr : "Ça marche, Nori ! Ça marche !",
-			en : "It works, Nori! It works !"
+			en : "It works, Nori ! It works !"
 		},
 		"serrure-tige-utiliser-nori" : {
-			fr : "C’est gentil de vouloir m’aider Nori, mais tu n’as pas assez de force.",
-			en : "It's nice to want to help Nori, but you don't have enough strength."
+			fr : "C’est gentil de vouloir m’aider, Nori, mais tu n’as pas assez de force.",
+			en : "It's nice to want to help me, Nori, but you don't have enough strength."
 		},
 		/**
 		 * Tige
 		 */
 		"tige-examiner" : {
 			fr : "Ce sont les renforts du coffre…",
-			en : "These are the trunk reinforcements…"
+			en : "These are the chest reinforcements…"
 		},
 		"tige-prendre" : {
 			fr : "Impossible, c’est trop bien fixé !",
-			en : "Impossible, it is too well fixed !"
+			en : "Impossible, it's fixed !"
 		},
 		"tige-utiliser-tournevis" : {
 			fr : "Hum, ça ne semble pas bouger…",
@@ -386,7 +386,7 @@ define(["jquery"], function($){
 		},
 		"tige-abime-prendre" : {
 			fr : "Ha ! Ça bouge, Nori ! Mais je n’arrive pas à le détacher…",
-			en : "Ha ! It moves, Nori! But I can not detach it…"
+			en : "Ha ! It moves, Nori! But I can't detach it…"
 		},
 		"tige-abime-utiliser-tournevis" : {
 			fr : "Ça y est ! Je l’ai !",
@@ -397,7 +397,7 @@ define(["jquery"], function($){
 		 */
 		"nori-regarder" : {
 		    fr : "C’est Nori, ma peluche rien qu’à moi qui me suit partout.",
-		    en : "It's Nori, my stuff just at me who follows me everywhere."
+		    en : "It's Nori, my soft toy just at me who follows me everywhere."
 		},
 		"nori-prendre" : {
             fr : "Viens là mon Nori.",
@@ -440,14 +440,14 @@ define(["jquery"], function($){
         },
         "boite-examiner" : {
             fr : "Il n’y a pas grand chose, mise à part quelques pierres de protections.",
-            en : "There is not much besides a few stones of protection."
+            en : "There is nothing but a few stones of protection."
         },
         /**
          * Collier
          */
         "collier-regarder" : {
             fr : "C’est le collier de perles de maman. Elle déteste quand je le grignote.",
-            en : "This is Mom's Pearls Necklace. She hates when I nibble."
+            en : "This is Mom's Pearls Necklace. She hates when I chew it."
         },
         "collier-gouter" : {
             fr : "J’aimerais bien ! Mais je dois sortir d’ici.",
@@ -477,7 +477,7 @@ define(["jquery"], function($){
         },
         "table-examiner" : {
         	fr : "Parfois, je me cache là-dessous pour écouter les gens.",
-        	en : "Sometimes I hide underneath to listen to people."
+        	en : "Sometimes I hide underneath to listen peoples."
         },
         "table-gouter" : {
         	fr : "Un reste de goût d’ail…",
@@ -485,11 +485,11 @@ define(["jquery"], function($){
         },
         "table-cacher" : {
         	fr : "Vite, Nori ! Sous la table !!!",
-        	en : "Quickly, Nori! Under the table !!!"
+        	en : "Quickly, Nori ! Under the table !!!"
         },
         "table-cacher-no-sombre" : {
         	fr : "Je n'ai pas besoin de me cacher.",
-        	en : "I do not need to hide."
+        	en : "I don't need to hide."
         },
         "table-cacher-no-ted" : {
         	fr : "Je suis déjà cachée.",
@@ -513,22 +513,22 @@ define(["jquery"], function($){
         },
         "chemine-examiner" : {
         	fr : "De la suie !",
-        	en : "Soot!"
+        	en : "Soot !"
         },
         "chemine-gouter" : {
         	fr : "Ç'est râpeux !",
-        	en : "It's rough!"
+        	en : "It's rough !"
         },
         /**
          * Pot à charbon
          */
         "pot-charbon-regarder" : {
-        	fr : "Un gros pot tout noir à l’intérieur",
-        	en : "A big black pot inside"
+        	fr : "Un gros pot tout noir à l’intérieur.",
+        	en : "A big pot, all is black inside."
         },
         "pot-charbon-ecouter" : {
         	fr : "Ça résonne !",
-        	en : "It's ringing!"
+        	en : "It's ringing !"
         },
         "pot-charbon-examiner" : {
         	fr : "Il n’y a rien là-dedans…",
@@ -539,7 +539,7 @@ define(["jquery"], function($){
          */
         "casserole-regarder" : {
         	fr : "Ces casseroles sont jolies, mais c’est un vrai cauchemar à nettoyer !",
-        	en : "These pans are pretty, but it's a real nightmare to clean!"
+        	en : "These pans are pretty, but it's a real nightmare to clean !"
         },
         "casserole-gouter" : {
         	fr : "Berk ! Le lustrant a un goût amer !",
@@ -605,7 +605,7 @@ define(["jquery"], function($){
         },
         "meuble-gouter" : {
         	fr : "Bof… Un goût de vieux bois ciré.",
-        	en : "Bof … A taste of old waxed wood."
+        	en : "Bof… A taste of old waxed wood."
         },
         /**
          * Tapis
