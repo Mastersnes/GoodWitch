@@ -10,7 +10,7 @@ define(["jquery"], function($){
 		},
 		"loadGame" : {
 			fr : "Charger une partie",
-			en : "Load a game"
+			en : "Load game"
 		},
 		"fromCode" : {
 			fr : "Veuillez entrer votre code de sauvegarde :",
@@ -93,15 +93,15 @@ define(["jquery"], function($){
 		},
 		"cinematique-coffre2" : {
 			fr : "Je ne l’entends plus. Où l’ont-ils emmenée ? Et Moi, je reste toute seule ?",
-			en : "I can not hear him any more. Where did he take her? And Me, I'm left alone?"
+			en : "I can't hear her any more. Where did they take her ? And Me, I'm alone?"
 		},
 		"coffre-text1" : {
 			fr : "— Maman ?<br/>Non ! Non ! Sarah a dit de ne pas sortir d’ici. Sarah m’a demandé de ne pas bouger… Alors, Dorcas ne bougera pas.",
-			en : "— Mom ?<br/>No ! No ! Sarah said not to get out of here. Sarah asked me not to move … So, Dorcas will not budge."
+			en : "— Mom ?<br/>No ! No ! Sarah said not to get out of here. Sarah asked me not to move… So, Dorcas will not move."
 		},
 		"coffre-text2" : {
 			fr : "Non. Je dois être sage, sinon ils vont me prendre moi aussi. Tu entends, Nori ? Maman a dit de ne pas bouger.",
-			en : "No. I must be wise, otherwise they will take me too. Do you hear, Nori? Mom said not to move."
+			en : "No. I must be good, otherwise they will take me too. Do you hear, Nori? Mom said not to move."
 		},
 		/**
 		 * Coffre Haut
@@ -112,7 +112,7 @@ define(["jquery"], function($){
 		},
 		"coffre-bas-text2" : {
 			fr : "J’aime beaucoup les reflets de la pleine lune. Maman aussi. <br/>Nous mettons toujours quelques fleurs sur la petite table près de la cheminée quand c’est la pleine lune. Maman chante des chansons.",
-			en : "I really like the reflections of the full moon. Mother too. <br/>We always put some flowers on the small table ready from the fireplace when it's full moon. Mother sings songs."
+			en : "I really like the full moon sparkle. Mother too. <br/>We always put some flowers on the small table close to the fireplace when it's full moon. Mother sings songs."
 		},
 		"coffre-bas-text3" : {
 			fr : "Elle a une jolie voix maman. Peut-être reviendra-t- elle ? Si la dame vêtue de blanc est là, elle reviendra sûrement !",
@@ -120,7 +120,7 @@ define(["jquery"], function($){
 		},
         "coffre-bas-text4" : {
             fr : "Elle lui fait beaucoup confiance, et moi aussi.<br/>Mais Sarah a fermé le coffre et je ne peux pas sortir d’ici.",
-            en : "She trusts him, and so do I.<br/>But Sarah closes the chest and I can't get out of here."
+            en : "She trusts her, and so do I.<br/>But Sarah closes the chest and I can't get out of here."
         },
         "coffre-bas-text5" : {
             fr : "Ce qu’elle n’a jamais su, c’est que j’ai trouvé comment l’ouvrir de l’intérieur ! N’est-ce pas, Nori ?",
@@ -139,11 +139,11 @@ define(["jquery"], function($){
         },
         "piece-sombre-text2" : {
             fr : "Mais, je n’ai pas de feu… Le vieux Ted a ramené des bougies hier soir.",
-            en : "But, I don't have a fire… Old Ted brought back a candle last night."
+            en : "But, I don't have fire… Old Ted brought back a candle last night."
         },
         "piece-sombre-text3" : {
             fr : "Il a encore regardé ma maman d’un drôle d’air. Sarah n’aime pas ça. Elle dit que c’est un méchant pervers !",
-            en : "He still looked at my mother with a funny look. Sarah does not like it. She says it's a wicked pervert !"
+            en : "He still looked at my mother with a stupid look. Sarah doesn't like it. She says it's a dangerous pervert !"
         },
         "piece-sombre-text4" : {
             fr : "Moi, il me fait peur… Surtout quand il me caresse les cheveux avec sa vieille main toute sale.",
@@ -151,7 +151,7 @@ define(["jquery"], function($){
         },
         "piece-sombre-text5" : {
             fr : "— Je voudrais qu’il brûle en enfer comme un chien de Satan !<br/>Je me demande où sont les allumettes… Dans le tiroir de la cuisine ?",
-            en : "— I wish he burned in hell like a dog of Satan!<br/>I wonder where are the matches… In the drawer of the kitchen?"
+            en : "— I wish he burned in hell like a dog of Satan!<br/>I wonder where are the matches… In the kitchen drawer ?"
         },
         
         /**
@@ -159,7 +159,7 @@ define(["jquery"], function($){
          */
         "piece-text1" : {
             fr : "Chut ! Un bruit ! Cachons-nous, Nori ! Non, non, pas là ! Sous la table !",
-            en : "Hush! A noise ! Let's Hide, Nori! No, no, not there! Under the table !"
+            en : "Shh! A noise ! Let's Hide, Nori! No, no, not there! Under the table !"
         },
 
         /**
@@ -167,23 +167,23 @@ define(["jquery"], function($){
          */
         "piece-ted1" : {
         	fr : "C’est monsieur Ted… Il ne faut pas qu’il nous trouve ! Qu’est-ce qu’il fait ici ?… On dirait qu’il cherche quelque chose…",
-        	en : "It's Mr. Ted … He must not find us! What is he doing here? Looks like he is looking for something …"
+        	en : "It's Mr. Ted… He must not find us! What is he doing here? Looks like he is looking for something…"
         },
         "piece-ted2" : {
         	fr : "— Baaarf, cette vieille sorcière l’avait bien cherché !<br/> Il est saoul, comme d’habitude…",
-        	en : "— Baaarf, this old witch had looked for it! <br/> He is drunk, as usual …"
+        	en : "— Baaarf, this old witch had looked for trouble! <br/> He is drunk, as usual…"
         },
         "piece-ted3" : {
         	fr : "— Allez, sors de là, p‘tit démon de l’enfer ! Je sais qu’ta mère t’a cachée ici… Ils vont vous faire griller comme des rôtis de porc ! Mouahahaha !",
-        	en : "— Come on, get out of here, little demon of hell! I know your mother hid you here … They're going to grill you like roast pork! Mouahahaha!"
+        	en : "— Come on, get out of here, little demon of hell! I know your mother hide you here… They're going to grill you like roast pork! Mouahahaha!"
         },
         "piece-ted4" : {
         	fr : "Pfff, il ne tient même plus debout. Il faut qu’on trouve une solution, Nori. On pourrait peut-être l’assommer ? Il faudrait que j’atteigne la cheminée sans me faire remarquer…",
-        	en : "He does not even stand up. We need a solution, Nori. Maybe we could knock him out? I would have to reach the fire without being noticed…"
+        	en : "Pff, He does not even stand up. We need a solution, Nori. Maybe we could knock him out? I would have to reach the fireplace without being noticed…"
         },
         "piece-ted5" : {
         	fr : "— Allez, montre-toi, suppôt de Satan ! Haa, où est cette sale petite morveuse… Tu vas voir si je t’attrape…",
-        	en : "— Come on, show yourself, Satan's supporter! Haa, where's that dirty little snotcher? You'll see if I catch you…"
+        	en : "— Come on, show yourself, Devil worshipper ! Haa, where's that dirty little brat… You'll see if I catch you…"
         },
         
         /**
@@ -195,14 +195,14 @@ define(["jquery"], function($){
         },
         "piece2-text2" : {
         	fr : "Je sais ! Faisons en sorte qu’il ne puisse plus bouger, Nori ! Ensuite, nous irons sauver maman avec le gros bouquin plein de jolies images !",
-        	en : "I know ! Let's make sure he can not move, Nori! Then we will save Mom with the big book full of pretty pictures!"
+        	en : "I know ! Let's make sure he can't move, Nori! Then we will save Mom with the big book full of pretty pictures !"
         },
         /**
          * Fin
          */
         "cinematique-fin1" : {
         	fr : "Retournons dans le coffre ! Ici, personne ne pourra nous voir… Écoute…",
-        	en : "Let's go back to the trunk! Here, nobody can see us … Listen …"
+        	en : "Let's go back to the chest! Here, nobody can see us… Listen…"
         },
         "cinematique-fin2" : {
         	fr : "— Dorcas ?! Dorcas ?! Où es-tu ! Monsieur Ted ? Mais, qu’est-ce que vous faites ici ? Et que vous est-il arrivé ?",
@@ -214,7 +214,7 @@ define(["jquery"], function($){
         },
         "cinematique-fin4" : {
         	fr : "— Hm hmm hm hmm hmmmm !<br/>— Attendez ! Cessez donc de gigoter enfin… Voilà.",
-        	en : "— Hm hmm hm hmm hmmmm! <br/> - Wait! Stop wiggling at last … Here."
+        	en : "— Hm hmm hm hmm hmmmm! <br/>— Wait! Stop wiggling will you… Here."
         },
         "cinematique-fin5" : {
         	fr : "On va avoir de gros ennuis, Nori…",
@@ -222,11 +222,11 @@ define(["jquery"], function($){
         },
         "cinematique-fin6" : {
         	fr : "— Maudite sorcière ! Vous ne payerez rien pour attendre ! Vous allez voir ! Je vous brûlerai moi-même, vous et votre sale petite peste !",
-        	en : "— Cursed sorceress! You will pay nothing to wait! You'll see ! I will burn you and your dirty little plague!"
+        	en : "— Cursed sorceress! You will get what you deserve! You'll see ! I will burn you and your dirty little pest!"
         },
         "cinematique-fin7" : {
         	fr : "— Ho, je comprends ! C’est donc vous qui avez raconté ces mensonges. Sortez de mon auberge monsieur ! Vous êtes un monstre !",
-        	en : "— Ho, I understand! So it was you who told these lies. Get out of my inn sir! You are a monster!"
+        	en : "— Ho, I understand ! So it was you who told these lies. Get out of my inn sir! You are a monster!"
         },
         "cinematique-fin8" : {
         	fr : "— Maman !!!!<br/> — Dorcas ! Ma petite fille… J’ai eu si peur.",
@@ -238,7 +238,7 @@ define(["jquery"], function($){
         },
         "cinematique-fin10" : {
         	fr : "— Oui, ma fille… Il n’y a un qu’un fou pour croire à de telles histoires… Viens, allons manger un bon repas bien chaud ! Prépare les bougies ! Ce soir, c’est la pleine lune…",
-        	en : "— Yes, my daughter. There's only one fool to believe in such stories. Come, let's eat a good hot meal! Prepare the candles ! Tonight is the full moon…"
+        	en : "— Yes, my daughter. There's only insane to believe in such stories. Come, let's eat a good hot meal! Prepare the candles ! Tonight is the full moon…"
         },
         "cinematique-fin11" : {
         	fr : "— Ouiii ! Vient Nori, allons-y !",
