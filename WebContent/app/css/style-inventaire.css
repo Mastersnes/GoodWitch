@@ -5,6 +5,11 @@ inventaire mask {
 	cursor: pointer;
 	z-index: 1900;
 }
+inventaire .close {
+	z-index: 2100;
+	top: 12vh;
+    right: 10vw;
+}
 inventaire content {
 	z-index: 2000;
     position: absolute;
@@ -12,6 +17,7 @@ inventaire content {
 	background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("../img/game/inventaire.jpg");
+	border-radius: 5%;
 	
 	width: 63.5%; height: 69%;
 }

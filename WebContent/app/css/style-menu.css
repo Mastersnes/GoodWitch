@@ -27,7 +27,7 @@ ul.menu {
 ul.menu > li {
 	display: block;
 	text-align: center;
-	font-size: 3vh;
+	font-size: 4vh;
 	font-family: serif;
 	
 	width: 60%;
@@ -94,14 +94,17 @@ ul.popup-menu > li:hover {
 }
 
 .popup .close {
-	width: 30px; height: 30px;
-	position: absolute;
 	top: -1.5vh;
-	right: -0.5vw;
-	opacity : 1;
-	background-color: #413f3f;
-	border: 1px solid black;
-	border-radius: 50%;
+    right: -0.5vw;
+}
+
+.close {
+	width: 30px !important; height: 30px !important;
+	position: absolute !important;
+	opacity : 1 !important;
+	background-color: #413f3f !important;
+	border: 1px solid black !important;
+	border-radius: 50% !important;
 }
 
 a {

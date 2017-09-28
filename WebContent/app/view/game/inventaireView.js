@@ -61,8 +61,8 @@ function($, _, page) {
 				that.action.element.utiliser(tableau, that.action.elementDom, item);
 			});
 			
-			$("inventaire mask").off("mousedown touch");
-			$("inventaire mask").on("mousedown touch", function() {
+			$("inventaire mask, inventaire .close").off("mousedown touch");
+			$("inventaire mask, inventaire .close").on("mousedown touch", function() {
 				$(that.el).hide();
 			});
 		};
