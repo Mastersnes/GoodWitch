@@ -29,11 +29,13 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			this.inventaireView = new InventaireView(this);
 		};
 
-		this.go = function(lieu, save) {
-			$(".camera").css({
-				left : "0%"
-			});
-			this.position = 0;
+		this.go = function(lieu, save, noResetMove) {
+			if (!noResetMove) {
+    		    $(".camera").css({
+    				left : "0%"
+    			});
+    			this.position = 0;
+			}
 			this.move = "stop";
 			
 		    this.lieu = lieu;

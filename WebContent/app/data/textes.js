@@ -248,9 +248,9 @@ define(["jquery"], function($){
             fr : "Fin.",
             en : "The End."
         },
-        "follow-us" : {
-            fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> Vous pouvez également nous suivre sur <a alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>À bientôt !",
-            en : "Congratulation, you won ! <br/> Let's try our others games on <a alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> You can also follow us on <a alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>See you !"
+        "fin" : {
+            fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a target='_blank' alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> Vous pouvez également nous suivre sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>À bientôt !",
+            en : "Congratulation, you won ! <br/> Let's try our others games on <a target='_blank' alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> You can also follow us on <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>See you !"
         },
         
 		/**

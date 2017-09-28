@@ -227,7 +227,7 @@ define(["jquery"], function($){
 						break;
 	            	case "piece":
 						tableau.showText(["table-cacher"], function() {
-							tableau.go("piece-ted");
+							tableau.go("piece-ted", null, true);
 						});
 						break;
 					case "piece-ted":
@@ -640,7 +640,7 @@ define(["jquery"], function($){
                     case "casserole":
                     	inventaire.removeItem("casserole");
                     	tableau.showText(["ted-utiliser-casserole"], function() {
-                    		tableau.go("piece2");
+                    		tableau.go("piece2", null, true);
                     	});
                     	break;
                     default:
@@ -794,7 +794,7 @@ define(["jquery"], function($){
                     		inventaire.removeItem("allumette");
                     		inventaire.addItem("eventTedArrive", true);
                     		tableau.showText(["lampe-utiliser-allumette"], function() {
-                    			tableau.go("piece");
+                    			tableau.go("piece", null, true);
                     		});
                     	}else {
                     		tableau.showText(["lampe-utiliser-allumette-no"]);

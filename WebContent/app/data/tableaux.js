@@ -131,7 +131,7 @@ define(["jquery"], function($){
 				cinematique : ["cinematique-fin1","cinematique-fin2","cinematique-fin3","cinematique-fin4",
 				               "cinematique-fin5","cinematique-fin6","cinematique-fin7","cinematique-fin8",
 				               "cinematique-fin9","cinematique-fin10","cinematique-fin11","cinematique-fin12",
-				               "follow-us"],
+				               "fin"],
 				width:1024, height : 768,
 				elements : [
 				],
