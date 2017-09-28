@@ -217,8 +217,8 @@ define(["jquery"], function($){
         	en : "— Hm hmm hm hmm hmmmm! <br/> - Wait! Stop wiggling at last … Here."
         },
         "cinematique-fin5" : {
-        	fr : "On va avoir de gros ennuis Nori…",
-        	en : "We're going to have big trouble Nori…"
+        	fr : "On va avoir de gros ennuis, Nori…",
+        	en : "We're going to have big trouble, Nori…"
         },
         "cinematique-fin6" : {
         	fr : "— Maudite sorcière ! Vous ne payerez rien pour attendre ! Vous allez voir ! Je vous brûlerai moi-même, vous et votre sale petite peste !",
@@ -237,12 +237,20 @@ define(["jquery"], function($){
         	en : "— Me too, Sarah! Me too ! I'm glad you came back!"
         },
         "cinematique-fin10" : {
-        	fr : "— Oui, ma fille… Il n’y a un qu’un fou pour croire à de telles histoires… Viens, allons manger un bon repas bien chaud ! Prépare les bougies, ce soir, c’est la pleine lune…",
-        	en : "— Yes, my daughter. There's only one fool to believe in such stories. Come, let's eat a good hot meal! Prepare the candles tonight is the full moon …"
+        	fr : "— Oui, ma fille… Il n’y a un qu’un fou pour croire à de telles histoires… Viens, allons manger un bon repas bien chaud ! Prépare les bougies ! Ce soir, c’est la pleine lune…",
+        	en : "— Yes, my daughter. There's only one fool to believe in such stories. Come, let's eat a good hot meal! Prepare the candles ! Tonight is the full moon…"
         },
         "cinematique-fin11" : {
         	fr : "— Ouiii ! Vient Nori, allons-y !",
         	en : "— Yes! Come Nori, let's go!"
+        },
+        "cinematique-fin12" : {
+            fr : "Fin.",
+            en : "The End."
+        },
+        "follow-us" : {
+            fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> Vous pouvez également nous suivre sur <a alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>À bientôt !",
+            en : "Congratulation, you won ! <br/> Let's try our others games on <a alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> You can also follow us on <a alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>See you !"
         },
         
 		/**
@@ -488,7 +496,7 @@ define(["jquery"], function($){
         	en : "I'm already hidden."
         },
         "table-cacher-no-ted-assome" : {
-        	fr : "Cette cachette n'est plus sûr.",
+        	fr : "Cette cachette n'est plus sûre.",
         	en : "This hiding place is no longer safe."
         },
         
@@ -569,8 +577,8 @@ define(["jquery"], function($){
         	en : "An old barrel that serves as storage."
         },
         "tonneau-examiner" : {
-        	fr : "Chouette ! Une corde ! Exactement ce qu’il me fallait Nori !",
-        	en : "Super ! A rope ! Exactly what I needed Nori!"
+        	fr : "Chouette ! Une corde ! Exactement ce qu’il me fallait, Nori !",
+        	en : "Super ! A rope ! Exactly what I needed, Nori!"
         },
         "tonneau-vide" : {
         	fr : "Il n'y a plus rien d'intéressant…",
@@ -626,7 +634,7 @@ define(["jquery"], function($){
         	en : "This slat looks to be damaged."
         },
         "planque-livre-examiner" : {
-        	fr : "La cachette idéal !",
+        	fr : "La cachette idéale !",
         	en : "The perfect hiding place!"
         },
         "planque-livre-ouvrir" : {
@@ -665,15 +673,15 @@ define(["jquery"], function($){
          * Lire livre
          */
         "livre-lire" : {
-        	fr : "Voilà le livre Nori ! Nous allons pouvoir sauver maman ! Il suffit de trouver la bonne page et de réciter l’incantation. Tu es prêt ?",
-        	en : "This is the book Black! We can save Mom! Just find the right page and recite the incantation. You're ready ?"
+        	fr : "Voilà le livre, Nori ! Nous allons pouvoir sauver maman ! Il suffit de trouver la bonne page et de réciter l’incantation. Tu es prêt ?",
+        	en : "This is the book, Nori ! We can save Mom ! Just find the right page and recite the incantation. You're ready ?"
         },
         "livre-lire1" : {
         	fr : "Dans le temps et l’espace,<br/> De la lune à la Terre,",
         	en : "In time and space,<br/> From the moon to the Earth,"
         },
         "livre-lire2" : {
-        	fr : "Les astres jamais ne s’effacent<br/> Et contemple le monde.",
+        	fr : "Les astres jamais ne s’effacent<br/> Et contemplent le monde.",
         	en : "The stars never fade<br/> And contemplate the world."
         },
         "livre-lire3" : {
@@ -801,6 +809,10 @@ define(["jquery"], function($){
         "lampe-utiliser-dessin" : {
         	fr : "Je n’ai pas envie de le brûler !",
         	en : "I do not want to burn it !"
+        },
+        "lampe-utiliser-corde" : {
+            fr : "Serait-ce vraiment raisonnable ?",
+            en : "Would it be really reasonable ?"
         },
         "lampe-utiliser-allumette" : {
         	fr : "Super ! On va y voir un peu plus clair à présent !",

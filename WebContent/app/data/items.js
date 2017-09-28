@@ -786,6 +786,9 @@ define(["jquery"], function($){
                     case "dessin":
                     	tableau.showText(["lampe-utiliser-dessin"]);
                     	break;
+                    case "corde":
+                        tableau.showText(["lampe-utiliser-corde"]);
+                        break;
                     case "allumette":
                     	if (inventaire.hasItem("eventRideauMis", true)) {
                     		inventaire.removeItem("allumette");
