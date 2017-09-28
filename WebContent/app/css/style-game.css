@@ -45,7 +45,9 @@ fleche {
 }
 fleche:hover {opacity: 1;}
 fleche.gauche {
-    left: 0; top : 50%;
+	margin-top: 50vh;
+    transform: translateY(-50%);
+    left: 0;
     background-image: url("../img/game/flecheH.png");
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -55,15 +57,25 @@ fleche.gauche {
     -ms-filter: "FlipH";
 }
 fleche.droite {
-    right: 0; top : 50%;
+	margin-top: 50vh;
+    transform: translateY(-50%);
+    right: 0;
     background-image: url("../img/game/flecheH.png");
 }
 fleche.bas {
-    left: 50%; bottom : 0;
+	margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom : 0;
     background-image: url("../img/game/flecheV.png");
 }
 fleche.haut {
-	left: 50%; top : 0;
+	margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+	top : 0;
     background-image: url("../img/game/flecheV.png");
     -moz-transform: scaleY(-1);
     -o-transform: scaleY(-1);
