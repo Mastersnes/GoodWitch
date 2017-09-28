@@ -113,7 +113,7 @@ define(["jquery"], function($){
                      {id: "chemine", x:"1797", y:"0"},
                      {id: "planque-livre", x:"1690", y:"699"},
                      {id: "tapis", x:"1444", y:"614"},
-                     {id: "ted-assome", x:"1382", y:"630"},
+                     {id: "ted-assome", x:"1352", y:"629"},
                      {id: "table", x:"307", y:"468"},
                      {id: "tonneau", x:"1383", y:"315"},
                      {id: "lampe", x:"876", y:"445"},

@@ -332,7 +332,7 @@ define(["jquery"], function($){
 				}
             }
         },
-        "casserole3" : {
+        "casserole2" : {
             regarder : function(tableau, dom) {
                 tableau.showText(["casserole-regarder"]);
             },
@@ -343,20 +343,20 @@ define(["jquery"], function($){
                 tableau.showText(["casserole-ecouter"]);
             },
             prendre : function(tableau, dom) {
-            	switch (tableau.lieu) {
-	            	case "piece-sombre":
-						tableau.showText(["no-sombre"]);
-						break;
-	            	case "piece":
-						tableau.showText(["attention-ted-arrive"]);
-						break;
-					default:
-						tableau.showText(["casserole-prendre-no"]);
-						break;
-				}
-	        }
+                switch (tableau.lieu) {
+                    case "piece-sombre":
+                        tableau.showText(["no-sombre"]);
+                        break;
+                    case "piece":
+                        tableau.showText(["attention-ted-arrive"]);
+                        break;
+                    default:
+                        tableau.showText(["casserole-prendre-no"]);
+                        break;
+                }
+            }
         },
-        "casserole4" : {
+        "casserole3" : {
             regarder : function(tableau, dom) {
                 tableau.showText(["casserole-regarder"]);
             },
@@ -407,7 +407,7 @@ define(["jquery"], function($){
         /**
          * Bonne casserole
          */
-        "casserole2" : {
+        "casserole4" : {
             regarder : function(tableau, dom) {
                 tableau.showText(["casserole-ok-regarder"]);
             },

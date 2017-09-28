@@ -158,8 +158,8 @@ define(["jquery"], function($){
          * Piece
          */
         "piece-text1" : {
-            fr : "Chut ! Un bruit ! Cachons-nous Nori ! Non, non, pas là ! Sous la table !",
-            en : "Hush! A noise ! Let's Hide Nori! No, no, not there! Under the table !"
+            fr : "Chut ! Un bruit ! Cachons-nous, Nori ! Non, non, pas là ! Sous la table !",
+            en : "Hush! A noise ! Let's Hide, Nori! No, no, not there! Under the table !"
         },
 
         /**
@@ -174,12 +174,12 @@ define(["jquery"], function($){
         	en : "— Baaarf, this old witch had looked for it! <br/> He is drunk, as usual …"
         },
         "piece-ted3" : {
-        	fr : "— Allez, sors de là, p ‘tit démon de l’enfer ! Je sais qu’ta mère t’a cachée ici… Ils vont vous faire griller comme des rôtis de porc ! Mouahahaha !",
-        	en : "— Come on, get out of here, demon of hell! I know your mother hid you here … They're going to grill you like roast pork! Mouahahaha!"
+        	fr : "— Allez, sors de là, p‘tit démon de l’enfer ! Je sais qu’ta mère t’a cachée ici… Ils vont vous faire griller comme des rôtis de porc ! Mouahahaha !",
+        	en : "— Come on, get out of here, little demon of hell! I know your mother hid you here … They're going to grill you like roast pork! Mouahahaha!"
         },
         "piece-ted4" : {
-        	fr : "Pfff, il ne tient même plus debout. Il faut qu’on trouve une solution Nori. On pourrait peut-être l’assommer ? Il faudrait que j’atteigne la cheminée sans me faire remarquer…",
-        	en : "He does not even stand up. We need a Nori solution. Maybe we could knock him out? I would have to reach the fire without being noticed…"
+        	fr : "Pfff, il ne tient même plus debout. Il faut qu’on trouve une solution, Nori. On pourrait peut-être l’assommer ? Il faudrait que j’atteigne la cheminée sans me faire remarquer…",
+        	en : "He does not even stand up. We need a solution, Nori. Maybe we could knock him out? I would have to reach the fire without being noticed…"
         },
         "piece-ted5" : {
         	fr : "— Allez, montre-toi, suppôt de Satan ! Haa, où est cette sale petite morveuse… Tu vas voir si je t’attrape…",
@@ -496,7 +496,7 @@ define(["jquery"], function($){
          * Cheminée
          */
         "chemine-regarder" : {
-        	fr : "Une bonne grande cheminée ! Idéale pour les longs mois d’hivers !",
+        	fr : "Une bonne grande cheminée ! Idéal pour les longs mois d’hivers !",
         	en : "A good big fireplace! Ideal for long winters!"
         },
         "chemine-ecouter" : {
@@ -717,8 +717,8 @@ define(["jquery"], function($){
         	en : "If I could…"
         },
         "ted-utiliser-casserole" : {
-        	fr : "Et bim ! Prend ça vieux monstre dégoûtant !",
-        	en : "And boom ! Take that old disgusting monster!"
+        	fr : "Et bim ! Prend ça, vieux monstre dégoûtant !",
+        	en : "And boom ! Take that, old disgusting monster!"
         },
         /**
          * Ted assome
@@ -799,8 +799,8 @@ define(["jquery"], function($){
         	en : "If I empty the lamp, I will not be able to light it…"
         },
         "lampe-utiliser-dessin" : {
-        	fr : "Je n’ai pas envie de les brûler !",
-        	en : "I do not want to burn them!"
+        	fr : "Je n’ai pas envie de le brûler !",
+        	en : "I do not want to burn it !"
         },
         "lampe-utiliser-allumette" : {
         	fr : "Super ! On va y voir un peu plus clair à présent !",
@@ -830,8 +830,8 @@ define(["jquery"], function($){
         	en : "I'll see nice curtains here…"
         },
         "fenetre-ouvrir" : {
-        	fr : "Il fait un peu froid dehors ! Et ce ne serait pas très discret.",
-        	en : "It's a little cold outside! And it would not be very discreet."
+        	fr : "Il fait un peu froid dehors ! Et ce ne serait pas très discret !",
+        	en : "It's a little cold outside! And it would not be very discreet !"
         },
         "fenetre-ecouter" : {
         	fr : "On n’entend pas grand chose. C’est calme dehors.",
@@ -891,7 +891,7 @@ define(["jquery"], function($){
 		},
 		"no-ted" : {
 			fr : "Impossible avec Ted qui rode !",
-			en : "Impossible with Ted who rode!"
+			en : "Impossible with Ted who rode !"
 		},
 		"coffre-oublie-nori" : {
 		    fr : "Je ne peux tout de même pas laisser Nori ici tout seul !",
