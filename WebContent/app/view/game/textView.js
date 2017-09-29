@@ -61,7 +61,6 @@ function($, _) {
 			var that = this;
 			$("#popupText").off("mousedown touch");
 			$("#popupText").on("mousedown touch", function() {
-			    console.log("currentId : ", that.ids[that.current]);
 			    if (that.ids[that.current] != "fin") {
 			        that.next();
 			    }
