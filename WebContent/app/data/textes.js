@@ -382,11 +382,11 @@ define(["jquery"], function($){
 		 */
 		"tige-abime-examiner" : {
 			fr : "Ce renfort-ci a l’air d’être abîmé…",
-			en : "This reinforcement looks to be damaged…"
+			en : "This reinforcement looks damaged…"
 		},
 		"tige-abime-prendre" : {
 			fr : "Ha ! Ça bouge, Nori ! Mais je n’arrive pas à le détacher…",
-			en : "Ha ! It moves, Nori! But I can't detach it…"
+			en : "Ha ! It moves, Nori ! But I can't detach it…"
 		},
 		"tige-abime-utiliser-tournevis" : {
 			fr : "Ça y est ! Je l’ai !",
@@ -413,7 +413,7 @@ define(["jquery"], function($){
         },
         "nori-tournevis-prendre" : {
             fr : "C’est mon tournevis secret ! Je l’ai volé à Ted la dernière fois.",
-            en : "It's my secret screwdriver! I flew it to Ted last time."
+            en : "It's my secret screwdriver ! I stole it to Ted last time."
         },
         "nori-gouter" : {
             fr : "Hum… Ça a le goût d’algue…",
@@ -436,7 +436,7 @@ define(["jquery"], function($){
         },
         "boite-prendre-no" : {
             fr : "Je pense que je devrais plutôt le laisser ici.",
-            en : "I think I should rather leave it here."
+            en : "I think I should leave it here."
         },
         "boite-examiner" : {
             fr : "Il n’y a pas grand chose, mise à part quelques pierres de protections.",
@@ -597,7 +597,7 @@ define(["jquery"], function($){
         },
         "meuble-examiner" : {
         	fr : "Chouette ! Mes dessins !",
-        	en : "Yeah ! My draws"
+        	en : "Yeah ! My draws !"
         },
         "meuble-examiner-vide" : {
         	fr : "Il n'y a plus que des vieux plats…",
@@ -616,11 +616,11 @@ define(["jquery"], function($){
         },
         "tapis-examiner" : {
         	fr : "Il y a quelque chose de caché en dessous ! Moi, je le sais !",
-        	en : "There's something hidden underneath! I know that!"
+        	en : "There's something hidden underneath ! I know that !"
         },
         "tapis-gouter" : {
         	fr : "Non, ce ne doit pas être bon…",
-        	en : "No, it does not have to be good…"
+        	en : "No, it doesn't have to be good…"
         },
         "tapis-soulever" : {
         	fr : "Voyons voir là-dessous…",
@@ -635,23 +635,23 @@ define(["jquery"], function($){
         },
         "planque-livre-examiner" : {
         	fr : "La cachette idéale !",
-        	en : "The perfect hiding place!"
+        	en : "The perfect hiding place !"
         },
         "planque-livre-ouvrir" : {
         	fr : "Aïe ! Je n’y arrive pas avec mes doigts…",
-        	en : "Ouch! I can not do it with my fingers…"
+        	en : "Ouch! I can't do it with my fingers…"
         },
         "planque-livre-ecouter" : {
         	fr : "Ha !! Ça sonne creux ici !",
-        	en : "Ha ! It sounds hollow here!"
+        	en : "Ha !! It sounds hollow here !"
         },
         "planque-livre-utiliser-nori" : {
         	fr : "Tu n’y arrivera pas non plus Nori.",
-        	en : "You can not do Nori either."
+        	en : "You will not succeed either, Nori."
         },
         "planque-livre-utiliser-casserole" : {
         	fr : "Taper dessus n’a pas l’air de fonctionner…",
-        	en : "Tapping on does not seem to work …"
+        	en : "Hit on it doesn't seem to work…"
         },
         "planque-livre-utiliser-dessin" : {
         	fr : "Non, je ne vais pas les ranger ici.",
@@ -663,7 +663,7 @@ define(["jquery"], function($){
         },
         "planque-livre-utiliser-couteau" : {
         	fr : "Super ! Ça s’ouvre !",
-        	en : "Yeah ! It's open"
+        	en : "Yeah ! It's open !"
         },
         "planque-livre-no" : {
         	fr : "J'ai déjà le livre.",
@@ -686,7 +686,7 @@ define(["jquery"], function($){
         },
         "livre-lire3" : {
         	fr : "Que la colère d’Hecate gronde,<br/> Et rétablisse la vérité",
-        	en : "Let Hecate's anger rumble,<br/> And restore the truth"
+        	en : "Let Hecate's rage rumble,<br/> And restore the truth"
         },
         "livre-lire4" : {
         	fr : "Afin qu’ici soit retrouvé<br/> Le bien qui m’a été enlevé.",
@@ -697,12 +697,12 @@ define(["jquery"], function($){
         	en : "In the light of the moonlight<br/> Let my words be heard."
         },
         "livre-lire6" : {
-        	fr : "Ainsi soit-il",
-        	en : "So be it"
+        	fr : "Ainsi soit-il !",
+        	en : "So be it !"
         },
         "livre-lire7" : {
         	fr : "…<br/> Nori ? Tu entends ? Vite, vite, quelqu’un arrive !! Cachons-nous !",
-        	en : "…<br/> Nori? You hear ? Quick, fast, someone arrives !! Let's hide!"
+        	en : "…<br/> Nori ? You hear ? Quick, fast, someone arrives !! Let's hide !"
         },
         
         /**
@@ -710,15 +710,15 @@ define(["jquery"], function($){
          */
         "ted-regarder" : {
         	fr : "Berk, ce vieux Ted est une laideur ! Il me fait très peur !!",
-        	en : "Berck, this old Ted is ugliness! It makes me very scared !!"
+        	en : "Berck, this old Ted is very ugly ! He really scare me !!"
         },
         "ted-ecouter" : {
         	fr : "Il dit des bêtises, comme toujours ! Je le déteste !",
-        	en : "He says nonsense, as always! I hate it !"
+        	en : "He says nonsense, as always! I hate him !"
         },
         "ted-utiliser-nori" : {
         	fr : "Certainement pas ! Ted serait capable de le brûler !",
-        	en : "Certainly not ! Ted would be able to burn it!"
+        	en : "Certainly not ! Ted would be able to burn it !"
         },
         "ted-utiliser-tournevis" : {
         	fr : "Si je pouvais…",
@@ -726,18 +726,18 @@ define(["jquery"], function($){
         },
         "ted-utiliser-casserole" : {
         	fr : "Et bim ! Prend ça, vieux monstre dégoûtant !",
-        	en : "And boom ! Take that, old disgusting monster!"
+        	en : "And boom ! Take that, old disgusting monster !"
         },
         /**
          * Ted assome
          */
         "ted-assome-regarder" : {
         	fr : "Un vieux Ted allongé comme un rat mort ! Bien fait pour lui !",
-        	en : "An old Ted lying like a dead rat! Well done for him!"
+        	en : "An old Ted lying like a dead rat ! Well done for him !"
         },
         "ted-assome-examiner" : {
         	fr : "Ted se balade toujours avec son couteau de chasse. Je vais le prendre au cas où.",
-        	en : "Ted always walks with his hunting knife. I'll take it in case."
+        	en : "Ted always has his hunting knife with him. I'll take it just in case."
         },
         "ted-assome-examiner-no" : {
         	fr : "Rien de bien intéressant…",
@@ -757,7 +757,7 @@ define(["jquery"], function($){
         },
         "ted-assome-utiliser-tournevis" : {
         	fr : "Même démonté, il ne servirait à rien !",
-        	en : "Even disassembled, it would serve no purpose!"
+        	en : "Even disassembled, He is good for nothing !"
         },
         "ted-assome-utiliser-couteau" : {
         	fr : "Si j’avais plus de temps… Peut-être…",
@@ -772,7 +772,7 @@ define(["jquery"], function($){
          */
         "echelle-regarder" : {
         	fr : "Une échelle bien pratique ! Mais il faut bien faire attention de ne pas tomber !",
-        	en : "A very practical ladder! But be careful not to fall!"
+        	en : "A very useful ladder ! But be careful not to fall !"
         },
         "echelle-gouter" : {
         	fr : "Ça a un petit goût de terre…",
@@ -780,7 +780,7 @@ define(["jquery"], function($){
         },
         "echelle-examiner" : {
         	fr : "Je ne dois aller nulle part…",
-        	en : "I do not have to go anywhere…"
+        	en : "I don't have to go anywhere…"
         },
         
         /**
@@ -792,7 +792,7 @@ define(["jquery"], function($){
         },
         "lampe-ouvrir" : {
         	fr : "Non ! Maman m’a dit de ne pas toucher !",
-        	en : "No ! Mom told me not to touch!"
+        	en : "No ! Mom told me not to touch !"
         },
         "lampe-utiliser-nori" : {
         	fr : "Nori, tu es encore trop petit pour jouer avec le feu…",
@@ -808,7 +808,7 @@ define(["jquery"], function($){
         },
         "lampe-utiliser-dessin" : {
         	fr : "Je n’ai pas envie de le brûler !",
-        	en : "I do not want to burn it !"
+        	en : "I don't want to burn it !"
         },
         "lampe-utiliser-corde" : {
             fr : "Serait-ce vraiment raisonnable ?",
@@ -816,26 +816,26 @@ define(["jquery"], function($){
         },
         "lampe-utiliser-allumette" : {
         	fr : "Super ! On va y voir un peu plus clair à présent !",
-        	en : "Great ! We'll see a little clearer now!"
+        	en : "Great ! We'll see a little lighter now!"
         },
         "lampe-utiliser-allumette-no" : {
         	fr : "Non Nori ! On va se faire repérer !",
-        	en : "No Nori! We'll be spotted!"
+        	en : "No Nori! We'll be spotted !"
         },
         "lampe-allumer" : {
         	fr : "Sans allumettes ? Je ne sais pas encore faire ce tour de magie.",
-        	en : "Without matches ? I do not know how to do this magic trick yet."
+        	en : "Without matches ? I don't know how to do this magic trick yet."
         },
         "lampe-allumer-deja" : {
             fr : "Elle est déjà allumée.",
-            en : "It's already light."
+            en : "It's already on."
         },
         /**
          * Fenetre
          */
         "fenetre-regarder" : {
         	fr : "Le ciel est magnifique à cette heure-ci !",
-        	en : "The sky is beautiful at this hour!"
+        	en : "The sky is beautiful at this hour !"
         },
         "fenetre-examiner" : {
         	fr : "Je verrais bien de beaux rideaux ici…",
@@ -843,19 +843,19 @@ define(["jquery"], function($){
         },
         "fenetre-ouvrir" : {
         	fr : "Il fait un peu froid dehors ! Et ce ne serait pas très discret !",
-        	en : "It's a little cold outside! And it would not be very discreet !"
+        	en : "It's a little cold outside ! And it would not be very discreet !"
         },
         "fenetre-ecouter" : {
         	fr : "On n’entend pas grand chose. C’est calme dehors.",
-        	en : "We do not hear much. It's quiet outside."
+        	en : "We don't hear much. It's quiet outside."
         },
         "fenetre-utiliser-nori" : {
         	fr : "Tu as vu comme la lune est belle, Nori ?",
-        	en : "You saw how beautiful the moon is, Nori?"
+        	en : "You saw how beautiful the moon is, Nori ?"
         },
         "fenetre-utiliser-tournevis" : {
         	fr : "Heu… Je n’ai pas envie de faire ça maintenant.",
-        	en : "Uh … I do not want to do that now."
+        	en : "Uh… I don't want to do that now."
         },
         "fenetre-utiliser-casserole" : {
         	fr : "Je vais casser une fenêtre avec ça !",
@@ -879,11 +879,11 @@ define(["jquery"], function($){
         },
         "allumette-prendre" : {
         	fr : "Je vais prendre ça au cas où !",
-        	en : "I'll take that in case of!"
+        	en : "I'll take that in case !"
         },
         "allumette-ecouter" : {
         	fr : "J’aime bien le bruit d’une boîte d’allumettes quand on la secoue !",
-        	en : "I like the sound of a matchbox when you shake it!"
+        	en : "I like the sound of a matchbox when you shake it !"
         },
         
 		/**
@@ -895,7 +895,7 @@ define(["jquery"], function($){
 		},
 		"attention-ted-arrive" : {
 			fr : "Pas le temps, je dois vite me cacher !",
-			en : "No time, I must hide quickly!"
+			en : "No time, I must hide quickly !"
 		},
 		"no-sombre" : {
 			fr : "Il fait beaucoup trop sombre, je n'y vois rien !",
@@ -956,32 +956,7 @@ define(["jquery"], function($){
         "tableau-coffre-bas" : {
             fr : "Bas du coffre",
             en : "Bottom of trunk"
-        },
-		
-		
-		/**
-		 * Fin
-		 */
-		"end0" : {
-			fr : "F&eacute;licitation, vous avez termin&eacute; le jeu !",
-			en : "Congratulations, you won !"
-		},
-		"end1" : {
-			fr : "N&apos;h&eacute;sitez pas &agrave; donner votre avis sur notre page <a target='_blank' alt='Les jeux de Bebel' href='https://www.facebook.com/lesjeuxdebebel/'>Les jeux de Bebel</a>.",
-			en : "Give us your opinion about the game on our page : <a target='_blank' alt='Les jeux de Bebel' href='https://www.facebook.com/lesjeuxdebebel/'>Les jeux de Bebel</a>."
-		},
-		"end2" : {
-			fr : "Ou bien sur <a target='_blank' alt='Diaspora' href='https://framasphere.org/tags/bebel'>Diaspora</a>.",
-			en : "Or on <a target='_blank' alt='Diaspora' href='https://framasphere.org/tags/bebel'>Diaspora</a>."
-		},
-		"end3" : {
-			fr : "Vous pouvez aussi retenter votre chance en lancant une nouvelle partie.",
-			en : "You can also retry by launching a new game."
-		},
-		"end4" : {
-			fr : "D&eacute;couvrez nos autres jeux sur notre <a target='_blank' alt='Site internet' href='http://lesjeuxdebebel.fr.nf/Bebel'>Site internet</a>.",
-			en : "Discover our other games on our <a target='_blank' alt='Website' href='http://lesjeuxdebebel.fr.nf/Bebel'>Website</a>."
-		}
+        }
 	};
 	
 	return {
