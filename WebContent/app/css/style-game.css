@@ -19,7 +19,7 @@
 /**
 * les differents plans
 **/
-plan, planFar, element, fleche, actions, .camera, .popupText, inventaire{
+plan, planFar, element, fleche, actions, .camera, .popupText, inventaire, lampe{
 	position: absolute;
 	background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -129,4 +129,13 @@ fleche:hover, action:hover {
 	width: 80%; height: 80%;
 	margin-left: 4%; 
 	margin-top: 0%;
+}
+
+lampe {
+	pointer-events: none;
+	z-index: 2000;
+	width: 30%; height: 33%;
+	box-shadow:0 0 0 10000px rgba(0,0,0,1), inset 0 0 0 rgba(0,0,0,1);
+	background-image: url("../img/game/lampe.png");
+	left: 50%; top: 50%;
 }

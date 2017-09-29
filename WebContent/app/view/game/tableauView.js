@@ -62,6 +62,9 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
     			        modifys : []
     			};
 			}else this.scene.postRender(this.postRender[lieu]);
+			
+			if (this.tableau.lampe) $("lampe").show();
+            else $("lampe").hide();
 
 			if (!this.alreadyLoop) {
 			    this.makeEvents();
@@ -167,17 +170,35 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			$(".scene").off("mousemove");
             $(".scene").on("mousemove", function(evt){
             	var decalage = parseInt($(".scene").css("margin-left"));
-            	var taille = parseInt($(".scene").css("width"));
-            	var x = evt.pageX - decalage;
-            	var xPercent = Utils.toPercent(x, taille);
+            	var taille = {
+            	        x : parseInt($(".scene").css("width")),
+            	        y : parseInt($(".scene").css("height"))
+            	};
             	
-            	if (xPercent < 5) {
+            	var mouse = {
+            	        x : Utils.toPercent((evt.pageX - decalage), taille.x),
+            	        y : Utils.toPercent(evt.pageY, taille.y)
+            	};
+            	
+            	if (mouse.x < 5) {
             		that.move = "left";
-            	}else if (xPercent > 95) {
+            	}else if (mouse.x > 95) {
             		that.move = "right";
             	}else {
             		that.move = "stop";
             	}
+            	
+            	if (that.tableau.lampe) {
+                    var lampe = {
+                            w : Utils.toPercent($("lampe").width(), 1024),
+                            h : Utils.toPercent($("lampe").height(), 768)
+                    };
+                    $("lampe").css({
+                        left : (mouse.x - (lampe.w/2)) + "%",
+                        top : (mouse.y - (lampe.h/2)) + "%"
+                    });
+            	}
+            	
             });
 		};
 		
