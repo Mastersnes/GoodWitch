@@ -245,8 +245,8 @@ define(["jquery"], function($){
         	en : "— Yes! Come Nori, let's go!"
         },
         "cinematique-fin12" : {
-            fr : "Fin.",
-            en : "The End."
+            fr : "À suivre…",
+            en : "To be continued…"
         },
         "fin" : {
             fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a target='_blank' alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> Vous pouvez également nous suivre sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>À bientôt !",
