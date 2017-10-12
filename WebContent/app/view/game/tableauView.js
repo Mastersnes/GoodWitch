@@ -41,8 +41,10 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		    this.lieu = lieu;
 			this.tableau = Tableaux.get(lieu);
 			
-			this.mediatheque.stopAllMusic();
-			if (this.tableau.music) this.mediatheque.play(this.tableau.music);
+			if (this.tableau.music) {
+				this.mediatheque.stopAllMusic();
+				this.mediatheque.play(this.tableau.music);
+			}
 			
 			this.scene.initScene(lieu);
 			

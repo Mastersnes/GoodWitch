@@ -2,7 +2,7 @@
 define(["jquery"], function($){
 	var data = {
 		"coffre" : {
-			music : "music/coffre.wav",
+			music : "music/coffre.mp3",
 			visite : false,
 			cinematique : ["cinematique-coffre1","cinematique-coffre2", "coffre-text1", "coffre-text2"],
 			width:1024, height : 768,
@@ -18,6 +18,7 @@ define(["jquery"], function($){
 	        }
 		},
 		"coffre-bas" : {
+			music : null,
 			visite : false,
 			cinematique : ["coffre-bas-text1", "coffre-bas-text2", "coffre-bas-text3", "coffre-bas-text4", "coffre-bas-text5", "coffre-bas-text6"],
 			width:1024, height : 768,
@@ -32,6 +33,7 @@ define(["jquery"], function($){
             }
         },
         "piece-sombre" : {
+        	music : "music/piece-sombre.mp3",
             visite : false,
             cinematique : ["piece-sombre-text1", "piece-sombre-text2", "piece-sombre-text3", "piece-sombre-text4", "piece-sombre-text5"],
             width:3072, height : 768,
