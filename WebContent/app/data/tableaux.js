@@ -59,6 +59,7 @@ define(["jquery"], function($){
             }
            },
            "piece" : {
+        	   music : "music/reperee.mp3",
                visite : false,
                cinematique : ["piece-text1"],
                width:3072, height : 768,
@@ -82,6 +83,7 @@ define(["jquery"], function($){
                }
            },
            "piece-ted" : {
+        	   music : "music/ted-is-here.mp3",
                visite : false,
                cinematique : ["piece-ted1","piece-ted2","piece-ted3","piece-ted4","piece-ted5"],
                width:3072, height : 768,
@@ -106,6 +108,7 @@ define(["jquery"], function($){
                }
            },
            "piece2" : {
+        	   music : "music/piece-sombre.mp3",
                visite : false,
                cinematique : ["piece2-text1","piece2-text2"],
                width:3072, height : 768,
@@ -130,6 +133,7 @@ define(["jquery"], function($){
                }
            },
            "fin" : {
+        	   	music : "music/fin.mp3",
 				visite : false,
 				cinematique : ["cinematique-fin1","cinematique-fin2","cinematique-fin3","cinematique-fin4",
 				               "cinematique-fin5","cinematique-fin6","cinematique-fin7","cinematique-fin8",
