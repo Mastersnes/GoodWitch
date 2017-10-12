@@ -1,9 +1,10 @@
 <div class="content">
 	<button type="button" class="close" aria-label="Close">X</button>
-	<div class="texte">
-		<p><%=data.text.get("illustration")%> : Alicia Nesztler</p>
-		<p><%=data.text.get("developpement")%> : Steven Nesztler</p>
-		<p class="hidden"><%=data.text.get("musique")%> : Alicia Nesztler</p>
-		<p><%=data.text.get("textes")%> : A.E Ferrets</p>
-	</div>
+	<ul class="texte popup-menu">
+		<li id="deviant"><%=data.text.get("illustration")%> : Alicia Nesztler</li>
+		<li><%=data.text.get("developpement")%> : Steven Nesztler</li>
+		<li><%=data.text.get("musique")%> : Alicia Nesztler</li>
+		<li id="aeferrets"><%=data.text.get("textes")%> : A.E Ferrets</li>
+	</ul>
+	<div class="text text-center"><%=data.text.get("followUs")%></div>
 </div>

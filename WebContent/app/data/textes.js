@@ -68,6 +68,10 @@ define(["jquery"], function($){
 			fr : "Textes",
 			en : "Texts"
 		},
+		"followUs" : {
+            fr : "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.",
+            en : "Follow us on <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>."
+        },
 		"partenaires" : {
 			fr : "Partenaires",
 			en : "Partners"
