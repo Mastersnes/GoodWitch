@@ -2,6 +2,7 @@
 define(["jquery"], function($){
 	var data = {
 		"coffre" : {
+			music : "music/coffre.wav",
 			visite : false,
 			cinematique : ["cinematique-coffre1","cinematique-coffre2", "coffre-text1", "coffre-text2"],
 			width:1024, height : 768,

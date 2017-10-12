@@ -42,6 +42,11 @@ define(["jquery",
             var parent = this.parent;
             var tableau = parent.tableau;
             
+            if (tableau.music) {
+            	this.mediatheque.stopAllMusic();
+            	this.mediatheque.play(tableau.music);
+            }
+            
             this.size = {
             		width : Utils.toPercent(tableau.width, 1024),
             		height : Utils.toPercent(tableau.height, 768)
