@@ -124,8 +124,8 @@ define(["jquery"], function($){
                      {id: "tonneau", x:"1383", y:"315"},
                      {id: "lampe", x:"876", y:"445"},
                      {id: "casserole1", x:"1949", y:"94"},
+                     {id: "casserole2", x:"2077", y:"108"},
                      {id: "casserole3", x:"2209", y:"108"},
-                     {id: "casserole4", x:"2326", y:"126"},
                      {id: "casserole5", x:"2447", y:"140"},
                      {id: "pot-charbon", x:"1931", y:"500"}
                ],

@@ -72,6 +72,20 @@ define(["jquery"], function($){
             fr : "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.",
             en : "Follow us on <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>."
         },
+        
+        "clue" : {
+            fr : "Indice",
+            en : "Clue"
+        },
+        "mute" : {
+            fr : "Mute",
+            en : "Mute"
+        },
+        "quit" : {
+            fr : "Quitter",
+            en : "Exit"
+        },
+        
 		"partenaires" : {
 			fr : "Partenaires",
 			en : "Partners"
@@ -960,6 +974,53 @@ define(["jquery"], function($){
         "tableau-coffre-bas" : {
             fr : "Bas du coffre",
             en : "Bottom of trunk"
+        },
+        /**
+         * Indices
+         */
+        "indice-tournevis" : {
+            fr : "Peut-être que je devrais prendre mon trésor, cela pourrait m'aider.<br/> Mais, où l'ai-je mis déjà ? Tu te souviens, Nori ?",
+            en : "Maybe should i take my treasure, that could help me.<br/> But where is it again ? Do you remember Nori ?"
+        },
+        "indice-renfort" : {
+            fr : "Ce coffre est très bien renforcé sur les côtés de la serrure. Peut-être que je pourrais arranger ça ?",
+            en : "This chest is very well reinforced on the sides of the lock. Maybe I could fix that ?"
+        },
+        "indice-crochetage" : {
+            fr : "Voilà, Nori ! Nous avons tous les outils qu’il nous faut pour sortir d’ici ! Il n’y a plus qu’à se servir de tout ce que l’on a trouvé.",
+            en : "There you go, Nori ! We have all the tools we need to get out of here ! There is nothing left but to use all that we found."
+        },
+        "indice-rideau" : {
+            fr : "Il ne faut pas qu’on nous repère avec la lueur de la lampe…<br/> J’ai toujours trouvé que cette pièce serait plus jolie avec des rideaux ! Tu te souviens de mon joli dessin, Nori ?",
+            en : "We must not be spotted with the light of the lamp… I always found that this room would be prettier with curtains ! Remember my pretty drawing, Nori ?"
+        },
+        "indice-lampe" : {
+            fr : "On n’y voit pas grand chose. Ce serait mieux si la lampe était allumée.",
+            en : "We don't see anything. It would be better if the lamp was on."
+        },
+        "indice-cacher" : {
+            fr : "Quelqu’un arrive ! Cachons-nous sous quelque chose !",
+            en : "Someone comes ! Let's hide under something !"
+        },
+        "indice-assomer" : {
+            fr : "Ted est fort, mais un bon coup sur la tête devrait lui remettre les idées en place !<br/> D’autant qu’il a toujours apprécié nos jolies casseroles…",
+            en : "Ted is strong, but a good blow on his head should set him straight !<br/> Especially as he has always appreciated our pretty pans…"
+        },
+        "indice-ligoter" : {
+            fr : "Je ne serai pas tranquille tant qu’il pourra encore bouger…",
+            en : "I will not be safe as long as he can still move…"
+        },
+        "indice-fouiller" : {
+            fr : "Et si l’on découvrait les petits secrets de Ted ? Ce serait bien de s’assurer que nous ne risquons plus rien, Nori !",
+            en : "What if we discovered Ted's little secrets ? It would be nice to make sure we don't risk anything, Nori !"
+        },
+        "indice-planque" : {
+            fr : "Maman a caché son livre quelque part dans la pièce. Mais, moi, je sais où est cette cachette ! Il n’y a pas que les poussières que l’on peut cacher…",
+            en : "Mother hid her book somewhere in the room. But I know where this hiding-place is ! It's not only the dust that can be hidden..."
+        },
+        "indice-planque-couteau" : {
+            fr : "Je n’arrive pas à l’ouvrir à main nues. Je devrais peut-être utiliser un objets plus plat pour faire levier…<br/> Je sais ! Pour une fois, ce vieux Ted aura été utile !",
+            en : "I can't open it with my bare hands. Maybe should i use a more flat object to leverage... I know! For once, this old Ted was useful !"
         }
 	};
 	

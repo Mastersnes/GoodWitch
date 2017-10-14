@@ -19,7 +19,7 @@
 /**
 * les differents plans
 **/
-plan, planFar, element, fleche, actions, .camera, .popupText, inventaire, lampe{
+plan, planFar, element, fleche, actions, .camera, .popupText, inventaire, lampe, params{
 	position: absolute;
 	background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -39,7 +39,7 @@ fleche {
     display: none;
     z-index: 10;
     width: 50; height: 42;
-    opacity: 0.3;
+    opacity: 0.7;
     -webkit-transition: opacity 1s; /* Safari */
     transition: opacity 1s;
 }
@@ -138,4 +138,28 @@ lampe {
 	box-shadow:0 0 0 10000px rgba(0,0,0,1), inset 0 0 0 rgba(0,0,0,1);
 	background-image: url("../img/game/lampe.png");
 	left: 50%; top: 50%;
+}
+
+params {
+	z-index: 1800;
+	right: 0;
+	color : white;
+	background-color: black;
+	cursor: pointer;
+}
+
+params ul {
+	display: inline-block;
+	-webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;
+}
+
+params div {
+	display: inline-block;
+}
+params div:hover {
+	color: gray;
+}
+params div#mute.active {
+	text-decoration: line-through;
 }

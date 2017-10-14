@@ -5,10 +5,11 @@ define(["jquery",
         "app/view/game/sceneView",
         "app/view/game/textView",
         "app/view/game/inventaireView",
+        "app/view/game/paramsView",
         "app/data/tableaux",
-        "app/data/items"
+        "app/data/items",
         ],
-function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
+function($, _, Utils, Scene, TextView, InventaireView, ParamsView, Tableaux, Items) {
 	'use strict';
 
 	return function(parent) {
@@ -27,6 +28,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			this.scene = new Scene(this);
 			this.textView = new TextView(this);
 			this.inventaireView = new InventaireView(this);
+			this.paramsView = new ParamsView(this);
 		};
 
 		this.go = function(lieu, save, noResetMove) {
@@ -84,6 +86,11 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 		
 		this.showInventaire = function(action){
 			this.inventaireView.show(action);
+		};
+		
+		this.showClue = function(action){
+			var clue = $("clue").attr("key");
+			this.showText([clue]);
 		};
 		
 		this.removeElement = function(domElement) {
@@ -150,6 +157,7 @@ function($, _, Utils, Scene, TextView, InventaireView, Tableaux, Items) {
 			
 			this.scene.makeEvents();
 			this.textView.makeEvents();
+			this.paramsView.makeEvents();
 			
 			$(document).unbind("keydown");
 			$(document).keydown(function(e) {

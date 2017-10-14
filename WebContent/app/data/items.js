@@ -56,6 +56,7 @@ define(["jquery"], function($){
 						tableau.modifyElement(dom, "serrure-done");
 						tableau.showText(["serrure-tige-utiliser-tournevis"], function() {
 							if (inventaire.hasItem("nori")) {
+								$("clue").attr("key", "indice-rideau");
 							    tableau.go("piece-sombre");
 							}else {
 							    tableau.showText(["coffre-oublie-nori"]);
@@ -76,6 +77,8 @@ define(["jquery"], function($){
 			ouvrir : function(tableau, dom) {
 			    var inventaire = tableau.inventaireView;
 			    if (inventaire.hasItem("nori")) {
+			    	var oldKey = $("clue").attr("key");
+			    	if (oldKey == "indice-crochetage") $("clue").attr("key", "indice-rideau");
                     tableau.go("piece-sombre");
                 }else {
                     tableau.showText(["coffre-oublie-nori"]);
@@ -125,6 +128,7 @@ define(["jquery"], function($){
 						tableau.showText(["tige-abime-utiliser-tournevis"]);
 						inventaire.addItem("tige");
 						tableau.removeElement(dom);
+						$("clue").attr("key", "indice-crochetage");
 						break;
 					case "nori":
 						tableau.showText(["tige-utiliser-nori"]);
@@ -157,6 +161,7 @@ define(["jquery"], function($){
                 }else {
                     tableau.showText(["nori-tournevis-prendre"]);
                     inventaire.addItem("tournevis");
+                    $("clue").attr("key", "indice-renfort");
                     tableau.saveGame();
                 }
             },
@@ -226,7 +231,8 @@ define(["jquery"], function($){
 						tableau.showText(["table-cacher-no-sombre"]);
 						break;
 	            	case "piece":
-						tableau.showText(["table-cacher"], function() {
+	            		$("clue").attr("key", "indice-assomer");
+	            		tableau.showText(["table-cacher"], function() {
 							tableau.go("piece-ted", null, true);
 						});
 						break;
@@ -565,6 +571,7 @@ define(["jquery"], function($){
 					case "piece2":
 						tableau.showText(["tapis-soulever"]);
 		            	tableau.removeElement(dom);
+		            	$("clue").attr("key", "indice-planque-couteau");
 						break;
 					default:
 						tableau.showText(["utiliser-non-prevu"]);
@@ -639,6 +646,7 @@ define(["jquery"], function($){
                     	break;
                     case "casserole":
                     	inventaire.removeItem("casserole");
+                    	$("clue").attr("key", "indice-ligoter");
                     	tableau.showText(["ted-utiliser-casserole"], function() {
                     		tableau.go("piece2", null, true);
                     	});
@@ -663,6 +671,7 @@ define(["jquery"], function($){
 	            		tableau.showText(["ted-assome-examiner"]);
 	            		inventaire.addItem("couteau");
 	            		inventaire.addItem("eventCouteauPris", true);
+	            		$("clue").attr("key", "indice-planque");
 	            	}
             	}else {
             		tableau.showText(["ted-assome-examiner-peur"]);
@@ -693,6 +702,7 @@ define(["jquery"], function($){
                     	tableau.showText(["ted-assome-utiliser-corde"]);
                     	inventaire.removeItem("corde");
                     	inventaire.addItem("eventTedAttache", true);
+                    	$("clue").attr("key", "indice-fouiller");
                     	break;
                     default:
                         tableau.showText(["utiliser-non-prevu"]);
@@ -793,6 +803,7 @@ define(["jquery"], function($){
                     	if (inventaire.hasItem("eventRideauMis", true)) {
                     		inventaire.removeItem("allumette");
                     		inventaire.addItem("eventTedArrive", true);
+                    		$("clue").attr("key", "indice-cacher");
                     		tableau.showText(["lampe-utiliser-allumette"], function() {
                     			tableau.go("piece", null, true);
                     		});
@@ -870,6 +881,7 @@ define(["jquery"], function($){
                     case "dessin":
                     	tableau.showText(["fenetre-utiliser-dessin"]);
                     	inventaire.removeItem("dessin");
+                    	$("clue").attr("key", "indice-lampe");
                     	inventaire.addItem("eventRideauMis", true);
                     	tableau.modifyElement(dom, "fenetre-rideau");
                     	break;

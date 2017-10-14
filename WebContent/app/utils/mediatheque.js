@@ -37,6 +37,8 @@ define(["jquery"], function($){
 				this.load(key);
 			}
 			try {
+				if (key.indexOf("music") > -1) this.currentMusic = key;
+				if (this.isMute) return;
 				this.sounds[key].play();
 			}catch (e) {
 				this.load(key);
@@ -76,6 +78,16 @@ define(["jquery"], function($){
 						this.load(index);
 					}
 				}
+			}
+		};
+		
+		this.mute = function(activation) {
+			if (activation) {
+				this.isMute = true;
+				this.stopAllMusic();
+			} else {
+				this.isMute = false;
+				if (this.currentMusic) this.play(this.currentMusic);
 			}
 		};
 		
