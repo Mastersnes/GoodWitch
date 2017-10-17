@@ -338,7 +338,7 @@ define(["jquery"], function($){
 			en : "Only the sound of the wind speaks…"
 		},
 		"serrure-ouvrir" : {
-			fr : "J’aimerais bien, mais Maman a prit la clé.",
+			fr : "J’aimerais bien, mais Maman a pris la clé.",
 			en : "I'd like, but Mom took the key."
 		},
 		"serrure-utiliser-tournevis" : {
@@ -457,7 +457,7 @@ define(["jquery"], function($){
             en : "I think I should leave it here."
         },
         "boite-examiner" : {
-            fr : "Il n’y a pas grand chose, mise à part quelques pierres de protections.",
+            fr : "Il n’y a pas grand chose, mis à part quelques pierres de protection.",
             en : "There is nothing but a few stones of protection."
         },
         /**
