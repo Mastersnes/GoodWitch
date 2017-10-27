@@ -275,8 +275,8 @@ define(["jquery"], function($){
             en : "To be continued…"
         },
         "fin" : {
-            fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a target='_blank' alt='Kongregate' href='www.kongregate.com/games/JeuxBebel'>Kongregate</a> !<br/> Vous pouvez également nous soutenir sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.<br/>À bientôt !",
-            en : "Congratulation, you won ! <br/> Let's try our others games on <a target='_blank' alt='Kongregate' href='www.kongregate.com/games/JeuxBebel'>Kongregate</a> !<br/> You can also support us on <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.<br/>See you !"
+            fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a> !<br/> Vous pouvez également nous soutenir sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.<br/>À bientôt !",
+            en : "Congratulation, you won ! <br/> Let's try our others games on <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a> !<br/> You can also support us on <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.<br/>See you !"
         },
         
 		/**
