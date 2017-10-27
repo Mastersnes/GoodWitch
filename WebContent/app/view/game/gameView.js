@@ -3,7 +3,7 @@ define(["jquery",
         'underscore',
         "app/utils/utils",
         "text!app/template/game/game.html",
-        "app/view/game/tableauView"],
+        "app/view/game/tableauView", 'lib/kongregate'],
 function($, _, Utils, page, TableauView) {
 	'use strict';
 
@@ -14,6 +14,14 @@ function($, _, Utils, page, TableauView) {
 			this.mediatheque = Mediatheque;
 			this.tableauView = new TableauView(this);
 			this.render(load, code);
+			
+			var that = this;
+			console.log(kongregateAPI);
+			kongregateAPI.loadAPI(function(){
+			    that.kongregate = kongregateAPI.getAPI();
+			    console.log("Guest : ", that.kongregate.services.isGuest());
+	            console.log("User : ", that.kongregate.services.getUsername());
+			});
 			
 			var that = this;
 		};
