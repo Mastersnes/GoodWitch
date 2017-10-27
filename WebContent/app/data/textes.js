@@ -69,8 +69,16 @@ define(["jquery"], function($){
 			en : "Texts"
 		},
 		"followUs" : {
-            fr : "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.",
-            en : "Follow us on <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>."
+            fr : "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> ou <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>.",
+            en : "Follow us on <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> or <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>."
+        },
+        "followUs2" : {
+            fr : "Soutenez-nous sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.",
+            en : "Support us on <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>."
+        },
+        "followUs3" : {
+            fr : "Nos autres jeux sur <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>.",
+            en : "Our other games on <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>."
         },
         
         "clue" : {
@@ -267,8 +275,8 @@ define(["jquery"], function($){
             en : "To be continued…"
         },
         "fin" : {
-            fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a target='_blank' alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> Vous pouvez également nous suivre sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>À bientôt !",
-            en : "Congratulation, you won ! <br/> Let's try our others games on <a target='_blank' alt='Itch.io' href='https://les-jeux-de-bebel.itch.io/'>Itch.io</a> !<br/> You can also follow us on <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a>.<br/>See you !"
+            fr : "Félicitation, vous avez gagné ! <br/> Venez tester nos autres jeux sur <a target='_blank' alt='Kongregate' href='www.kongregate.com/games/JeuxBebel'>Kongregate</a> !<br/> Vous pouvez également nous soutenir sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.<br/>À bientôt !",
+            en : "Congratulation, you won ! <br/> Let's try our others games on <a target='_blank' alt='Kongregate' href='www.kongregate.com/games/JeuxBebel'>Kongregate</a> !<br/> You can also support us on <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.<br/>See you !"
         },
         
 		/**
