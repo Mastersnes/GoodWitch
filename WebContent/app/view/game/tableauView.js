@@ -20,6 +20,7 @@ function($, _, Utils, Scene, TextView, InventaireView, ParamsView, Tableaux, Ite
 			this.parent = parent;
 			this.Textes = parent.Textes;
 			this.mediatheque = parent.mediatheque;
+			this.kongregateUtils = parent.kongregateUtils;
 			
 			this.position = 0;
 			this.move = "stop";
@@ -90,6 +91,7 @@ function($, _, Utils, Scene, TextView, InventaireView, ParamsView, Tableaux, Ite
 		
 		this.showClue = function(action){
 			var clue = $("clue").attr("key");
+			this.kongregateUtils.score("ShowClue", 1);
 			this.showText([clue]);
 		};
 		
