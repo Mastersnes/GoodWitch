@@ -2,6 +2,7 @@
 define(["jquery",
         'underscore',
         "app/utils/utils",
+        "app/utils/kongregateUtils",
         "app/data/textes",
         "app/utils/mediatheque",
         "text!app/template/menu/menu.html",
@@ -10,7 +11,7 @@ define(["jquery",
         "app/view/menu/optionView",
         "app/view/menu/creditView",
         "app/view/menu/partenaireView"], 
-function($, _, Utils, Textes, Mediatheque, page, GameView, LoadView, OptionView, CreditView, PartenaireView) {
+function($, _, Utils, Kongregate, Textes, Mediatheque, page, GameView, LoadView, OptionView, CreditView, PartenaireView) {
 	'use strict';
 
 	return function() {
@@ -18,7 +19,18 @@ function($, _, Utils, Textes, Mediatheque, page, GameView, LoadView, OptionView,
 		    this.el = $("#app");
             this.mediatheque = new Mediatheque();
             this.mediatheque.play("music/menu.mp3");
-            this.render();
+            this.kongregateUtils = new Kongregate(Textes);
+            
+            var that = this;
+			if (window.location.href.indexOf("kongregate") > -1) {
+	            console.log("kongregate Load");
+				this.kongregateUtils.load(function() {
+	            	that.render();
+	            });
+			}else {
+				console.log("Pas sur kongregate !");
+				this.render();
+			}
 		};
 
 		this.render = function() {
@@ -28,6 +40,7 @@ function($, _, Utils, Textes, Mediatheque, page, GameView, LoadView, OptionView,
 					text : Textes
 			};
 			this.el.html(template(templateData));
+			this.kongregateUtils.render();
 			
 			this.makeEvents();
 			
@@ -52,6 +65,10 @@ function($, _, Utils, Textes, Mediatheque, page, GameView, LoadView, OptionView,
 			});
 			$("#partenaire").click(function() {
 				new PartenaireView(Textes).show();
+			});
+			
+			$("#login").click(function() {
+				that.kongregateUtils.login();
 			});
 		};
 		

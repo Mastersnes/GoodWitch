@@ -57,8 +57,10 @@ define(["jquery"], function($){
 						tableau.showText(["serrure-tige-utiliser-tournevis"], function() {
 							if (inventaire.hasItem("nori")) {
 								$("clue").attr("key", "indice-rideau");
+								tableau.kongregateUtils.score("LeaveTrunk", 1);
 							    tableau.go("piece-sombre");
 							}else {
+								tableau.kongregateUtils.score("NoriForget", 1);
 							    tableau.showText(["coffre-oublie-nori"]);
 							}
 						});
@@ -79,8 +81,10 @@ define(["jquery"], function($){
 			    if (inventaire.hasItem("nori")) {
 			    	var oldKey = $("clue").attr("key");
 			    	if (oldKey == "indice-crochetage") $("clue").attr("key", "indice-rideau");
+			    	tableau.kongregateUtils.score("LeaveTrunk", 1);
                     tableau.go("piece-sombre");
                 }else {
+                	tableau.kongregateUtils.score("NoriForget", 1);
                     tableau.showText(["coffre-oublie-nori"]);
                 }
 			}
@@ -616,6 +620,7 @@ define(["jquery"], function($){
                     	tableau.showText(["planque-livre-utiliser-couteau", "livre-lire", "livre-lire1", "livre-lire2"
                     	                  , "livre-lire3", "livre-lire4", "livre-lire5", "livre-lire6", "livre-lire7"]
                     	,function() {
+                    		tableau.kongregateUtils.score("GameComplete", 1);
                     		tableau.go("fin");
                     	});
                     	break;

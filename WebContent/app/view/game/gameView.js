@@ -12,10 +12,9 @@ function($, _, Utils, page, TableauView) {
 			this.el = $("#app");
 			this.Textes = Textes;
 			this.mediatheque = Mediatheque;
+			this.kongregateUtils = parent.kongregateUtils;
 			this.tableauView = new TableauView(this);
 			this.render(load, code);
-			
-			var that = this;
 		};
 
 		this.render = function(load, code) {

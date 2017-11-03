@@ -4,6 +4,14 @@ define(["jquery"], function($){
 		/**
 		 * Plateformes
 		 */
+		"bienvenue" : {
+			fr : "Bienvenue",
+			en : "Wellcome"
+		},
+		"guest" : {
+			fr : "Invité",
+			en : "Guest"
+		},
 		"newGame" : {
 			fr : "Nouvelle partie",
 			en : "New Game"
@@ -146,7 +154,7 @@ define(["jquery"], function($){
 		},
         "coffre-bas-text4" : {
             fr : "Elle lui fait beaucoup confiance, et moi aussi.<br/>Mais Sarah a fermé le coffre et je ne peux pas sortir d’ici.",
-            en : "She trusts her, and so do I.<br/>But Sarah closes the chest and I can't get out of here."
+            en : "She trusts her, and so do I.<br/>But Sarah closes the trunk and I can't get out of here."
         },
         "coffre-bas-text5" : {
             fr : "Ce qu’elle n’a jamais su, c’est que j’ai trouvé comment l’ouvrir de l’intérieur ! N’est-ce pas, Nori ?",
@@ -228,7 +236,7 @@ define(["jquery"], function($){
          */
         "cinematique-fin1" : {
         	fr : "Retournons dans le coffre ! Ici, personne ne pourra nous voir… Écoute…",
-        	en : "Let's go back to the chest! Here, nobody can see us… Listen…"
+        	en : "Let's go back to the trunk! Here, nobody can see us… Listen…"
         },
         "cinematique-fin2" : {
         	fr : "— Dorcas ?! Dorcas ?! Où es-tu ! Monsieur Ted ? Mais, qu’est-ce que vous faites ici ? Et que vous est-il arrivé ?",
@@ -351,7 +359,7 @@ define(["jquery"], function($){
 		},
 		"serrure-utiliser-tournevis" : {
 			fr : "Hum… Le tournevis entre, mais le coffre ne s’ouvre pas. Il manque peut-être quelque chose ?",
-			en : "Hmm… The screwdriver comes in, but the chest doesn't open. Perhaps something is missing ?"
+			en : "Hmm… The screwdriver comes in, but the trunk doesn't open. Perhaps something is missing ?"
 		},
 		"serrure-utiliser-tige" : {
 			fr : "Chouette, ça semble entrer !",
@@ -385,7 +393,7 @@ define(["jquery"], function($){
 		 */
 		"tige-examiner" : {
 			fr : "Ce sont les renforts du coffre…",
-			en : "These are the chest reinforcements…"
+			en : "These are the trunk reinforcements…"
 		},
 		"tige-prendre" : {
 			fr : "Impossible, c’est trop bien fixé !",
@@ -458,7 +466,7 @@ define(["jquery"], function($){
          */
         "boite-regarder" : {
             fr : "C’est le petit coffre à bijoux de maman.",
-            en : "This is Mom's little jewelry chest."
+            en : "This is Mom's little jewelry trunk."
         },
         "boite-prendre-no" : {
             fr : "Je pense que je devrais plutôt le laisser ici.",
@@ -992,7 +1000,7 @@ define(["jquery"], function($){
         },
         "indice-renfort" : {
             fr : "Ce coffre est très bien renforcé sur les côtés de la serrure. Peut-être que je pourrais arranger ça ?",
-            en : "This chest is very well reinforced on the sides of the lock. Maybe I could fix that ?"
+            en : "This trunk is very well reinforced on the sides of the lock. Maybe I could fix that ?"
         },
         "indice-crochetage" : {
             fr : "Voilà, Nori ! Nous avons tous les outils qu’il nous faut pour sortir d’ici ! Il n’y a plus qu’à se servir de tout ce que l’on a trouvé.",
