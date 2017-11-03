@@ -22,7 +22,7 @@ function($, _, Utils, Kongregate, Textes, Mediatheque, page, GameView, LoadView,
             this.kongregateUtils = new Kongregate(Textes);
             
             var that = this;
-			if (1==1 || window.location.href.indexOf("kongregate") > -1) {
+			if (window.location.href.indexOf("kongregate") > -1) {
 	            console.log("kongregate Load");
 				this.kongregateUtils.load(function() {
 	            	that.render();
