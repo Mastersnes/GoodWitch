@@ -59,8 +59,8 @@ function($, _) {
 
 		this.makeEvents = function() {
 			var that = this;
-			$("#popupText").off("mousedown touch");
-			$("#popupText").on("mousedown touch", function() {
+			$("#popupText").off("click");
+			$("#popupText").on("click", function() {
 			    if (that.ids[that.current] != "fin") {
 			        that.next();
 			    }

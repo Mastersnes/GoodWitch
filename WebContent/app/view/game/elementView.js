@@ -15,16 +15,18 @@ define(["jquery",
         
         this.makeEvents = function() {
             var that = this;
-            $("element").unbind("mousedown touch");
-			$("element").on("mousedown touch", function(evt) {
-            	var target = $(evt.target);
+            $("element").unbind("click");
+			$("element").on("click", function(evt) {
+				var target = $(evt.target);
                 var id = target.attr("id");
                 var element = Items.get(id);
                 
             	that.actionView.render($(this), element);
             });
 			
-			$("plan.frontground").on("mousedown touch", function(evt) {
+			$("plan.frontground").unbind("click");
+			$("plan.frontground").on("click", function(evt) {
+				evt.stopPropagation();
 			    that.actionView.checkHide(evt);
             });
 			

@@ -15,8 +15,8 @@ function($, _, Utils) {
 		this.makeEvents = function() {
 			var that = this;
 			
-            $("params #open-close").off("mousedown touch");
-            $("params #open-close").on("mousedown touch", function(evt){
+            $("params #open-close").off("click");
+            $("params #open-close").on("click", function(evt){
             	if ($(this).hasClass("open")) {
             		// on ferme
             		$(this).removeClass("open");
@@ -30,12 +30,12 @@ function($, _, Utils) {
             	}
             });
             
-            $("params #clue").off("mousedown touch");
-            $("params #clue").on("mousedown touch", function(evt){
+            $("params #clue").off("click");
+            $("params #clue").on("click", function(evt){
             	parent.showClue();
             });
-            $("params #mute").off("mousedown touch");
-            $("params #mute").on("mousedown touch", function(evt){
+            $("params #mute").off("click");
+            $("params #mute").on("click", function(evt){
             	if ($(this).hasClass("active")) {            		
             		//demute
             		$(this).removeClass("active");
@@ -46,8 +46,8 @@ function($, _, Utils) {
             		that.mediatheque.mute(true);
             	}
             });
-            $("params #quit").off("mousedown touch");
-            $("params #quit").on("mousedown touch", function(evt){
+            $("params #quit").off("click");
+            $("params #quit").on("click", function(evt){
             	window.close();
             });
 		};
