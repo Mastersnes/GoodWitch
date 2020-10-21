@@ -181,17 +181,18 @@ function($, _, Utils, Scene, TextView, InventaireView, ParamsView, Tableaux, Ite
 			
 			$(".scene").off("mousemove");
             $(".scene").on("mousemove", function(evt){
-            	var decalage = parseInt($(".scene").css("margin-left"));
+            	var decalage = parseInt($(".scene").position().left);
             	var taille = {
-            	        x : parseInt($(".scene").css("width")),
-            	        y : parseInt($(".scene").css("height"))
+            	        x : parseInt($(".scene").width()),
+            	        y : parseInt($(".scene").height())
             	};
-            	
+
             	var mouse = {
             	        x : Utils.toPercent((evt.pageX - decalage), taille.x),
             	        y : Utils.toPercent(evt.pageY, taille.y)
             	};
-            	
+
+
             	if (mouse.x < 5) {
             		that.move = "left";
             	}else if (mouse.x > 95) {
@@ -199,7 +200,7 @@ function($, _, Utils, Scene, TextView, InventaireView, ParamsView, Tableaux, Ite
             	}else {
             		that.move = "stop";
             	}
-            	
+
             	if (that.tableau.lampe) {
                     var lampe = {
                             w : Utils.toPercent($("lampe").width(), 1024),
