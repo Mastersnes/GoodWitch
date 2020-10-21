@@ -50,6 +50,17 @@ function($, _, Utils) {
             $("params #quit").on("click", function(evt){
             	window.close();
             });
+            $("params #fullscreen").off("click");
+            $("params #fullscreen").on("click", function(evt){
+            	var elem = $("body")[0];
+                if (elem.requestFullscreen) {
+                  elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) {
+                  elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) {
+                  elem.webkitRequestFullscreen();
+                }
+            });
 		};
 		
 		this.init(parent);

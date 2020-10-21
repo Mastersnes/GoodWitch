@@ -56,6 +56,10 @@ define(["jquery"], function($){
 			fr : "Plein &eacutecran (appuyez sur echap pour revenir)",
 			en : "Fullscreen (press escape for return)"
 		},
+		"fullscreen2" : {
+			fr : "Plein &eacutecran",
+			en : "Fullscreen"
+		},
 		"credits" : {
 			fr : "Credits",
 			en : "Credits"
